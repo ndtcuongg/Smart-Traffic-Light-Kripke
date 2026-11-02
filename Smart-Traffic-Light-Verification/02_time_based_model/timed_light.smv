@@ -1,0 +1,148 @@
+MODULE main 
+VAR
+
+
+state :
+{
+NS_GREEN,
+NS_YELLOW,
+EW_GREEN,
+EW_YELLOW
+};
+
+
+timer : 0..60;
+
+
+
+ASSIGN
+
+
+-- Initial state
+
+init(state) := NS_GREEN;
+
+
+-- Green time = 30 seconds
+
+init(timer) := 30;
+
+
+
+-- =========================
+-- STATE TRANSITION
+-- =========================
+
+
+next(state) :=
+
+case
+
+
+state = NS_GREEN
+&
+timer = 0 :
+
+NS_YELLOW;
+
+
+state = NS_YELLOW
+&
+timer = 0 :
+
+EW_GREEN;
+
+
+state = EW_GREEN
+&
+timer = 0 :
+
+EW_YELLOW;
+
+
+state = EW_YELLOW
+&
+timer = 0 :
+
+NS_GREEN;
+
+
+TRUE :
+
+state;
+
+
+esac;
+
+
+
+-- =========================
+-- TIMER CONTROL
+-- =========================
+
+
+next(timer) :=
+
+case
+
+
+timer > 0 :
+
+timer - 1;
+
+
+state = NS_GREEN
+&
+timer = 0 :
+
+5;
+
+
+state = NS_YELLOW
+&
+timer = 0 :
+
+30;
+
+
+state = EW_GREEN
+&
+timer = 0 :
+
+5;
+
+
+state = EW_YELLOW
+&
+timer = 0 :
+
+30;
+
+
+TRUE :
+
+timer;
+
+
+esac;
+
+
+
+-- =========================
+-- TIME CONSTRAINT
+-- =========================
+
+
+LTLSPEC
+G(
+state = NS_GREEN
+->
+timer <= 30
+);
+
+LTLSPEC
+G(
+state = NS_YELLOW
+->
+timer <= 5
+);

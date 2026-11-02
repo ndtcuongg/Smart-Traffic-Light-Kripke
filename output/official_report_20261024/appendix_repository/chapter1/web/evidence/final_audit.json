@@ -1,0 +1,16 @@
+{
+  "executed_at": "2026-10-22T15:40:44.885539+00:00",
+  "status": "PASS",
+  "preservation": {
+    "status": "PASS",
+    "checked_files": 93,
+    "changed": []
+  },
+  "original_smv_count": 22,
+  "changed_smv": [],
+  "official_v1_sha256": "c177eb76351a2e1b12a0bdcd202f0f02da4284b3e9b03380d039d52b2c121239",
+  "backend_tests": 13,
+  "browser_checks": 32,
+  "fresh_run": "20261022T153609Z_0d111894",
+  "documentation_links": "PASS"
+}

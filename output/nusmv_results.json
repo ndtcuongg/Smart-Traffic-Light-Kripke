@@ -1,0 +1,251 @@
+[
+  {
+    "file": "Smart-Traffic-Light-Verification/01_basic_model/traffic_light_model.smv",
+    "sha256": "c691888f8987d22193863bbf4d571b2bb5cf24a07876a7616574b3beb5e13662",
+    "returncode": 0,
+    "seconds": 0.019682,
+    "properties": [
+      {
+        "formula": "G (state = NS_GREEN ->  F state = EW_GREEN)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (state = NS_GREEN ->  F state = EW_GREEN)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/02_time_based_model/timed_light.smv",
+    "sha256": "7090cab83c3233b26be15ad23fd79862b6f7299df17be6782ee3780871d411c6",
+    "returncode": 0,
+    "seconds": 0.023112,
+    "properties": [
+      {
+        "formula": "G (state = NS_GREEN -> timer <= 30)",
+        "result": "true"
+      },
+      {
+        "formula": "G (state = NS_YELLOW -> timer <= 5)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (state = NS_GREEN -> timer <= 30)  is true\n-- specification  G (state = NS_YELLOW -> timer <= 5)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/03_adaptive_model/adaptive_light.smv",
+    "sha256": "68a485579d4a44b5c4e54822f0a8845d4b9cfadf853fceda5408b328607afef4",
+    "returncode": 0,
+    "seconds": 0.051241,
+    "properties": [
+      {
+        "formula": "G (time_period = MORNING_PEAK ->  F traffic_mode = PEAK)",
+        "result": "true"
+      },
+      {
+        "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+        "result": "true"
+      },
+      {
+        "formula": "G ((time_period = MORNING_PEAK | time_period = EVENING_PEAK) ->  F traffic_mode = PEAK)",
+        "result": "true"
+      },
+      {
+        "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+        "result": "true"
+      },
+      {
+        "formula": "G !(state = NS_GREEN & state = EW_GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G (state = NS_GREEN ->  F state = NS_YELLOW)",
+        "result": "true"
+      },
+      {
+        "formula": "G (state = EW_GREEN ->  F state = EW_YELLOW)",
+        "result": "true"
+      },
+      {
+        "formula": "G (((traffic_mode = PEAK & state = NS_GREEN) & timer = 0) ->  X timer = 45)",
+        "result": "true"
+      },
+      {
+        "formula": "G (((traffic_mode = NORMAL & state = NS_GREEN) & timer = 0) ->  X timer = 30)",
+        "result": "true"
+      },
+      {
+        "formula": "G (((traffic_mode = LOW & state = NS_GREEN) & timer = 0) ->  X timer = 20)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (time_period = MORNING_PEAK ->  F traffic_mode = PEAK)  is true\n-- specification  G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)  is true\n-- specification  G ((time_period = MORNING_PEAK | time_period = EVENING_PEAK) ->  F traffic_mode = PEAK)  is true\n-- specification  G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)  is true\n-- specification  G !(state = NS_GREEN & state = EW_GREEN)  is true\n-- specification  G (state = NS_GREEN ->  F state = NS_YELLOW)  is true\n-- specification  G (state = EW_GREEN ->  F state = EW_YELLOW)  is true\n-- specification  G (((traffic_mode = PEAK & state = NS_GREEN) & timer = 0) ->  X timer = 45)  is true\n-- specification  G (((traffic_mode = NORMAL & state = NS_GREEN) & timer = 0) ->  X timer = 30)  is true\n-- specification  G (((traffic_mode = LOW & state = NS_GREEN) & timer = 0) ->  X timer = 20)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/03_bmc/init_bug.smv",
+    "sha256": "d3c2629ad0f4a953429b9a2f48cda2816120dd0197803d0c2c9fdb55cbd95583",
+    "returncode": 0,
+    "seconds": 0.019015,
+    "properties": [
+      {
+        "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+        "result": "false"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G !(NS_light = GREEN & EW_light = GREEN)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -- Loop starts here\n  -> State: 1.1 <-\n    NS_light = GREEN\n    EW_light = GREEN\n  -> State: 1.2 <-\n    NS_light = YELLOW\n    EW_light = YELLOW\n  -> State: 1.3 <-\n    NS_light = RED\n    EW_light = RED\n  -> State: 1.4 <-\n    NS_light = GREEN\n    EW_light = GREEN\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc.smv",
+    "sha256": "fc41b615d171be29d1e4c9d9bb9cc0d3847625d0302e4147baa7daa08acd318e",
+    "returncode": 0,
+    "seconds": 0.019637,
+    "properties": [
+      {
+        "formula": "G !(state = NS_GREEN & state = EW_GREEN)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G !(state = NS_GREEN & state = EW_GREEN)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc_bug.smv",
+    "sha256": "5dbc6d8d531b87ad9a86c3c9e05649a86ecbb313217e876b7f89971c9d3d2f50",
+    "returncode": 0,
+    "seconds": 0.019069,
+    "properties": [],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/03_bmc/transition_bug.smv",
+    "sha256": "838df61296f7a6652ca2f8b071f41eec06ea4e8adcc25b7f5a0ca7807787253e",
+    "returncode": 0,
+    "seconds": 0.020852,
+    "properties": [
+      {
+        "formula": "G (state = S0 ->  X state = S1)",
+        "result": "false"
+      },
+      {
+        "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (state = S0 ->  X state = S1)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -- Loop starts here\n  -> State: 1.1 <-\n    state = S0\n    NS_light = GREEN\n    EW_light = RED\n  -> State: 1.2 <-\n    state = S2\n    NS_light = RED\n    EW_light = GREEN\n  -> State: 1.3 <-\n    state = S3\n    EW_light = YELLOW\n  -> State: 1.4 <-\n    state = S0\n    NS_light = GREEN\n    EW_light = RED\n-- specification  G !(NS_light = GREEN & EW_light = GREEN)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/04_verification/safety_liveness.smv",
+    "sha256": "b19a0080e15e4730498fb72a77f8ba33826636a9b6ab780792e68d54b13f2cc8",
+    "returncode": 0,
+    "seconds": 0.020674,
+    "properties": [
+      {
+        "formula": "G (NS_light = RED ->  F NS_light = GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G (EW_light = RED ->  F EW_light = GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G !(NS_light = RED & EW_light = RED)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (NS_light = RED ->  F NS_light = GREEN)  is true\n-- specification  G (EW_light = RED ->  F EW_light = GREEN)  is true\n-- specification  G !(NS_light = GREEN & EW_light = GREEN)  is true\n-- specification  G !(NS_light = RED & EW_light = RED)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug.smv",
+    "sha256": "036d2e77a96944774007da853114292bfeab07c710db00ff3ab8373887cedfde",
+    "returncode": 0,
+    "seconds": 0.0224,
+    "properties": [
+      {
+        "formula": "G (state = S0 ->  X state = S1)",
+        "result": "false"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (state = S0 ->  X state = S1)  is false\n-- as demonstrated by the following execution sequence\nTrace Description: LTL Counterexample \nTrace Type: Counterexample \n  -- Loop starts here\n  -> State: 1.1 <-\n    state = S0\n  -> State: 1.2 <-\n    state = S2\n  -> State: 1.3 <-\n    state = S3\n  -> State: 1.4 <-\n    state = S0\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug_fixed.smv",
+    "sha256": "8f21fe12c2be40a8a3c8f3096cb39057a594b5d57ecd3a284155db0ba4348dc6",
+    "returncode": 0,
+    "seconds": 0.023879,
+    "properties": [
+      {
+        "formula": "G (state = S0 ->  X state = S1)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (state = S0 ->  X state = S1)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/06_extension/emergency_mode.smv",
+    "sha256": "882382f7d0f0485dad65f25b84632cc7088f85db1382841c7ce525e26b26a960",
+    "returncode": 0,
+    "seconds": 0.023848,
+    "properties": [
+      {
+        "formula": "G (emergency = TRUE ->  F state = EMERGENCY_GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G (state = EMERGENCY_GREEN ->  F state = NS_GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G !(state = EMERGENCY_GREEN & state = EW_GREEN)",
+        "result": "true"
+      },
+      {
+        "formula": "G !(state = EMERGENCY_GREEN & state = NS_GREEN)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification  G (emergency = TRUE ->  F state = EMERGENCY_GREEN)  is true\n-- specification  G (state = EMERGENCY_GREEN ->  F state = NS_GREEN)  is true\n-- specification  G !(state = EMERGENCY_GREEN & state = EW_GREEN)  is true\n-- specification  G !(state = EMERGENCY_GREEN & state = NS_GREEN)  is true\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/test/traffic_light2.smv",
+    "sha256": "f813edd26bdff703853e29aafbffacd17abb1ec8281980d4b5eebe50e2eb30b1",
+    "returncode": 0,
+    "seconds": 0.027032,
+    "properties": [],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n",
+    "stderr": ""
+  },
+  {
+    "file": "Smart-Traffic-Light-Verification/test/traffic_light_basic.smv",
+    "sha256": "26492c9da1bc773800849b944e898670f46504ebb54453745340e7b9dc983666",
+    "returncode": 0,
+    "seconds": 0.022875,
+    "properties": [],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n",
+    "stderr": ""
+  },
+  {
+    "file": "test.smv",
+    "sha256": "87ed479e123c3d187e45a343d4317d7febf22d4b09478d64a51859276411de69",
+    "returncode": 0,
+    "seconds": 0.016121,
+    "properties": [
+      {
+        "formula": "AG !(state = logged_in & state = logged_out)",
+        "result": "true"
+      }
+    ],
+    "stdout": "*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)\n*** Enabled addons are: compass\n*** For more information on NuSMV see <http://nusmv.fbk.eu>\n*** or email to <nusmv-users@list.fbk.eu>.\n*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>\n\n*** Copyright (c) 2010-2025, Fondazione Bruno Kessler\n\n*** This version of NuSMV is linked to the CUDD library version 2.4.1\n*** Copyright (c) 1995-2004, Regents of the University of Colorado\n\n*** This version of NuSMV is linked to the MiniSat SAT solver. \n*** See http://minisat.se/MiniSat.html\n*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson\n*** Copyright (c) 2007-2010, Niklas Sorensson\n\n-- specification AG !(state = logged_in & state = logged_out)  is true\n",
+    "stderr": ""
+  }
+]

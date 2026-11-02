@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+    "-dynamic",
+    "-r",
+    "-is",
+    "-ils",
+    "-ii",
+    "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\smart_intersection.smv"
+  ],
+  "returncode": 0,
+  "seconds": 16.677418100007344,
+  "reachable_states": 86400,
+  "status": "PASS"
+}

@@ -1,0 +1,63 @@
+MODULE main 
+VAR
+
+
+state :
+{
+NS_GREEN,
+NS_YELLOW,
+EW_GREEN,
+EW_YELLOW
+};
+
+
+
+ASSIGN
+
+
+init(state) := NS_GREEN;
+
+
+
+next(state) :=
+
+case
+
+
+state = NS_GREEN :
+
+NS_YELLOW;
+
+
+state = NS_YELLOW :
+
+EW_GREEN;
+
+
+state = EW_GREEN :
+
+EW_YELLOW;
+
+
+state = EW_YELLOW :
+
+NS_GREEN;
+
+
+esac;
+
+
+
+-- Safety property
+
+LTLSPEC
+
+G !(
+
+state = NS_GREEN
+
+&
+
+state = EW_GREEN
+
+);

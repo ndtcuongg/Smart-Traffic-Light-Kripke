@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "all_243_preexisting_files_unchanged": true,
+  "all_335_formulas_mapped_by_actual_formula_not_output_order": true,
+  "exact_eight_top_level_sections": true,
+  "docx_zip_integrity": true,
+  "docx_body_font": "Times New Roman 11.5pt",
+  "margins_cm": 2,
+  "documents": {
+    "BAO_CAO_CHINH_THUC": {
+      "pages": 20,
+      "fonts": [
+        "CambriaMath",
+        "Consolas",
+        "TimesNewRomanPS-BoldMT",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ],
+      "no_text_outside_page": true,
+      "page_numbers_continuous": true,
+      "no_replacement_glyph": true,
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 977,
+          "first_line": "1. Trang bìa & Thông tin nhóm"
+        },
+        {
+          "page": 2,
+          "characters": 1424,
+          "first_line": "2. Tổng quan đề tài"
+        },
+        {
+          "page": 3,
+          "characters": 2327,
+          "first_line": "3. Phương pháp luận"
+        },
+        {
+          "page": 4,
+          "characters": 1812,
+          "first_line": "4. Phân tích lỗ hổng & Bản vá"
+        },
+        {
+          "page": 5,
+          "characters": 2267,
+          "first_line": "4. Phân tích lỗ hổng & Bản vá (tiếp)"
+        },
+        {
+          "page": 6,
+          "characters": 2178,
+          "first_line": "4. Phân tích lỗ hổng & Bản vá (tiếp)"
+        },
+        {
+          "page": 7,
+          "characters": 2083,
+          "first_line": "4.4. Giới hạn đặc tả và mở rộng — tách khỏi D01–D03"
+        },
+        {
+          "page": 8,
+          "characters": 2194,
+          "first_line": "4.5. Thí nghiệm cấy lỗi N1 và N2"
+        },
+        {
+          "page": 9,
+          "characters": 2431,
+          "first_line": "4.6. Thí nghiệm N3 — Bỏ qua ALL_RED"
+        },
+        {
+          "page": 10,
+          "characters": 1816,
+          "first_line": "5. Bảng tổng hợp before/after"
+        },
+        {
+          "page": 11,
+          "characters": 1703,
+          "first_line": "6. Bằng chứng kiểm chứng"
+        },
+        {
+          "page": 12,
+          "characters": 1865,
+          "first_line": "6.2. Log, nhóm CTL và hai đồ thị"
+        },
+        {
+          "page": 13,
+          "characters": 839,
+          "first_line": "6.3. Ảnh giao diện và nguồn lưu trữ"
+        },
+        {
+          "page": 14,
+          "characters": 1833,
+          "first_line": "7. Phản biện & Bài học"
+        },
+        {
+          "page": 15,
+          "characters": 1534,
+          "first_line": "8. Phụ lục"
+        },
+        {
+          "page": 16,
+          "characters": 1932,
+          "first_line": "B. Lệnh tái lập và tham số"
+        },
+        {
+          "page": 17,
+          "characters": 2114,
+          "first_line": "C. Nguồn v0 và vai trò"
+        },
+        {
+          "page": 18,
+          "characters": 1421,
+          "first_line": "D. Biến, AP và toàn bộ CTLSPEC"
+        },
+        {
+          "page": 19,
+          "characters": 1188,
+          "first_line": "E. Phân công và phản hồi giảng viên"
+        },
+        {
+          "page": 20,
+          "characters": 1390,
+          "first_line": "F. Checklist tiêu chí theo report_guide.pdf"
+        }
+      ]
+    },
+    "BIEN_BAN_KIEM_CHUNG": {
+      "pages": 2,
+      "fonts": [
+        "TimesNewRomanPS-BoldMT",
+        "TimesNewRomanPSMT"
+      ],
+      "no_text_outside_page": true,
+      "page_numbers_continuous": true,
+      "no_replacement_glyph": true,
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 1568,
+          "first_line": "BIÊN BẢN KIỂM CHỨNG HÌNH THỨC"
+        },
+        {
+          "page": 2,
+          "characters": 2514,
+          "first_line": "Chi tiết quy trình, phạm vi và kết luận record"
+        }
+      ]
+    }
+  },
+  "report_section_lengths": {
+    "1": {
+      "title": "Trang bìa & Thông tin nhóm",
+      "start_page": 1,
+      "end_page": 1,
+      "pages": 1
+    },
+    "2": {
+      "title": "Tổng quan đề tài",
+      "start_page": 2,
+      "end_page": 2,
+      "pages": 1
+    },
+    "3": {
+      "title": "Phương pháp luận",
+      "start_page": 3,
+      "end_page": 3,
+      "pages": 1
+    },
+    "4": {
+      "title": "Phân tích lỗ hổng & Bản vá",
+      "start_page": 4,
+      "end_page": 9,
+      "pages": 6
+    },
+    "5": {
+      "title": "Bảng tổng hợp before/after",
+      "start_page": 10,
+      "end_page": 10,
+      "pages": 1
+    },
+    "6": {
+      "title": "Bằng chứng kiểm chứng",
+      "start_page": 11,
+      "end_page": 13,
+      "pages": 3
+    },
+    "7": {
+      "title": "Phản biện & Bài học",
+      "start_page": 14,
+      "end_page": 14,
+      "pages": 1
+    },
+    "8": {
+      "title": "Phụ lục",
+      "start_page": 15,
+      "end_page": 20,
+      "pages": 6
+    }
+  },
+  "guide_suggested_lengths_met": true,
+  "renderer": "Edge print HTML generated from same structured content as DOCX; editable Word pagination can differ",
+  "pending_human_items": [
+    "Group identity and contribution placeholders",
+    "Instructor ruling on CWE/CERT, filenames, five-step source, electronic appendices"
+  ],
+  "test_record_rows": 838
+}

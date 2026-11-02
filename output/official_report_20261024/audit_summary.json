@@ -1,0 +1,253 @@
+{
+  "phase": "Audit completed before report writing",
+  "date_local": "2026-10-24",
+  "timezone": "Asia/Bangkok",
+  "guide_path": "C:\\Users\\Admin\\Downloads\\report_guide.pdf",
+  "guide_sha256": "b07136783c9531172a5cf7aa733b97e14f450fab2fbe6473de7d2fe7e3d48ab5",
+  "inventoried_files": 243,
+  "all_preexisting_files_unchanged": true,
+  "preserved_baseline_files": 22,
+  "original_v0_records": 14,
+  "original_v0_properties": 28,
+  "historical_v0_true": 25,
+  "historical_v0_false": 3,
+  "v1_property_groups": {
+    "safety": 11,
+    "liveness": 4,
+    "deadlock": 1,
+    "timer": 45,
+    "clock": 228,
+    "transition": 12,
+    "reachability": 6,
+    "adaptive": 28
+  },
+  "reproducible_model_and_properties": true,
+  "fresh_runs": [
+    {
+      "id": "v1_main_recheck",
+      "started_utc": "2026-10-23T23:59:02.402145+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v1_main_recheck.smv"
+      ],
+      "seconds": 0.265,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/v1_main_recheck.smv",
+      "log": "output/official_report_20261024/evidence/v1_main_recheck.log"
+    },
+    {
+      "id": "v0_timer_added_query",
+      "started_utc": "2026-10-23T23:59:02.670090+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v0_timer_added_query.smv"
+      ],
+      "seconds": 0.031,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/v0_timer_added_query.smv",
+      "log": "output/official_report_20261024/evidence/v0_timer_added_query.log"
+    },
+    {
+      "id": "v0_adaptive_added_queries",
+      "started_utc": "2026-10-23T23:59:02.715663+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v0_adaptive_added_queries.smv"
+      ],
+      "seconds": 0.094,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/v0_adaptive_added_queries.smv",
+      "log": "output/official_report_20261024/evidence/v0_adaptive_added_queries.log"
+    },
+    {
+      "id": "recheck_negative_conflicting_green",
+      "started_utc": "2026-10-23T23:59:02.806012+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_conflicting_green.smv"
+      ],
+      "seconds": 0.078,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/recheck_negative_conflicting_green.smv",
+      "log": "output/official_report_20261024/evidence/recheck_negative_conflicting_green.log"
+    },
+    {
+      "id": "recheck_negative_timer_reset",
+      "started_utc": "2026-10-23T23:59:02.883018+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_timer_reset.smv"
+      ],
+      "seconds": 4.906,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/recheck_negative_timer_reset.smv",
+      "log": "output/official_report_20261024/evidence/recheck_negative_timer_reset.log"
+    },
+    {
+      "id": "recheck_negative_skip_all_red",
+      "started_utc": "2026-10-23T23:59:07.793543+00:00",
+      "command": [
+        "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+        "-dynamic",
+        "-df",
+        "-coi",
+        "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_skip_all_red.smv"
+      ],
+      "seconds": 0.094,
+      "returncode": 0,
+      "status": "PASS",
+      "model": "output/official_report_20261024/evidence/recheck_negative_skip_all_red.smv",
+      "log": "output/official_report_20261024/evidence/recheck_negative_skip_all_red.log"
+    }
+  ],
+  "fresh_graphs": [
+    {
+      "file": "smart_intersection.json",
+      "status": "PASS",
+      "states": 1012,
+      "edges": 2548,
+      "reachable_states": 1012,
+      "deadlocks": 0,
+      "max_wait_to_green_seconds": {
+        "n": 55,
+        "s": 55,
+        "e": 55,
+        "w": 55
+      },
+      "reachability_witnesses": {
+        "phase_NS_GREEN": {
+          "state": "NS_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 3
+        },
+        "phase_NS_YELLOW": {
+          "state": "NS_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 225
+        },
+        "phase_ALL_RED_NS_TO_EW": {
+          "state": "ALL_RED_NS_TO_EW__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 291
+        },
+        "phase_EW_GREEN": {
+          "state": "EW_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 329
+        },
+        "phase_EW_YELLOW": {
+          "state": "EW_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 691
+        },
+        "phase_ALL_RED_EW_TO_NS": {
+          "state": "ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 0
+        },
+        "period_MORNING_PEAK": {
+          "state": "NS_GREEN__r045__now_MORNING_PEAK__entry_MORNING_PEAK",
+          "enumeration_index": 6
+        },
+        "period_NORMAL": {
+          "state": "ALL_RED_EW_TO_NS__r001__now_NORMAL__entry_NIGHT_LOW",
+          "enumeration_index": 2
+        },
+        "period_EVENING_PEAK": {
+          "state": "NS_GREEN__r035__now_EVENING_PEAK__entry_EVENING_PEAK",
+          "enumeration_index": 5
+        },
+        "period_NIGHT_LOW": {
+          "state": "ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 0
+        }
+      },
+      "all_12_lamp_values_checked": true,
+      "all_one_second_edges_checked": true
+    },
+    {
+      "file": "smart_intersection_exact.json",
+      "status": "PASS",
+      "states": 86400,
+      "edges": 86400,
+      "reachable_states": 86400,
+      "deadlocks": 0,
+      "max_wait_to_green_seconds": {
+        "n": 55,
+        "s": 55,
+        "e": 55,
+        "w": 55
+      },
+      "reachability_witnesses": {
+        "phase_NS_GREEN": {
+          "state": "t00002__NS_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 2
+        },
+        "phase_NS_YELLOW": {
+          "state": "t00017__NS_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 17
+        },
+        "phase_ALL_RED_NS_TO_EW": {
+          "state": "t00020__ALL_RED_NS_TO_EW__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 20
+        },
+        "phase_EW_GREEN": {
+          "state": "t00022__EW_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 22
+        },
+        "phase_EW_YELLOW": {
+          "state": "t00037__EW_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 37
+        },
+        "phase_ALL_RED_EW_TO_NS": {
+          "state": "t00000__ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 0
+        },
+        "period_MORNING_PEAK": {
+          "state": "t25200__ALL_RED_EW_TO_NS__r002__now_MORNING_PEAK__entry_MORNING_PEAK",
+          "enumeration_index": 25200
+        },
+        "period_NORMAL": {
+          "state": "t21600__ALL_RED_EW_TO_NS__r002__now_NORMAL__entry_NORMAL",
+          "enumeration_index": 21600
+        },
+        "period_EVENING_PEAK": {
+          "state": "t57600__ALL_RED_EW_TO_NS__r002__now_EVENING_PEAK__entry_EVENING_PEAK",
+          "enumeration_index": 57600
+        },
+        "period_NIGHT_LOW": {
+          "state": "t00000__ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+          "enumeration_index": 0
+        }
+      },
+      "all_12_lamp_values_checked": true,
+      "all_one_second_edges_checked": true
+    }
+  ],
+  "fresh_json_ctl": {
+    "checks": 26,
+    "overall": "PASS"
+  },
+  "ctlspec_declarations_all_artifacts": 4077,
+  "missing": [
+    "Student names, IDs, class, group, GitHub URL and actual task assignments",
+    "Instructor approval for domain defect identifiers instead of CWE/CERT and actual filename convention",
+    "Course topic guide and its canonical five-step methodology not supplied",
+    "Historical v0 commands/timestamps absent from archived records; fresh supplemental queries are labeled separately",
+    "No physical traffic validation; emergency not implemented in v1; exact GUI import not manually demonstrated"
+  ]
+}

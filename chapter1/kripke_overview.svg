@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980" role="img" aria-label="Kripke — giao lộ bốn hướng có thời gian">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#55718a"/></marker></defs>
+<rect width="1400" height="980" fill="#f3f6fa"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#19344c}.title{font-size:27px;font-weight:700}.sub{font-size:15px;fill:#526b80}.box{fill:#fff;stroke:#bac9d6;stroke-width:1.4}.name{font-size:17px;font-weight:700}.mono{font-family:Consolas,monospace;font-size:12px}.link{fill:none;stroke:#55718a;stroke-width:1.6;marker-end:url(#arrow)}</style>
+<text class="title" x="35" y="45">Kripke — giao lộ bốn hướng có thời gian</text>
+<text class="sub" x="35" y="77">Mỗi cạnh = 1 giây. Hình này mô tả tham số; DOT và JSON chứa toàn bộ trạng thái và cạnh.</text>
+<rect class="box" x="40" y="120" width="400" height="175" rx="12"/>
+<text class="name" x="56" y="150">NS_GREEN</text>
+<text class="mono" x="56" y="176">N</text>
+<circle cx="92" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="104" y="176">R:OFF</text>
+<circle cx="192" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="204" y="176">Y:OFF</text>
+<circle cx="292" cy="172" r="7" fill="#299c67"/><text class="mono" x="304" y="176">G:ON</text>
+<text class="mono" x="56" y="199">S</text>
+<circle cx="92" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="104" y="199">R:OFF</text>
+<circle cx="192" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="204" y="199">Y:OFF</text>
+<circle cx="292" cy="195" r="7" fill="#299c67"/><text class="mono" x="304" y="199">G:ON</text>
+<text class="mono" x="56" y="222">E</text>
+<circle cx="92" cy="218" r="7" fill="#d84545"/><text class="mono" x="104" y="222">R:ON</text>
+<circle cx="192" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="204" y="222">Y:OFF</text>
+<circle cx="292" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="304" y="222">G:OFF</text>
+<text class="mono" x="56" y="245">W</text>
+<circle cx="92" cy="241" r="7" fill="#d84545"/><text class="mono" x="104" y="245">R:ON</text>
+<circle cx="192" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="204" y="245">Y:OFF</text>
+<circle cx="292" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="304" y="245">G:OFF</text>
+<path class="link" d="M440 205 L500 205"/>
+<rect class="box" x="500" y="120" width="400" height="175" rx="12"/>
+<text class="name" x="516" y="150">NS_YELLOW</text>
+<text class="mono" x="516" y="176">N</text>
+<circle cx="552" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="564" y="176">R:OFF</text>
+<circle cx="652" cy="172" r="7" fill="#e7b62c"/><text class="mono" x="664" y="176">Y:ON</text>
+<circle cx="752" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="764" y="176">G:OFF</text>
+<text class="mono" x="516" y="199">S</text>
+<circle cx="552" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="564" y="199">R:OFF</text>
+<circle cx="652" cy="195" r="7" fill="#e7b62c"/><text class="mono" x="664" y="199">Y:ON</text>
+<circle cx="752" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="764" y="199">G:OFF</text>
+<text class="mono" x="516" y="222">E</text>
+<circle cx="552" cy="218" r="7" fill="#d84545"/><text class="mono" x="564" y="222">R:ON</text>
+<circle cx="652" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="664" y="222">Y:OFF</text>
+<circle cx="752" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="764" y="222">G:OFF</text>
+<text class="mono" x="516" y="245">W</text>
+<circle cx="552" cy="241" r="7" fill="#d84545"/><text class="mono" x="564" y="245">R:ON</text>
+<circle cx="652" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="664" y="245">Y:OFF</text>
+<circle cx="752" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="764" y="245">G:OFF</text>
+<path class="link" d="M900 205 L960 205"/>
+<rect class="box" x="960" y="120" width="400" height="175" rx="12"/>
+<text class="name" x="976" y="150">ALL_RED_NS_TO_EW</text>
+<text class="mono" x="976" y="176">N</text>
+<circle cx="1012" cy="172" r="7" fill="#d84545"/><text class="mono" x="1024" y="176">R:ON</text>
+<circle cx="1112" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="176">Y:OFF</text>
+<circle cx="1212" cy="172" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="176">G:OFF</text>
+<text class="mono" x="976" y="199">S</text>
+<circle cx="1012" cy="195" r="7" fill="#d84545"/><text class="mono" x="1024" y="199">R:ON</text>
+<circle cx="1112" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="199">Y:OFF</text>
+<circle cx="1212" cy="195" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="199">G:OFF</text>
+<text class="mono" x="976" y="222">E</text>
+<circle cx="1012" cy="218" r="7" fill="#d84545"/><text class="mono" x="1024" y="222">R:ON</text>
+<circle cx="1112" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="222">Y:OFF</text>
+<circle cx="1212" cy="218" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="222">G:OFF</text>
+<text class="mono" x="976" y="245">W</text>
+<circle cx="1012" cy="241" r="7" fill="#d84545"/><text class="mono" x="1024" y="245">R:ON</text>
+<circle cx="1112" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="245">Y:OFF</text>
+<circle cx="1212" cy="241" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="245">G:OFF</text>
+<path class="link" d="M1160 295 L1160 360"/>
+<rect class="box" x="960" y="360" width="400" height="175" rx="12"/>
+<text class="name" x="976" y="390">EW_GREEN</text>
+<text class="mono" x="976" y="416">N</text>
+<circle cx="1012" cy="412" r="7" fill="#d84545"/><text class="mono" x="1024" y="416">R:ON</text>
+<circle cx="1112" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="416">Y:OFF</text>
+<circle cx="1212" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="416">G:OFF</text>
+<text class="mono" x="976" y="439">S</text>
+<circle cx="1012" cy="435" r="7" fill="#d84545"/><text class="mono" x="1024" y="439">R:ON</text>
+<circle cx="1112" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="439">Y:OFF</text>
+<circle cx="1212" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="1224" y="439">G:OFF</text>
+<text class="mono" x="976" y="462">E</text>
+<circle cx="1012" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="1024" y="462">R:OFF</text>
+<circle cx="1112" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="462">Y:OFF</text>
+<circle cx="1212" cy="458" r="7" fill="#299c67"/><text class="mono" x="1224" y="462">G:ON</text>
+<text class="mono" x="976" y="485">W</text>
+<circle cx="1012" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="1024" y="485">R:OFF</text>
+<circle cx="1112" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="1124" y="485">Y:OFF</text>
+<circle cx="1212" cy="481" r="7" fill="#299c67"/><text class="mono" x="1224" y="485">G:ON</text>
+<path class="link" d="M960 445 L900 445"/>
+<rect class="box" x="500" y="360" width="400" height="175" rx="12"/>
+<text class="name" x="516" y="390">EW_YELLOW</text>
+<text class="mono" x="516" y="416">N</text>
+<circle cx="552" cy="412" r="7" fill="#d84545"/><text class="mono" x="564" y="416">R:ON</text>
+<circle cx="652" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="664" y="416">Y:OFF</text>
+<circle cx="752" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="764" y="416">G:OFF</text>
+<text class="mono" x="516" y="439">S</text>
+<circle cx="552" cy="435" r="7" fill="#d84545"/><text class="mono" x="564" y="439">R:ON</text>
+<circle cx="652" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="664" y="439">Y:OFF</text>
+<circle cx="752" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="764" y="439">G:OFF</text>
+<text class="mono" x="516" y="462">E</text>
+<circle cx="552" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="564" y="462">R:OFF</text>
+<circle cx="652" cy="458" r="7" fill="#e7b62c"/><text class="mono" x="664" y="462">Y:ON</text>
+<circle cx="752" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="764" y="462">G:OFF</text>
+<text class="mono" x="516" y="485">W</text>
+<circle cx="552" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="564" y="485">R:OFF</text>
+<circle cx="652" cy="481" r="7" fill="#e7b62c"/><text class="mono" x="664" y="485">Y:ON</text>
+<circle cx="752" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="764" y="485">G:OFF</text>
+<path class="link" d="M500 445 L440 445"/>
+<rect class="box" x="40" y="360" width="400" height="175" rx="12"/>
+<text class="name" x="56" y="390">ALL_RED_EW_TO_NS</text>
+<text class="mono" x="56" y="416">N</text>
+<circle cx="92" cy="412" r="7" fill="#d84545"/><text class="mono" x="104" y="416">R:ON</text>
+<circle cx="192" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="204" y="416">Y:OFF</text>
+<circle cx="292" cy="412" r="7" fill="#dce4eb"/><text class="mono" x="304" y="416">G:OFF</text>
+<text class="mono" x="56" y="439">S</text>
+<circle cx="92" cy="435" r="7" fill="#d84545"/><text class="mono" x="104" y="439">R:ON</text>
+<circle cx="192" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="204" y="439">Y:OFF</text>
+<circle cx="292" cy="435" r="7" fill="#dce4eb"/><text class="mono" x="304" y="439">G:OFF</text>
+<text class="mono" x="56" y="462">E</text>
+<circle cx="92" cy="458" r="7" fill="#d84545"/><text class="mono" x="104" y="462">R:ON</text>
+<circle cx="192" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="204" y="462">Y:OFF</text>
+<circle cx="292" cy="458" r="7" fill="#dce4eb"/><text class="mono" x="304" y="462">G:OFF</text>
+<text class="mono" x="56" y="485">W</text>
+<circle cx="92" cy="481" r="7" fill="#d84545"/><text class="mono" x="104" y="485">R:ON</text>
+<circle cx="192" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="204" y="485">Y:OFF</text>
+<circle cx="292" cy="481" r="7" fill="#dce4eb"/><text class="mono" x="304" y="485">G:OFF</text>
+<path class="link" d="M240 360 L240 295"/>
+<text class="sub" x="40" y="590">S = (phase, remaining, current_period, entry_period, clock, 12 lamp booleans).</text>
+<text class="sub" x="40" y="619">Countdown: (phase,r,p,e) → (phase,r−1,p′,e) khi r &gt; 1.</text>
+<text class="sub" x="40" y="648">Đổi pha: (phase,1,p,e) → (next_phase,D(next_phase,p′),p′,p′).</text>
+<text class="sub" x="40" y="677">Clock: 23:59:59 → 00:00:00; current_period lấy từ clock mới.</text>
+<text class="sub" x="40" y="706">entry_period được chốt tại đầu pha; đổi khung giờ không cắt ngắn pha đang chạy.</text>
+<text class="sub" x="40" y="735">JSON cho GUI: 1.012 trạng thái / 2.548 cạnh; giữ timer từng giây, chiếu clock xuống period.</text>
+<text class="sub" x="40" y="764">JSON chính xác: 86.400 trạng thái / 86.400 cạnh; đầy đủ clock 24 giờ với cấu hình mặc định.</text>
+<text class="sub" x="40" y="793">Mọi lamp ON/OFF được ghi rõ trong labeling, không chỉ dùng một biến phase.</text>
+<text class="name" x="40" y="855">Thời lượng theo entry_period (giây)</text>
+<text class="sub" x="40" y="884">MORNING_PEAK: NS_GREEN=45; EW_GREEN=35; YELLOW=3; ALL_RED=2</text>
+<text class="sub" x="40" y="907">NORMAL: NS_GREEN=25; EW_GREEN=25; YELLOW=3; ALL_RED=2</text>
+<text class="sub" x="40" y="930">EVENING_PEAK: NS_GREEN=35; EW_GREEN=45; YELLOW=3; ALL_RED=2</text>
+<text class="sub" x="40" y="953">NIGHT_LOW: NS_GREEN=15; EW_GREEN=15; YELLOW=3; ALL_RED=2</text>
+</svg>

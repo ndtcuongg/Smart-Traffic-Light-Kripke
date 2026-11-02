@@ -1,0 +1,75 @@
+{
+  "initial_clock_seconds": 0,
+  "initial_phase": "ALL_RED_EW_TO_NS",
+  "period_ranges": [
+    {
+      "start": "00:00:00",
+      "end": "06:00:00",
+      "period": "NIGHT_LOW"
+    },
+    {
+      "start": "06:00:00",
+      "end": "07:00:00",
+      "period": "NORMAL"
+    },
+    {
+      "start": "07:00:00",
+      "end": "09:00:00",
+      "period": "MORNING_PEAK"
+    },
+    {
+      "start": "09:00:00",
+      "end": "16:00:00",
+      "period": "NORMAL"
+    },
+    {
+      "start": "16:00:00",
+      "end": "19:00:00",
+      "period": "EVENING_PEAK"
+    },
+    {
+      "start": "19:00:00",
+      "end": "22:00:00",
+      "period": "NORMAL"
+    },
+    {
+      "start": "22:00:00",
+      "end": "24:00:00",
+      "period": "NIGHT_LOW"
+    }
+  ],
+  "durations_seconds": {
+    "MORNING_PEAK": {
+      "NS_GREEN": 45,
+      "NS_YELLOW": 3,
+      "ALL_RED_NS_TO_EW": 2,
+      "EW_GREEN": 41,
+      "EW_YELLOW": 3,
+      "ALL_RED_EW_TO_NS": 2
+    },
+    "NORMAL": {
+      "NS_GREEN": 17,
+      "NS_YELLOW": 3,
+      "ALL_RED_NS_TO_EW": 2,
+      "EW_GREEN": 25,
+      "EW_YELLOW": 3,
+      "ALL_RED_EW_TO_NS": 2
+    },
+    "EVENING_PEAK": {
+      "NS_GREEN": 35,
+      "NS_YELLOW": 3,
+      "ALL_RED_NS_TO_EW": 2,
+      "EW_GREEN": 45,
+      "EW_YELLOW": 3,
+      "ALL_RED_EW_TO_NS": 2
+    },
+    "NIGHT_LOW": {
+      "NS_GREEN": 15,
+      "NS_YELLOW": 3,
+      "ALL_RED_NS_TO_EW": 2,
+      "EW_GREEN": 15,
+      "EW_YELLOW": 3,
+      "ALL_RED_EW_TO_NS": 2
+    }
+  }
+}

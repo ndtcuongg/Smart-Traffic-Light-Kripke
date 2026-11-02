@@ -1,0 +1,23 @@
+{
+  "id": "20261022T151633Z_90ea512d",
+  "status": "completed",
+  "requested_at": "2026-10-22T15:16:33.322922+00:00",
+  "started_at": "2026-10-22T15:16:33.442437+00:00",
+  "stage": "Đang chuẩn bị kiểm chứng Chương 1.",
+  "tools": [
+    "NuSMV BDD/CTL",
+    "Bộ kiểm CTL độc lập bằng Python"
+  ],
+  "source_hashes": {
+    "smart_intersection.smv": "c177eb76351a2e1b12a0bdcd202f0f02da4284b3e9b03380d039d52b2c121239",
+    "config.json": "b8c3daffa72b4fc5a08f1cda6f891320138ad15e7ff68e1c60226901d5e46687",
+    "properties.json": "ff0802b04dcbdf5394e282b1d7c8625faeaf1845cd7bb3028fb044443307515e",
+    "smart_intersection.json": "d9cbed4bc18deeb61d53ff9030c7c588e742039c540560a057dc5959d8e5f129"
+  },
+  "preservation": {
+    "status": "PASS",
+    "checked_files": 93,
+    "changed": []
+  },
+  "finished_at": "2026-10-22T15:17:13.410109+00:00"
+}

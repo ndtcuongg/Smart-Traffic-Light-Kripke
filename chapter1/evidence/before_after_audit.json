@@ -1,0 +1,566 @@
+{
+  "documentation_date": "2026-10-22",
+  "verification_rerun": false,
+  "documentation_only": true,
+  "original_source_count": 14,
+  "historical_generated_smv_also_preserved": "output/excel_graph_check.smv",
+  "all_existing_smv_files_preserved": 22,
+  "all_existing_smv_hashes": {
+    "test.smv": "87ed479e123c3d187e45a343d4317d7febf22d4b09478d64a51859276411de69",
+    "chapter1/smart_intersection.smv": "c177eb76351a2e1b12a0bdcd202f0f02da4284b3e9b03380d039d52b2c121239",
+    "chapter1/evidence/negative_conflicting_green.smv": "ad49f75b29db10aec68310c68ae841ab8123bf3af15d7badb05d9dea9aae6adb",
+    "chapter1/evidence/negative_skip_all_red.smv": "434e285217f1e550f89938cf947519d65f413cb2a56da8cf673a735a69a76892",
+    "chapter1/evidence/negative_timer_reset.smv": "f779763365c12f779bb8af915afc98e46d4d585d0e8f80680b3ed0f2c3364b66",
+    "chapter1/evidence/nusmv_any_start_time.smv": "3af96695e28d4a095a0a1b6509c14885b9e04fb913ed4ced119159b5ade6b019",
+    "chapter1/evidence/nusmv_main.smv": "c177eb76351a2e1b12a0bdcd202f0f02da4284b3e9b03380d039d52b2c121239",
+    "chapter1/evidence/nusmv_period_reachability.smv": "855022e99741cbad81e8b976e1cef6065ee843ce3ad37985ef066b5f50a77842",
+    "output/excel_graph_check.smv": "c816a27a41888d819181f2d587a50150b966125f0ecf6d43214517c677302489",
+    "Smart-Traffic-Light-Verification/01_basic_model/traffic_light_model.smv": "c691888f8987d22193863bbf4d571b2bb5cf24a07876a7616574b3beb5e13662",
+    "Smart-Traffic-Light-Verification/02_time_based_model/timed_light.smv": "7090cab83c3233b26be15ad23fd79862b6f7299df17be6782ee3780871d411c6",
+    "Smart-Traffic-Light-Verification/03_adaptive_model/adaptive_light.smv": "68a485579d4a44b5c4e54822f0a8845d4b9cfadf853fceda5408b328607afef4",
+    "Smart-Traffic-Light-Verification/03_bmc/init_bug.smv": "d3c2629ad0f4a953429b9a2f48cda2816120dd0197803d0c2c9fdb55cbd95583",
+    "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc.smv": "fc41b615d171be29d1e4c9d9bb9cc0d3847625d0302e4147baa7daa08acd318e",
+    "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc_bug.smv": "5dbc6d8d531b87ad9a86c3c9e05649a86ecbb313217e876b7f89971c9d3d2f50",
+    "Smart-Traffic-Light-Verification/03_bmc/transition_bug.smv": "838df61296f7a6652ca2f8b071f41eec06ea4e8adcc25b7f5a0ca7807787253e",
+    "Smart-Traffic-Light-Verification/04_verification/safety_liveness.smv": "b19a0080e15e4730498fb72a77f8ba33826636a9b6ab780792e68d54b13f2cc8",
+    "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug.smv": "036d2e77a96944774007da853114292bfeab07c710db00ff3ab8373887cedfde",
+    "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug_fixed.smv": "8f21fe12c2be40a8a3c8f3096cb39057a594b5d57ecd3a284155db0ba4348dc6",
+    "Smart-Traffic-Light-Verification/06_extension/emergency_mode.smv": "882382f7d0f0485dad65f25b84632cc7088f85db1382841c7ce525e26b26a960",
+    "Smart-Traffic-Light-Verification/test/traffic_light2.smv": "f813edd26bdff703853e29aafbffacd17abb1ec8281980d4b5eebe50e2eb30b1",
+    "Smart-Traffic-Light-Verification/test/traffic_light_basic.smv": "26492c9da1bc773800849b944e898670f46504ebb54453745340e7b9dc983666"
+  },
+  "official_after_implementation": "chapter1/smart_intersection.smv",
+  "official_after_sha256": "c177eb76351a2e1b12a0bdcd202f0f02da4284b3e9b03380d039d52b2c121239",
+  "official_after_matches_prior_manifest": true,
+  "official_after_matches_verified_snapshot": true,
+  "mapping": [
+    {
+      "id": "V0-01",
+      "source_file": "Smart-Traffic-Light-Verification/01_basic_model/traffic_light_model.smv",
+      "classification": "Giới hạn mô hình bốn pha",
+      "source_sha256": "c691888f8987d22193863bbf4d571b2bb5cf24a07876a7616574b3beb5e13662",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 0,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (state = NS_GREEN ->  F state = EW_GREEN)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-01_traffic_light_model.stdout.log",
+      "stdout_sha256": "856486e217d1c997bcc4b63af8c6136bf9561b5f0765120ee0b4d321d32d73bf",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "clearance_all_red",
+        "recurring_green_n",
+        "recurring_green_e"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-01"
+    },
+    {
+      "id": "V0-02",
+      "source_file": "Smart-Traffic-Light-Verification/02_time_based_model/timed_light.smv",
+      "classification": "Ngữ nghĩa timer=0 khác yêu cầu đúng D giây",
+      "source_sha256": "7090cab83c3233b26be15ad23fd79862b6f7299df17be6782ee3780871d411c6",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 1,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (state = NS_GREEN -> timer <= 30)",
+          "result": "true"
+        },
+        {
+          "formula": "G (state = NS_YELLOW -> timer <= 5)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-02_timed_light.stdout.log",
+      "stdout_sha256": "04d4783e28345d1c93507b611df9b7e7229660f77e7ceea756a567e5f2dc58b9",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "timer_bounds",
+        "countdown_2",
+        "countdown_30",
+        "hold_NS_GREEN",
+        "advance_NS_GREEN",
+        "reset_NS_GREEN_NORMAL"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-02"
+    },
+    {
+      "id": "V0-03",
+      "source_file": "Smart-Traffic-Light-Verification/03_adaptive_model/adaptive_light.smv",
+      "classification": "Lỗi logic thích nghi hiện hữu, nguồn không đánh dấu fault-injection",
+      "source_sha256": "68a485579d4a44b5c4e54822f0a8845d4b9cfadf853fceda5408b328607afef4",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 2,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (time_period = MORNING_PEAK ->  F traffic_mode = PEAK)",
+          "result": "true"
+        },
+        {
+          "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+          "result": "true"
+        },
+        {
+          "formula": "G ((time_period = MORNING_PEAK | time_period = EVENING_PEAK) ->  F traffic_mode = PEAK)",
+          "result": "true"
+        },
+        {
+          "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+          "result": "true"
+        },
+        {
+          "formula": "G !(state = NS_GREEN & state = EW_GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G (state = NS_GREEN ->  F state = NS_YELLOW)",
+          "result": "true"
+        },
+        {
+          "formula": "G (state = EW_GREEN ->  F state = EW_YELLOW)",
+          "result": "true"
+        },
+        {
+          "formula": "G (((traffic_mode = PEAK & state = NS_GREEN) & timer = 0) ->  X timer = 45)",
+          "result": "true"
+        },
+        {
+          "formula": "G (((traffic_mode = NORMAL & state = NS_GREEN) & timer = 0) ->  X timer = 30)",
+          "result": "true"
+        },
+        {
+          "formula": "G (((traffic_mode = LOW & state = NS_GREEN) & timer = 0) ->  X timer = 20)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-03_adaptive_light.stdout.log",
+      "stdout_sha256": "95baa2766a0f13573ab81ec7422126b6bbfeb9861fa6d292779ea82e4c4569b9",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "reset_NS_GREEN_NORMAL",
+        "reset_ALL_RED_NS_TO_EW_EVENING_PEAK",
+        "reset_ALL_RED_EW_TO_NS_NIGHT_LOW",
+        "latch_NORMAL",
+        "clock_second_59",
+        "clock_hour_tick_23"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-03"
+    },
+    {
+      "id": "V0-04",
+      "source_file": "Smart-Traffic-Light-Verification/03_bmc/init_bug.smv",
+      "classification": "Mẫu lỗi khởi tạo theo tên/vai trò init_bug",
+      "source_sha256": "d3c2629ad0f4a953429b9a2f48cda2816120dd0197803d0c2c9fdb55cbd95583",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 3,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+          "result": "false"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-04_init_bug.stdout.log",
+      "stdout_sha256": "99442ea4a58757d641142ce176407852cc32faf3adacfdb9efbfd2c59862addd",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "physical_green_exclusion",
+        "one_hot_n",
+        "synchronized_green",
+        "clearance_all_red"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-04"
+    },
+    {
+      "id": "V0-05",
+      "source_file": "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc.smv",
+      "classification": "Giới hạn safety enum, không có lỗi cấy được phát hiện",
+      "source_sha256": "fc41b615d171be29d1e4c9d9bb9cc0d3847625d0302e4147baa7daa08acd318e",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 4,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G !(state = NS_GREEN & state = EW_GREEN)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-05_traffic_light_bmc.stdout.log",
+      "stdout_sha256": "231a8d912a9e4ea4d85095481bfc5c03de4e757eb48afe952cfe92ed69d1a31d",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "physical_green_exclusion",
+        "one_hot_n",
+        "synchronized_green",
+        "clearance_all_red",
+        "deadlock_free"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-05"
+    },
+    {
+      "id": "V0-06",
+      "source_file": "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc_bug.smv",
+      "classification": "File khung, chưa có thuộc tính hoặc fault thực thi",
+      "source_sha256": "5dbc6d8d531b87ad9a86c3c9e05649a86ecbb313217e876b7f89971c9d3d2f50",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 5,
+      "historical_exit_code": 0,
+      "historical_properties": [],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-06_traffic_light_bmc_bug.stdout.log",
+      "stdout_sha256": "96f7fdfbd673cde4696853ec84f6cabc98d9ceab4530589ebcd406f2d4dc1eae",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "physical_green_exclusion",
+        "recurring_green_n",
+        "deadlock_free",
+        "advance_NS_YELLOW"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-06"
+    },
+    {
+      "id": "V0-07",
+      "source_file": "Smart-Traffic-Light-Verification/03_bmc/transition_bug.smv",
+      "classification": "Fault chuyển tiếp có chủ đích, có chú thích nguồn",
+      "source_sha256": "838df61296f7a6652ca2f8b071f41eec06ea4e8adcc25b7f5a0ca7807787253e",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 6,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (state = S0 ->  X state = S1)",
+          "result": "false"
+        },
+        {
+          "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-07_transition_bug.stdout.log",
+      "stdout_sha256": "4459deb540ef76e203e78d16eab3d7419150d7ce2417f72409ad5df987c0e07f",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "hold_NS_GREEN",
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "yellow_ns_other_red",
+        "physical_green_exclusion"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-07"
+    },
+    {
+      "id": "V0-08",
+      "source_file": "Smart-Traffic-Light-Verification/04_verification/safety_liveness.smv",
+      "classification": "Hạn chế thiết kế/tập yêu cầu, không đánh dấu fault-injection",
+      "source_sha256": "b19a0080e15e4730498fb72a77f8ba33826636a9b6ab780792e68d54b13f2cc8",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 7,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (NS_light = RED ->  F NS_light = GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G (EW_light = RED ->  F EW_light = GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G !(NS_light = GREEN & EW_light = GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G !(NS_light = RED & EW_light = RED)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-08_safety_liveness.stdout.log",
+      "stdout_sha256": "93aefff4b4fef194f47fa013d4fb741ad6f1460e82bfc97520ad4818ad0330a9",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "yellow_ns_other_red",
+        "yellow_ew_other_red",
+        "clearance_all_red",
+        "advance_NS_YELLOW",
+        "recurring_green_n",
+        "recurring_green_e"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-08"
+    },
+    {
+      "id": "V0-09",
+      "source_file": "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug.smv",
+      "classification": "Fault chuyển tiếp có chủ đích, có BUG INTRODUCED HERE",
+      "source_sha256": "036d2e77a96944774007da853114292bfeab07c710db00ff3ab8373887cedfde",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 8,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (state = S0 ->  X state = S1)",
+          "result": "false"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-09_transition_bug.stdout.log",
+      "stdout_sha256": "683e657452d2c3b6be3cd89722922370a419c2e3509248ca3f070cf72a4a0703",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "hold_NS_GREEN",
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "clearance_all_red"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-09"
+    },
+    {
+      "id": "V0-10",
+      "source_file": "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug_fixed.smv",
+      "classification": "Bản sửa đối chứng đã TRUE, không phải lỗi cạnh còn tồn tại",
+      "source_sha256": "8f21fe12c2be40a8a3c8f3096cb39057a594b5d57ecd3a284155db0ba4348dc6",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 9,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (state = S0 ->  X state = S1)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-10_transition_bug_fixed.stdout.log",
+      "stdout_sha256": "dedab9f40c280fca2b76bda4bd2972247aa0fbb9407c0df83b741ffdd40c9b53",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "hold_NS_GREEN",
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "physical_green_exclusion"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-10"
+    },
+    {
+      "id": "V0-11",
+      "source_file": "Smart-Traffic-Light-Verification/06_extension/emergency_mode.smv",
+      "classification": "Ví dụ emergency, chức năng chưa được tích hợp vào v1",
+      "source_sha256": "882382f7d0f0485dad65f25b84632cc7088f85db1382841c7ce525e26b26a960",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 10,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "G (emergency = TRUE ->  F state = EMERGENCY_GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G (state = EMERGENCY_GREEN ->  F state = NS_GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G !(state = EMERGENCY_GREEN & state = EW_GREEN)",
+          "result": "true"
+        },
+        {
+          "formula": "G !(state = EMERGENCY_GREEN & state = NS_GREEN)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-11_emergency_mode.stdout.log",
+      "stdout_sha256": "afec61fc899cf1cd1a5554ed8458ecc954dd00d8dc5e635df04448439ef06a7a",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "recurring_green_n",
+        "recurring_green_e",
+        "physical_green_exclusion"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-11"
+    },
+    {
+      "id": "V0-12",
+      "source_file": "Smart-Traffic-Light-Verification/test/traffic_light2.smv",
+      "classification": "Fixture chưa có SPEC",
+      "source_sha256": "f813edd26bdff703853e29aafbffacd17abb1ec8281980d4b5eebe50e2eb30b1",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 11,
+      "historical_exit_code": 0,
+      "historical_properties": [],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-12_traffic_light2.stdout.log",
+      "stdout_sha256": "96f7fdfbd673cde4696853ec84f6cabc98d9ceab4530589ebcd406f2d4dc1eae",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "physical_green_exclusion",
+        "deadlock_free"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-12"
+    },
+    {
+      "id": "V0-13",
+      "source_file": "Smart-Traffic-Light-Verification/test/traffic_light_basic.smv",
+      "classification": "Fixture chưa có SPEC",
+      "source_sha256": "26492c9da1bc773800849b944e898670f46504ebb54453745340e7b9dc983666",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 12,
+      "historical_exit_code": 0,
+      "historical_properties": [],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-13_traffic_light_basic.stdout.log",
+      "stdout_sha256": "96f7fdfbd673cde4696853ec84f6cabc98d9ceab4530589ebcd406f2d4dc1eae",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "hold_NS_GREEN",
+        "advance_NS_GREEN",
+        "advance_NS_YELLOW",
+        "physical_green_exclusion"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-13"
+    },
+    {
+      "id": "V0-14",
+      "source_file": "test.smv",
+      "classification": "Ví dụ đăng nhập ngoài nghiệp vụ giao lộ",
+      "source_sha256": "87ed479e123c3d187e45a343d4317d7febf22d4b09478d64a51859276411de69",
+      "source_matches_preserved_work": true,
+      "source_matches_historical_verification_hash": true,
+      "historical_json": "output/nusmv_results.json",
+      "historical_array_index": 13,
+      "historical_exit_code": 0,
+      "historical_properties": [
+        {
+          "formula": "AG !(state = logged_in & state = logged_out)",
+          "result": "true"
+        }
+      ],
+      "historical_stdout_extraction": "chapter1/evidence/before_v0_logs/V0-14_test.stdout.log",
+      "stdout_sha256": "1aa774326a91620ea38d91ed02d576b0325bf73af902f8f1946a0df1b22e53cf",
+      "stdout_is_exact_archived_utf8_string": true,
+      "stderr_in_archive": "",
+      "v1_property_names": [
+        "physical_green_exclusion",
+        "one_hot_n",
+        "synchronized_green"
+      ],
+      "v1_named_properties_found_true_in_both_runs": true,
+      "documentation_section": "V0-14"
+    }
+  ],
+  "v1_positive_runs": {
+    "nusmv_main": {
+      "properties": 335,
+      "all_true": true
+    },
+    "nusmv_any_start_time": {
+      "properties": 335,
+      "all_true": true
+    },
+    "nusmv_period_reachability": {
+      "properties": 4,
+      "all_true": true
+    }
+  },
+  "v1_intentionally_injected_faults": [
+    {
+      "name": "negative_conflicting_green",
+      "actual_property_result": false,
+      "expected_property_result": false,
+      "harness_status": "PASS",
+      "model": "chapter1/evidence/negative_conflicting_green.smv",
+      "log": "chapter1/evidence/negative_conflicting_green.log"
+    },
+    {
+      "name": "negative_timer_reset",
+      "actual_property_result": false,
+      "expected_property_result": false,
+      "harness_status": "PASS",
+      "model": "chapter1/evidence/negative_timer_reset.smv",
+      "log": "chapter1/evidence/negative_timer_reset.log"
+    },
+    {
+      "name": "negative_skip_all_red",
+      "actual_property_result": false,
+      "expected_property_result": false,
+      "harness_status": "PASS",
+      "model": "chapter1/evidence/negative_skip_all_red.smv",
+      "log": "chapter1/evidence/negative_skip_all_red.log"
+    }
+  ],
+  "evidence_sha256": {
+    "output/nusmv_results.json": "648c87587492a699be35df3d180f6691ab1ac2247b80d3922f6fddb6ef4cecd2",
+    "output/excel_graph_check.smv": "c816a27a41888d819181f2d587a50150b966125f0ecf6d43214517c677302489",
+    "output/excel_graph_check.log": "8180132b0e10d320f437f67cdc4c56751c461e060ce4f940b4726a54b2aed915",
+    "output/validation.json": "d55eb8dbd07463d859aaa251f4f3ea3549dda68452defed357b3c6fb5b81d025",
+    "chapter1/properties.json": "ff0802b04dcbdf5394e282b1d7c8625faeaf1845cd7bb3028fb044443307515e",
+    "chapter1/evidence/nusmv_results.json": "27ba1fabcfe8695773cbf472852f54ce80c6fac8823c23b2ea554bca8198998a",
+    "chapter1/evidence/nusmv_main.log": "6789ca37f065a26b4d0cbf5e4ed268c16db0ada1e7cee7fb8c306202484ec267",
+    "chapter1/evidence/nusmv_any_start_time.log": "6789ca37f065a26b4d0cbf5e4ed268c16db0ada1e7cee7fb8c306202484ec267",
+    "chapter1/evidence/nusmv_period_reachability.log": "e0b01f3bc7582a31f1cb1e7f34bccbf135b35d359fd3932ae798e7d47100b936",
+    "chapter1/evidence/nusmv_reachable.json": "53f5ade76a7e24e5fc87b3166d261a1beeb60082febbd25884524f225b677113",
+    "chapter1/evidence/graph_results.json": "81d9fec2acba2f5bccfd219489f2b89125fa82fc9ba2a2d5483c2b7906f5abde",
+    "chapter1/evidence/build_summary.json": "29d23d7dbff42f897a0832e1eb6a949290d8b3b22da1f10d7574847c1e570ea9",
+    "chapter1/evidence/seclab_results.json": "d5479aeac0053f5bf670d5fa00a3a0b67d776ab6c769bdd3778dbc7d1a7cb1fe",
+    "chapter1/evidence/negative_conflicting_green.log": "74d53675ab84ca8bad06ab62d15cbef377ba12ff1249906f7b95e906272b6561",
+    "chapter1/evidence/negative_timer_reset.log": "32971c5f608d67d43cce80928611400d495fd04638c2c4b74c99546caf9fb21c",
+    "chapter1/evidence/negative_skip_all_red.log": "113beb04d9582729e71df57e0e11d661aac01585596d08af4b73b4b1af79ed58"
+  },
+  "documentation_sha256": "d30b39229fa625876c883370ddeceafa3f9f10cd65e36c603bf8be29862f126e",
+  "local_document_links": "PASS",
+  "mapping_items_per_original": 5,
+  "unique_v1_properties_cross_referenced": 21
+}

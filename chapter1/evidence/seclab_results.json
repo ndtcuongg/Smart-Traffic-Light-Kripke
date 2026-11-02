@@ -1,0 +1,185 @@
+{
+  "target_executable": "C:\\Users\\Admin\\Downloads\\SecLabFramework.exe",
+  "module": "core.kripke (unmodified bundled Python 3.14 bytecode)",
+  "schema_sample": "dataset/ch1_verification/traffic_light.json",
+  "schema_sample_sha256": "7ffd032952762e26d369aac8b0eab09f32c2863d63199d55843a53da916dd27a",
+  "json_parser": "KripkeStructure.from_json_file",
+  "parse_status": "PASS",
+  "parse_seconds": 0.017517599975690246,
+  "states": 1012,
+  "transitions": 2548,
+  "properties": [
+    {
+      "formula": "AG(safe)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1105
+    },
+    {
+      "formula": "AG(!conflicting_green)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.106
+    },
+    {
+      "formula": "AG(one_hot)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1163
+    },
+    {
+      "formula": "AG(synchronized)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1032
+    },
+    {
+      "formula": "AG(yellow_safe)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1051
+    },
+    {
+      "formula": "AG(all_red_correct)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1498
+    },
+    {
+      "formula": "AG(timer_valid)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1185
+    },
+    {
+      "formula": "AG(countdown_ok)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1123
+    },
+    {
+      "formula": "AG(reset_ok)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1105
+    },
+    {
+      "formula": "AG(transition_ok)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1125
+    },
+    {
+      "formula": "AG(transition_enabled)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1139
+    },
+    {
+      "formula": "AF(n_green_on)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.9445
+    },
+    {
+      "formula": "AF(s_green_on)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.9423
+    },
+    {
+      "formula": "AF(e_green_on)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.9438
+    },
+    {
+      "formula": "AF(w_green_on)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.933
+    },
+    {
+      "formula": "EG(normal_operation)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1034
+    },
+    {
+      "formula": "EF(phase_NS_GREEN)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.3525
+    },
+    {
+      "formula": "EF(phase_NS_YELLOW)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.8305
+    },
+    {
+      "formula": "EF(phase_ALL_RED_NS_TO_EW)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.8081
+    },
+    {
+      "formula": "EF(phase_EW_GREEN)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.3152
+    },
+    {
+      "formula": "EF(phase_EW_YELLOW)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.8039
+    },
+    {
+      "formula": "EF(phase_ALL_RED_EW_TO_NS)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.883
+    },
+    {
+      "formula": "EF(period_MORNING_PEAK)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1041
+    },
+    {
+      "formula": "EF(period_NORMAL)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.0764
+    },
+    {
+      "formula": "EF(period_EVENING_PEAK)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.1019
+    },
+    {
+      "formula": "EF(period_NIGHT_LOW)",
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "seconds": 0.0996
+    }
+  ],
+  "deadlock_states": [],
+  "mutex": {
+    "atoms": [
+      "ns_go",
+      "ew_go"
+    ],
+    "status": "PASS",
+    "violating_states": []
+  },
+  "exact_json_parse": {
+    "status": "PASS",
+    "states": 86400,
+    "transitions": 86400
+  },
+  "other_chapters_invoked": false,
+  "overall": "PASS"
+}

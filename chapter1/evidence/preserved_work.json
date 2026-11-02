@@ -1,0 +1,90 @@
+{
+  "Smart-Traffic-Light-Verification/01_basic_model/kripke_model.png": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "Smart-Traffic-Light-Verification/01_basic_model/traffic_light_model.smv": {
+    "sha256": "c691888f8987d22193863bbf4d571b2bb5cf24a07876a7616574b3beb5e13662",
+    "bytes": 428
+  },
+  "Smart-Traffic-Light-Verification/02_time_based_model/timed_light.smv": {
+    "sha256": "7090cab83c3233b26be15ad23fd79862b6f7299df17be6782ee3780871d411c6",
+    "bytes": 1128
+  },
+  "Smart-Traffic-Light-Verification/03_adaptive_model/adaptive_light.smv": {
+    "sha256": "68a485579d4a44b5c4e54822f0a8845d4b9cfadf853fceda5408b328607afef4",
+    "bytes": 4731
+  },
+  "Smart-Traffic-Light-Verification/03_bmc/init_bug.smv": {
+    "sha256": "d3c2629ad0f4a953429b9a2f48cda2816120dd0197803d0c2c9fdb55cbd95583",
+    "bytes": 532
+  },
+  "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc.smv": {
+    "sha256": "fc41b615d171be29d1e4c9d9bb9cc0d3847625d0302e4147baa7daa08acd318e",
+    "bytes": 415
+  },
+  "Smart-Traffic-Light-Verification/03_bmc/traffic_light_bmc_bug.smv": {
+    "sha256": "5dbc6d8d531b87ad9a86c3c9e05649a86ecbb313217e876b7f89971c9d3d2f50",
+    "bytes": 14
+  },
+  "Smart-Traffic-Light-Verification/03_bmc/transition_bug.smv": {
+    "sha256": "838df61296f7a6652ca2f8b071f41eec06ea4e8adcc25b7f5a0ca7807787253e",
+    "bytes": 1422
+  },
+  "Smart-Traffic-Light-Verification/04_verification/safety_liveness.smv": {
+    "sha256": "b19a0080e15e4730498fb72a77f8ba33826636a9b6ab780792e68d54b13f2cc8",
+    "bytes": 1217
+  },
+  "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug.smv": {
+    "sha256": "036d2e77a96944774007da853114292bfeab07c710db00ff3ab8373887cedfde",
+    "bytes": 554
+  },
+  "Smart-Traffic-Light-Verification/05_bug_analysis/transition_bug_fixed.smv": {
+    "sha256": "8f21fe12c2be40a8a3c8f3096cb39057a594b5d57ecd3a284155db0ba4348dc6",
+    "bytes": 554
+  },
+  "Smart-Traffic-Light-Verification/06_extension/emergency_mode.smv": {
+    "sha256": "882382f7d0f0485dad65f25b84632cc7088f85db1382841c7ce525e26b26a960",
+    "bytes": 1569
+  },
+  "Smart-Traffic-Light-Verification/test/traffic_light2.smv": {
+    "sha256": "f813edd26bdff703853e29aafbffacd17abb1ec8281980d4b5eebe50e2eb30b1",
+    "bytes": 313
+  },
+  "Smart-Traffic-Light-Verification/test/traffic_light_basic.smv": {
+    "sha256": "26492c9da1bc773800849b944e898670f46504ebb54453745340e7b9dc983666",
+    "bytes": 329
+  },
+  "output/BAO_CAO_SPEC.md": {
+    "sha256": "0ee8432c77158f6bd0653fee0b66fb855afb78d909e2bcb995f837140e82ca3f",
+    "bytes": 8113
+  },
+  "output/excel_graph_check.log": {
+    "sha256": "8180132b0e10d320f437f67cdc4c56751c461e060ce4f940b4726a54b2aed915",
+    "bytes": 47908
+  },
+  "output/excel_graph_check.smv": {
+    "sha256": "c816a27a41888d819181f2d587a50150b966125f0ecf6d43214517c677302489",
+    "bytes": 52261
+  },
+  "output/nusmv_results.json": {
+    "sha256": "648c87587492a699be35df3d180f6691ab1ac2247b80d3922f6fddb6ef4cecd2",
+    "bytes": 20111
+  },
+  "output/Smart_Traffic_Light_Spec.xlsx": {
+    "sha256": "d0b2856f565967d566ab5da3c317cbbbb816bf3a5d08cd451bdfaaf91bc65beb",
+    "bytes": 60243
+  },
+  "output/validation.json": {
+    "sha256": "d55eb8dbd07463d859aaa251f4f3ea3549dda68452defed357b3c6fb5b81d025",
+    "bytes": 2509
+  },
+  "test.smv": {
+    "sha256": "87ed479e123c3d187e45a343d4317d7febf22d4b09478d64a51859276411de69",
+    "bytes": 281
+  },
+  "scripts/generate_spec.py": {
+    "sha256": "afe8dc6845b19d2fe51d6428d378e468caf1d5adb660ac1482fb7480c88e6418",
+    "bytes": 35812
+  }
+}

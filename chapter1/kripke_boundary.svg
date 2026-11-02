@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1410" height="2280" viewBox="0 0 1410 2280" role="img" aria-label="Vết Kripke chi tiết — đổi NORMAL → MORNING_PEAK lúc 07:00">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#55718a"/></marker></defs>
+<rect width="1410" height="2280" fill="#f3f6fa"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#19344c}.title{font-size:27px;font-weight:700}.sub{font-size:15px;fill:#526b80}.box{fill:#fff;stroke:#bac9d6;stroke-width:1.4}.name{font-size:17px;font-weight:700}.mono{font-family:Consolas,monospace;font-size:12px}.link{fill:none;stroke:#55718a;stroke-width:1.6;marker-end:url(#arrow)}</style>
+<text class="title" x="35" y="45">Vết Kripke chi tiết — đổi NORMAL → MORNING_PEAK lúc 07:00</text>
+<text class="sub" x="35" y="77">Ca kiểm thử khởi tạo lúc 06:59:55 trong NS_GREEN; đọc từ trái sang phải, trên xuống dưới.</text>
+<rect x="20" y="110" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="133">00 | 06:59:55 | NS_GREEN | timer=25</text>
+<text class="mono" x="30" y="155">now=NORMAL; entry=NORMAL</text>
+<text class="mono" x="30" y="177">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="199">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="221">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="243">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 180 L485 180"/>
+<rect x="485" y="110" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="133">01 | 06:59:56 | NS_GREEN | timer=24</text>
+<text class="mono" x="495" y="155">now=NORMAL; entry=NORMAL</text>
+<text class="mono" x="495" y="177">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="199">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="221">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="243">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 180 L950 180"/>
+<rect x="950" y="110" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="133">02 | 06:59:57 | NS_GREEN | timer=23</text>
+<text class="mono" x="960" y="155">now=NORMAL; entry=NORMAL</text>
+<text class="mono" x="960" y="177">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="199">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="221">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="243">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 265 L1170 280 L240 280 L240 290"/>
+<rect x="20" y="290" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="313">03 | 06:59:58 | NS_GREEN | timer=22</text>
+<text class="mono" x="30" y="335">now=NORMAL; entry=NORMAL</text>
+<text class="mono" x="30" y="357">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="379">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="401">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="423">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 360 L485 360"/>
+<rect x="485" y="290" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="313">04 | 06:59:59 | NS_GREEN | timer=21</text>
+<text class="mono" x="495" y="335">now=NORMAL; entry=NORMAL</text>
+<text class="mono" x="495" y="357">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="379">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="401">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="423">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 360 L950 360"/>
+<rect x="950" y="290" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="313">05 | 07:00:00 | NS_GREEN | timer=20</text>
+<text class="mono" x="960" y="335">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="357">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="379">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="401">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="423">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 445 L1170 460 L240 460 L240 470"/>
+<rect x="20" y="470" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="493">06 | 07:00:01 | NS_GREEN | timer=19</text>
+<text class="mono" x="30" y="515">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="537">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="559">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="581">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="603">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 540 L485 540"/>
+<rect x="485" y="470" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="493">07 | 07:00:02 | NS_GREEN | timer=18</text>
+<text class="mono" x="495" y="515">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="537">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="559">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="581">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="603">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 540 L950 540"/>
+<rect x="950" y="470" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="493">08 | 07:00:03 | NS_GREEN | timer=17</text>
+<text class="mono" x="960" y="515">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="537">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="559">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="581">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="603">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 625 L1170 640 L240 640 L240 650"/>
+<rect x="20" y="650" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="673">09 | 07:00:04 | NS_GREEN | timer=16</text>
+<text class="mono" x="30" y="695">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="717">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="739">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="761">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="783">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 720 L485 720"/>
+<rect x="485" y="650" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="673">10 | 07:00:05 | NS_GREEN | timer=15</text>
+<text class="mono" x="495" y="695">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="717">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="739">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="761">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="783">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 720 L950 720"/>
+<rect x="950" y="650" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="673">11 | 07:00:06 | NS_GREEN | timer=14</text>
+<text class="mono" x="960" y="695">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="717">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="739">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="761">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="783">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 805 L1170 820 L240 820 L240 830"/>
+<rect x="20" y="830" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="853">12 | 07:00:07 | NS_GREEN | timer=13</text>
+<text class="mono" x="30" y="875">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="897">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="919">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="941">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="963">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 900 L485 900"/>
+<rect x="485" y="830" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="853">13 | 07:00:08 | NS_GREEN | timer=12</text>
+<text class="mono" x="495" y="875">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="897">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="919">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="941">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="963">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 900 L950 900"/>
+<rect x="950" y="830" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="853">14 | 07:00:09 | NS_GREEN | timer=11</text>
+<text class="mono" x="960" y="875">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="897">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="919">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="941">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="963">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 985 L1170 1000 L240 1000 L240 1010"/>
+<rect x="20" y="1010" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1033">15 | 07:00:10 | NS_GREEN | timer=10</text>
+<text class="mono" x="30" y="1055">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="1077">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1099">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1121">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1143">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 1080 L485 1080"/>
+<rect x="485" y="1010" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1033">16 | 07:00:11 | NS_GREEN | timer=9</text>
+<text class="mono" x="495" y="1055">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="1077">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1099">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1121">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1143">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 1080 L950 1080"/>
+<rect x="950" y="1010" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1033">17 | 07:00:12 | NS_GREEN | timer=8</text>
+<text class="mono" x="960" y="1055">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="1077">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1099">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1121">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1143">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 1165 L1170 1180 L240 1180 L240 1190"/>
+<rect x="20" y="1190" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1213">18 | 07:00:13 | NS_GREEN | timer=7</text>
+<text class="mono" x="30" y="1235">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="1257">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1279">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1301">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1323">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 1260 L485 1260"/>
+<rect x="485" y="1190" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1213">19 | 07:00:14 | NS_GREEN | timer=6</text>
+<text class="mono" x="495" y="1235">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="1257">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1279">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1301">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1323">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 1260 L950 1260"/>
+<rect x="950" y="1190" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1213">20 | 07:00:15 | NS_GREEN | timer=5</text>
+<text class="mono" x="960" y="1235">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="1257">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1279">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1301">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1323">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 1345 L1170 1360 L240 1360 L240 1370"/>
+<rect x="20" y="1370" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1393">21 | 07:00:16 | NS_GREEN | timer=4</text>
+<text class="mono" x="30" y="1415">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="1437">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1459">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1481">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1503">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 1440 L485 1440"/>
+<rect x="485" y="1370" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1393">22 | 07:00:17 | NS_GREEN | timer=3</text>
+<text class="mono" x="495" y="1415">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="495" y="1437">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1459">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="1481">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1503">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 1440 L950 1440"/>
+<rect x="950" y="1370" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1393">23 | 07:00:18 | NS_GREEN | timer=2</text>
+<text class="mono" x="960" y="1415">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="960" y="1437">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1459">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="1481">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1503">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 1525 L1170 1540 L240 1540 L240 1550"/>
+<rect x="20" y="1550" width="440" height="155" rx="9" fill="#e7f4ee" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1573">24 | 07:00:19 | NS_GREEN | timer=1</text>
+<text class="mono" x="30" y="1595">now=MORNING_PEAK; entry=NORMAL</text>
+<text class="mono" x="30" y="1617">N: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1639">S: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="1661">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1683">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 1620 L485 1620"/>
+<rect x="485" y="1550" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1573">25 | 07:00:20 | NS_YELLOW | timer=3</text>
+<text class="mono" x="495" y="1595">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="495" y="1617">N: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="495" y="1639">S: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="495" y="1661">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1683">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 1620 L950 1620"/>
+<rect x="950" y="1550" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1573">26 | 07:00:21 | NS_YELLOW | timer=2</text>
+<text class="mono" x="960" y="1595">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="960" y="1617">N: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="960" y="1639">S: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="960" y="1661">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1683">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 1705 L1170 1720 L240 1720 L240 1730"/>
+<rect x="20" y="1730" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1753">27 | 07:00:22 | NS_YELLOW | timer=1</text>
+<text class="mono" x="30" y="1775">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="30" y="1797">N: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="30" y="1819">S: R:OFF Y:ON G:OFF</text>
+<text class="mono" x="30" y="1841">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1863">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M460 1800 L485 1800"/>
+<rect x="485" y="1730" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1753">28 | 07:00:23 | ALL_RED_NS_TO_EW | timer=2</text>
+<text class="mono" x="495" y="1775">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="495" y="1797">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1819">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1841">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1863">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M925 1800 L950 1800"/>
+<rect x="950" y="1730" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1753">29 | 07:00:24 | ALL_RED_NS_TO_EW | timer=1</text>
+<text class="mono" x="960" y="1775">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="960" y="1797">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1819">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1841">E: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1863">W: R:ON Y:OFF G:OFF</text>
+<path class="link" d="M1170 1885 L1170 1900 L240 1900 L240 1910"/>
+<rect x="20" y="1910" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="1933">30 | 07:00:25 | EW_GREEN | timer=35</text>
+<text class="mono" x="30" y="1955">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="30" y="1977">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="1999">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="2021">E: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="2043">W: R:OFF Y:OFF G:ON</text>
+<path class="link" d="M460 1980 L485 1980"/>
+<rect x="485" y="1910" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="495" y="1933">31 | 07:00:26 | EW_GREEN | timer=34</text>
+<text class="mono" x="495" y="1955">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="495" y="1977">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="1999">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="495" y="2021">E: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="495" y="2043">W: R:OFF Y:OFF G:ON</text>
+<path class="link" d="M925 1980 L950 1980"/>
+<rect x="950" y="1910" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="960" y="1933">32 | 07:00:27 | EW_GREEN | timer=33</text>
+<text class="mono" x="960" y="1955">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="960" y="1977">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="1999">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="960" y="2021">E: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="960" y="2043">W: R:OFF Y:OFF G:ON</text>
+<path class="link" d="M1170 2065 L1170 2080 L240 2080 L240 2090"/>
+<rect x="20" y="2090" width="440" height="155" rx="9" fill="#ffffff" stroke="#b7c8d6"/>
+<text class="mono" x="30" y="2113">33 | 07:00:28 | EW_GREEN | timer=32</text>
+<text class="mono" x="30" y="2135">now=MORNING_PEAK; entry=MORNING_PEAK</text>
+<text class="mono" x="30" y="2157">N: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="2179">S: R:ON Y:OFF G:OFF</text>
+<text class="mono" x="30" y="2201">E: R:OFF Y:OFF G:ON</text>
+<text class="mono" x="30" y="2223">W: R:OFF Y:OFF G:ON</text>
+</svg>

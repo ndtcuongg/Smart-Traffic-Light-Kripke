@@ -1,0 +1,503 @@
+MODULE main 
+VAR
+
+
+-- ==============================
+-- Traffic Light State
+-- ==============================
+
+state :
+{
+    NS_GREEN,
+    NS_YELLOW,
+    EW_GREEN,
+    EW_YELLOW
+};
+
+
+-- ==============================
+-- Time Period Control
+-- ==============================
+
+time_period :
+{
+    MORNING_PEAK,
+    NORMAL_TIME,
+    EVENING_PEAK,
+    NIGHT_LOW
+};
+
+-- ==============================
+-- Traffic Condition
+-- ==============================
+
+traffic_mode :
+{
+    PEAK,
+    NORMAL,
+    LOW
+};
+
+
+
+-- ==============================
+-- Timer
+-- ==============================
+
+timer : 0..60;
+
+
+
+ASSIGN
+
+
+-- ==============================
+-- Initial State
+-- ==============================
+
+
+init(state) := NS_GREEN;
+
+init(time_period) := NORMAL_TIME;
+
+init(traffic_mode) := NORMAL;
+
+init(timer) := 30;
+
+
+
+-- ==============================
+-- Traffic Mode Based on Time Period
+-- ==============================
+
+
+next(traffic_mode) :=
+
+case
+
+
+time_period = MORNING_PEAK :
+
+PEAK;
+
+
+
+time_period = EVENING_PEAK :
+
+PEAK;
+
+
+
+time_period = NIGHT_LOW :
+
+LOW;
+
+
+
+TRUE :
+
+NORMAL;
+
+
+esac;
+
+
+
+-- ==============================
+-- Time Period Transition
+-- ==============================
+
+next(time_period) :=
+
+case
+
+
+-- Giả lập giờ cao điểm sáng
+
+time_period = NORMAL_TIME :
+
+MORNING_PEAK;
+
+
+
+-- Sau cao điểm sáng về bình thường
+
+time_period = MORNING_PEAK :
+
+NORMAL_TIME;
+
+
+
+-- Giờ cao điểm chiều
+
+time_period = NORMAL_TIME :
+
+EVENING_PEAK;
+
+
+
+-- Ban đêm
+
+time_period = EVENING_PEAK :
+
+NIGHT_LOW;
+
+
+
+TRUE :
+
+time_period;
+
+
+esac;
+-- ==============================
+-- State Transition
+-- ==============================
+
+
+next(state) :=
+
+case
+
+
+state = NS_GREEN
+&
+timer = 0 :
+
+NS_YELLOW;
+
+
+state = NS_YELLOW
+&
+timer = 0 :
+
+EW_GREEN;
+
+
+state = EW_GREEN
+&
+timer = 0 :
+
+EW_YELLOW;
+
+
+state = EW_YELLOW
+&
+timer = 0 :
+
+NS_GREEN;
+
+
+
+TRUE :
+
+state;
+
+
+esac;
+
+
+
+-- ==============================
+-- Adaptive Timer
+-- ==============================
+
+
+next(timer) :=
+
+case
+
+
+-- ------------------------------
+-- Green phase initialization
+-- ------------------------------
+
+
+state = NS_GREEN
+&
+timer = 0
+&
+traffic_mode = PEAK :
+
+45;
+
+
+state = NS_GREEN
+&
+timer = 0
+&
+traffic_mode = NORMAL :
+
+30;
+
+
+state = NS_GREEN
+&
+timer = 0
+&
+traffic_mode = LOW :
+
+20;
+
+
+
+state = EW_GREEN
+&
+timer = 0
+&
+traffic_mode = PEAK :
+
+45;
+
+
+state = EW_GREEN
+&
+timer = 0
+&
+traffic_mode = NORMAL :
+
+30;
+
+
+state = EW_GREEN
+&
+timer = 0
+&
+traffic_mode = LOW :
+
+20;
+
+
+
+-- ------------------------------
+-- Yellow duration
+-- ------------------------------
+
+
+(state = NS_YELLOW |
+ state = EW_YELLOW)
+&
+timer = 0 :
+
+5;
+
+
+
+-- ------------------------------
+-- Countdown
+-- ------------------------------
+
+
+timer > 0 :
+
+timer - 1;
+
+
+
+TRUE :
+
+timer;
+
+
+esac;
+
+
+
+-- ==============================
+-- SAFETY PROPERTY
+-- ==============================
+
+
+-- Không có hai hướng cùng xanh
+
+
+LTLSPEC
+
+G !(
+
+state = NS_GREEN
+
+&
+
+state = EW_GREEN
+
+);
+
+
+
+-- ==============================
+-- LIVENESS PROPERTY
+-- ==============================
+
+
+-- NS xanh phải chuyển vàng
+
+
+LTLSPEC
+
+G(
+
+state = NS_GREEN
+
+->
+
+F state = NS_YELLOW
+
+);
+
+
+
+-- EW xanh phải chuyển vàng
+
+
+LTLSPEC
+
+G(
+
+state = EW_GREEN
+
+->
+
+F state = EW_YELLOW
+
+);
+
+
+
+-- ==============================
+-- ADAPTIVE PROPERTY
+-- ==============================
+
+
+-- Cao điểm
+
+LTLSPEC
+
+G(
+
+traffic_mode = PEAK
+
+&
+state = NS_GREEN
+
+&
+timer = 0
+
+->
+
+X timer = 45
+
+);
+
+
+
+-- Bình thường
+
+
+LTLSPEC
+
+G(
+
+traffic_mode = NORMAL
+
+&
+state = NS_GREEN
+
+&
+timer = 0
+
+->
+
+X timer = 30
+
+);
+
+
+
+-- Thấp điểm
+
+
+LTLSPEC
+
+G(
+
+traffic_mode = LOW
+
+&
+state = NS_GREEN
+
+&
+timer = 0
+
+->
+
+X timer = 20
+
+);
+
+
+-- ==============================
+-- TIME PERIOD VERIFICATION
+-- ==============================
+
+
+LTLSPEC
+
+G(
+
+time_period = MORNING_PEAK
+
+->
+
+F traffic_mode = PEAK
+
+);
+
+
+LTLSPEC
+
+G(
+
+time_period = NIGHT_LOW
+
+->
+
+F traffic_mode = LOW
+
+);
+
+-- ==============================
+-- TIME BASED ADAPTIVE PROPERTY
+-- ==============================
+
+
+-- Cao điểm sáng/chiều phải chuyển PEAK
+
+LTLSPEC
+
+G(
+
+(time_period = MORNING_PEAK |
+ time_period = EVENING_PEAK)
+
+->
+
+F traffic_mode = PEAK
+
+);
+
+
+
+-- Ban đêm phải chuyển LOW
+
+LTLSPEC
+
+G(
+
+time_period = NIGHT_LOW
+
+->
+
+F traffic_mode = LOW
+
+);

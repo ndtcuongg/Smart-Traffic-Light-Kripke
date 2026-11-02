@@ -1,0 +1,7 @@
+{
+  "application": "Microsoft Edge headless",
+  "source": "Print HTML generated directly from DOCX paragraphs/tables/embedded original images",
+  "returncode": 0,
+  "output": "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\web\\report_delivery\\quality_checks\\browser_export.pdf",
+  "bytes": 1151624
+}

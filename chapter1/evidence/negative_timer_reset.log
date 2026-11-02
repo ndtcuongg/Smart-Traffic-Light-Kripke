@@ -1,0 +1,52 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX timer = 15)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    phase = ALL_RED_EW_TO_NS
+    timer = 2
+    second = 0
+    minute = 0
+    hour = 0
+    initial_duration = 2
+    next_phase_duration = 15
+    phase_next = ALL_RED_EW_TO_NS
+    phase_after = NS_GREEN
+    period_next = NIGHT_LOW
+    period = NIGHT_LOW
+    next_hour = 0
+    next_minute = 0
+    next_second = 1
+    clock_sec = 0
+  -> State: 1.2 <-
+    timer = 1
+    second = 1
+    phase_next = NS_GREEN
+    next_second = 2
+    clock_sec = 1
+  -> State: 1.3 <-
+    phase = NS_GREEN
+    second = 2
+    next_phase_duration = 3
+    phase_next = NS_YELLOW
+    phase_after = NS_YELLOW
+    next_second = 3
+    clock_sec = 2
+
+STDERR

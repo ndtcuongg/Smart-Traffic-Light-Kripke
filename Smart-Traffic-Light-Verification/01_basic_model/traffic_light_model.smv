@@ -1,0 +1,59 @@
+MODULE main 
+VAR
+
+
+state :
+{
+NS_GREEN,
+NS_YELLOW,
+EW_GREEN,
+EW_YELLOW
+};
+
+
+
+ASSIGN
+
+
+-- Initial State
+
+init(state) := NS_GREEN;
+
+
+
+-- Transition Relation
+
+
+next(state) :=
+
+case
+
+
+state = NS_GREEN :
+
+NS_YELLOW;
+
+
+state = NS_YELLOW :
+
+EW_GREEN;
+
+
+state = EW_GREEN :
+
+EW_YELLOW;
+
+
+state = EW_YELLOW :
+
+NS_GREEN;
+
+
+esac;
+
+LTLSPEC
+G(
+state = NS_GREEN
+->
+F state = EW_GREEN
+);

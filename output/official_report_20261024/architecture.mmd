@@ -1,0 +1,10 @@
+flowchart TD
+ V0["v0: chu kỳ / timer / thích nghi"] -. "kế thừa; giữ nguồn" .-> CORE
+ CFG["config.json"] --> CORE["v1: intersection.py + build.py"]
+ CORE --> JSON["JSON exact / JSON chiếu"]
+ CORE --> SMV["NuSMV + properties.json"]
+ CORE --> WEB["domain.py / server.py / static"]
+ JSON --> CHECK["verify_graph / CTL JSON"]
+ SMV --> NUSMV["NuSMV BDD / CTL"]
+ CHECK --> LOG["evidence: log và counterexample"]
+ NUSMV --> LOG

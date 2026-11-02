@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+    "-dynamic",
+    "-r",
+    "-is",
+    "-ils",
+    "-ii",
+    "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v1_main_recheck.smv"
+  ],
+  "returncode": 0,
+  "reachable_states": 86400,
+  "seconds": 32.578,
+  "status": "PASS"
+}

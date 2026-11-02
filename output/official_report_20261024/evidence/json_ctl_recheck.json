@@ -1,0 +1,196 @@
+{
+  "tool": "Bộ kiểm CTL độc lập bằng Python",
+  "states": 1012,
+  "transitions": 2548,
+  "reachable_states": 1012,
+  "properties": [
+    {
+      "formula": "AG(safe)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(!conflicting_green)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(one_hot)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(synchronized)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(yellow_safe)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(all_red_correct)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(timer_valid)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(countdown_ok)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(reset_ok)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(transition_ok)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AG(transition_enabled)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AF(n_green_on)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AF(s_green_on)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AF(e_green_on)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "AF(w_green_on)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EG(normal_operation)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_NS_GREEN)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_NS_YELLOW)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_ALL_RED_NS_TO_EW)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_EW_GREEN)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_EW_YELLOW)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(phase_ALL_RED_EW_TO_NS)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(period_MORNING_PEAK)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(period_NORMAL)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(period_EVENING_PEAK)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    },
+    {
+      "formula": "EF(period_NIGHT_LOW)",
+      "result": true,
+      "status": "PASS",
+      "satisfying_states": 1012,
+      "initial_not_satisfied": []
+    }
+  ],
+  "mutex": {
+    "status": "PASS",
+    "violating_states": []
+  },
+  "deadlock_states": [],
+  "overall": "PASS"
+}

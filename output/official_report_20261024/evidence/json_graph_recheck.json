@@ -1,0 +1,118 @@
+[
+  {
+    "file": "smart_intersection.json",
+    "status": "PASS",
+    "states": 1012,
+    "edges": 2548,
+    "reachable_states": 1012,
+    "deadlocks": 0,
+    "max_wait_to_green_seconds": {
+      "n": 55,
+      "s": 55,
+      "e": 55,
+      "w": 55
+    },
+    "reachability_witnesses": {
+      "phase_NS_GREEN": {
+        "state": "NS_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 3
+      },
+      "phase_NS_YELLOW": {
+        "state": "NS_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 225
+      },
+      "phase_ALL_RED_NS_TO_EW": {
+        "state": "ALL_RED_NS_TO_EW__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 291
+      },
+      "phase_EW_GREEN": {
+        "state": "EW_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 329
+      },
+      "phase_EW_YELLOW": {
+        "state": "EW_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 691
+      },
+      "phase_ALL_RED_EW_TO_NS": {
+        "state": "ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 0
+      },
+      "period_MORNING_PEAK": {
+        "state": "NS_GREEN__r045__now_MORNING_PEAK__entry_MORNING_PEAK",
+        "enumeration_index": 6
+      },
+      "period_NORMAL": {
+        "state": "ALL_RED_EW_TO_NS__r001__now_NORMAL__entry_NIGHT_LOW",
+        "enumeration_index": 2
+      },
+      "period_EVENING_PEAK": {
+        "state": "NS_GREEN__r035__now_EVENING_PEAK__entry_EVENING_PEAK",
+        "enumeration_index": 5
+      },
+      "period_NIGHT_LOW": {
+        "state": "ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 0
+      }
+    },
+    "all_12_lamp_values_checked": true,
+    "all_one_second_edges_checked": true
+  },
+  {
+    "file": "smart_intersection_exact.json",
+    "status": "PASS",
+    "states": 86400,
+    "edges": 86400,
+    "reachable_states": 86400,
+    "deadlocks": 0,
+    "max_wait_to_green_seconds": {
+      "n": 55,
+      "s": 55,
+      "e": 55,
+      "w": 55
+    },
+    "reachability_witnesses": {
+      "phase_NS_GREEN": {
+        "state": "t00002__NS_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 2
+      },
+      "phase_NS_YELLOW": {
+        "state": "t00017__NS_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 17
+      },
+      "phase_ALL_RED_NS_TO_EW": {
+        "state": "t00020__ALL_RED_NS_TO_EW__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 20
+      },
+      "phase_EW_GREEN": {
+        "state": "t00022__EW_GREEN__r015__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 22
+      },
+      "phase_EW_YELLOW": {
+        "state": "t00037__EW_YELLOW__r003__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 37
+      },
+      "phase_ALL_RED_EW_TO_NS": {
+        "state": "t00000__ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 0
+      },
+      "period_MORNING_PEAK": {
+        "state": "t25200__ALL_RED_EW_TO_NS__r002__now_MORNING_PEAK__entry_MORNING_PEAK",
+        "enumeration_index": 25200
+      },
+      "period_NORMAL": {
+        "state": "t21600__ALL_RED_EW_TO_NS__r002__now_NORMAL__entry_NORMAL",
+        "enumeration_index": 21600
+      },
+      "period_EVENING_PEAK": {
+        "state": "t57600__ALL_RED_EW_TO_NS__r002__now_EVENING_PEAK__entry_EVENING_PEAK",
+        "enumeration_index": 57600
+      },
+      "period_NIGHT_LOW": {
+        "state": "t00000__ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+        "enumeration_index": 0
+      }
+    },
+    "all_12_lamp_values_checked": true,
+    "all_one_second_edges_checked": true
+  }
+]

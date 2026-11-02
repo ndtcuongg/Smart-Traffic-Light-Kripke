@@ -1,0 +1,103 @@
+{
+  "sheet_rows": {
+    "ThongTin": 2,
+    "YeuCauChucNang": 19,
+    "YeuCauPhiChucNang": 6,
+    "RangBuoc": 9,
+    "MoHinhTrangThai": 461,
+    "ThuocTinhAnToan": 29,
+    "LoaiTruLanNhau": 6,
+    "HamSinhMa": 7,
+    "KiemTraSoHoc": 5,
+    "TestCase": 27
+  },
+  "headers": "pass",
+  "references": "pass",
+  "no_deadlocks": "pass",
+  "graph_state_counts": [
+    {
+      "model": "basic",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 4
+    },
+    {
+      "model": "timed",
+      "nuSMV_reachable_states": 74,
+      "excel_reachable_states": 74,
+      "excel_total_states": 124
+    },
+    {
+      "model": "adaptive",
+      "nuSMV_reachable_states": 129,
+      "excel_reachable_states": 129,
+      "excel_total_states": 270
+    },
+    {
+      "model": "initbug",
+      "nuSMV_reachable_states": 3,
+      "excel_reachable_states": 3,
+      "excel_total_states": 9
+    },
+    {
+      "model": "bmc",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 4
+    },
+    {
+      "model": "bmcbug",
+      "nuSMV_reachable_states": 3,
+      "excel_reachable_states": 3,
+      "excel_total_states": 10
+    },
+    {
+      "model": "verify",
+      "nuSMV_reachable_states": 3,
+      "excel_reachable_states": 3,
+      "excel_total_states": 9
+    },
+    {
+      "model": "bug",
+      "nuSMV_reachable_states": 3,
+      "excel_reachable_states": 3,
+      "excel_total_states": 4
+    },
+    {
+      "model": "fixed",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 4
+    },
+    {
+      "model": "emergency",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 9
+    },
+    {
+      "model": "test2",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 4
+    },
+    {
+      "model": "testbasic",
+      "nuSMV_reachable_states": 4,
+      "excel_reachable_states": 4,
+      "excel_total_states": 4
+    },
+    {
+      "model": "login",
+      "nuSMV_reachable_states": 2,
+      "excel_reachable_states": 2,
+      "excel_total_states": 2
+    }
+  ],
+  "ctl_count": 29,
+  "ctl_true": 22,
+  "ctl_false": 7,
+  "ctl_matches_expected": true,
+  "spec_verification_lab_pipeline": "NOT RUN: core/spec_excel.py and core/spec_pipeline.py absent",
+  "Z3_and_fuzzing": "NOT RUN; proposed lab inputs only"
+}

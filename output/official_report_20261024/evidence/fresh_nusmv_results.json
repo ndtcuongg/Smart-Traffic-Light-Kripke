@@ -1,0 +1,2246 @@
+[
+  {
+    "id": "v1_main_recheck",
+    "started_utc": "2026-10-23T23:59:02.402145+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v1_main_recheck.smv"
+    ],
+    "seconds": 0.265,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "AG (EX TRUE)",
+        "result": true,
+        "log_line": 17
+      },
+      {
+        "formula": "AG (second = 0 -> AX second = 1)",
+        "result": true,
+        "log_line": 18
+      },
+      {
+        "formula": "AG (second = 1 -> AX second = 2)",
+        "result": true,
+        "log_line": 19
+      },
+      {
+        "formula": "AG (second = 2 -> AX second = 3)",
+        "result": true,
+        "log_line": 20
+      },
+      {
+        "formula": "AG (second = 3 -> AX second = 4)",
+        "result": true,
+        "log_line": 21
+      },
+      {
+        "formula": "AG (second = 4 -> AX second = 5)",
+        "result": true,
+        "log_line": 22
+      },
+      {
+        "formula": "AG (second = 5 -> AX second = 6)",
+        "result": true,
+        "log_line": 23
+      },
+      {
+        "formula": "AG (second = 6 -> AX second = 7)",
+        "result": true,
+        "log_line": 24
+      },
+      {
+        "formula": "AG (second = 7 -> AX second = 8)",
+        "result": true,
+        "log_line": 25
+      },
+      {
+        "formula": "AG (second = 8 -> AX second = 9)",
+        "result": true,
+        "log_line": 26
+      },
+      {
+        "formula": "AG (second = 9 -> AX second = 10)",
+        "result": true,
+        "log_line": 27
+      },
+      {
+        "formula": "AG (second = 10 -> AX second = 11)",
+        "result": true,
+        "log_line": 28
+      },
+      {
+        "formula": "AG (second = 11 -> AX second = 12)",
+        "result": true,
+        "log_line": 29
+      },
+      {
+        "formula": "AG (second = 12 -> AX second = 13)",
+        "result": true,
+        "log_line": 30
+      },
+      {
+        "formula": "AG (second = 13 -> AX second = 14)",
+        "result": true,
+        "log_line": 31
+      },
+      {
+        "formula": "AG (second = 14 -> AX second = 15)",
+        "result": true,
+        "log_line": 32
+      },
+      {
+        "formula": "AG (second = 15 -> AX second = 16)",
+        "result": true,
+        "log_line": 33
+      },
+      {
+        "formula": "AG (second = 16 -> AX second = 17)",
+        "result": true,
+        "log_line": 34
+      },
+      {
+        "formula": "AG (second = 17 -> AX second = 18)",
+        "result": true,
+        "log_line": 35
+      },
+      {
+        "formula": "AG (second = 18 -> AX second = 19)",
+        "result": true,
+        "log_line": 36
+      },
+      {
+        "formula": "AG (second = 19 -> AX second = 20)",
+        "result": true,
+        "log_line": 37
+      },
+      {
+        "formula": "AG (second = 20 -> AX second = 21)",
+        "result": true,
+        "log_line": 38
+      },
+      {
+        "formula": "AG (second = 21 -> AX second = 22)",
+        "result": true,
+        "log_line": 39
+      },
+      {
+        "formula": "AG (second = 22 -> AX second = 23)",
+        "result": true,
+        "log_line": 40
+      },
+      {
+        "formula": "AG (second = 23 -> AX second = 24)",
+        "result": true,
+        "log_line": 41
+      },
+      {
+        "formula": "AG (second = 24 -> AX second = 25)",
+        "result": true,
+        "log_line": 42
+      },
+      {
+        "formula": "AG (second = 25 -> AX second = 26)",
+        "result": true,
+        "log_line": 43
+      },
+      {
+        "formula": "AG (second = 26 -> AX second = 27)",
+        "result": true,
+        "log_line": 44
+      },
+      {
+        "formula": "AG (second = 27 -> AX second = 28)",
+        "result": true,
+        "log_line": 45
+      },
+      {
+        "formula": "AG (second = 28 -> AX second = 29)",
+        "result": true,
+        "log_line": 46
+      },
+      {
+        "formula": "AG (second = 29 -> AX second = 30)",
+        "result": true,
+        "log_line": 47
+      },
+      {
+        "formula": "AG (second = 30 -> AX second = 31)",
+        "result": true,
+        "log_line": 48
+      },
+      {
+        "formula": "AG (second = 31 -> AX second = 32)",
+        "result": true,
+        "log_line": 49
+      },
+      {
+        "formula": "AG (second = 32 -> AX second = 33)",
+        "result": true,
+        "log_line": 50
+      },
+      {
+        "formula": "AG (second = 33 -> AX second = 34)",
+        "result": true,
+        "log_line": 51
+      },
+      {
+        "formula": "AG (second = 34 -> AX second = 35)",
+        "result": true,
+        "log_line": 52
+      },
+      {
+        "formula": "AG (second = 35 -> AX second = 36)",
+        "result": true,
+        "log_line": 53
+      },
+      {
+        "formula": "AG (second = 36 -> AX second = 37)",
+        "result": true,
+        "log_line": 54
+      },
+      {
+        "formula": "AG (second = 37 -> AX second = 38)",
+        "result": true,
+        "log_line": 55
+      },
+      {
+        "formula": "AG (second = 38 -> AX second = 39)",
+        "result": true,
+        "log_line": 56
+      },
+      {
+        "formula": "AG (second = 39 -> AX second = 40)",
+        "result": true,
+        "log_line": 57
+      },
+      {
+        "formula": "AG (second = 40 -> AX second = 41)",
+        "result": true,
+        "log_line": 58
+      },
+      {
+        "formula": "AG (second = 41 -> AX second = 42)",
+        "result": true,
+        "log_line": 59
+      },
+      {
+        "formula": "AG (second = 42 -> AX second = 43)",
+        "result": true,
+        "log_line": 60
+      },
+      {
+        "formula": "AG (second = 43 -> AX second = 44)",
+        "result": true,
+        "log_line": 61
+      },
+      {
+        "formula": "AG (second = 44 -> AX second = 45)",
+        "result": true,
+        "log_line": 62
+      },
+      {
+        "formula": "AG (second = 45 -> AX second = 46)",
+        "result": true,
+        "log_line": 63
+      },
+      {
+        "formula": "AG (second = 46 -> AX second = 47)",
+        "result": true,
+        "log_line": 64
+      },
+      {
+        "formula": "AG (second = 47 -> AX second = 48)",
+        "result": true,
+        "log_line": 65
+      },
+      {
+        "formula": "AG (second = 48 -> AX second = 49)",
+        "result": true,
+        "log_line": 66
+      },
+      {
+        "formula": "AG (second = 49 -> AX second = 50)",
+        "result": true,
+        "log_line": 67
+      },
+      {
+        "formula": "AG (second = 50 -> AX second = 51)",
+        "result": true,
+        "log_line": 68
+      },
+      {
+        "formula": "AG (second = 51 -> AX second = 52)",
+        "result": true,
+        "log_line": 69
+      },
+      {
+        "formula": "AG (second = 52 -> AX second = 53)",
+        "result": true,
+        "log_line": 70
+      },
+      {
+        "formula": "AG (second = 53 -> AX second = 54)",
+        "result": true,
+        "log_line": 71
+      },
+      {
+        "formula": "AG (second = 54 -> AX second = 55)",
+        "result": true,
+        "log_line": 72
+      },
+      {
+        "formula": "AG (second = 55 -> AX second = 56)",
+        "result": true,
+        "log_line": 73
+      },
+      {
+        "formula": "AG (second = 56 -> AX second = 57)",
+        "result": true,
+        "log_line": 74
+      },
+      {
+        "formula": "AG (second = 57 -> AX second = 58)",
+        "result": true,
+        "log_line": 75
+      },
+      {
+        "formula": "AG (second = 58 -> AX second = 59)",
+        "result": true,
+        "log_line": 76
+      },
+      {
+        "formula": "AG (second = 59 -> AX second = 0)",
+        "result": true,
+        "log_line": 77
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 0) -> AX minute = 1)",
+        "result": true,
+        "log_line": 78
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 0) -> AX minute = 0)",
+        "result": true,
+        "log_line": 79
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 1) -> AX minute = 2)",
+        "result": true,
+        "log_line": 80
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 1) -> AX minute = 1)",
+        "result": true,
+        "log_line": 81
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 2) -> AX minute = 3)",
+        "result": true,
+        "log_line": 82
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 2) -> AX minute = 2)",
+        "result": true,
+        "log_line": 83
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 3) -> AX minute = 4)",
+        "result": true,
+        "log_line": 84
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 3) -> AX minute = 3)",
+        "result": true,
+        "log_line": 85
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 4) -> AX minute = 5)",
+        "result": true,
+        "log_line": 86
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 4) -> AX minute = 4)",
+        "result": true,
+        "log_line": 87
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 5) -> AX minute = 6)",
+        "result": true,
+        "log_line": 88
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 5) -> AX minute = 5)",
+        "result": true,
+        "log_line": 89
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 6) -> AX minute = 7)",
+        "result": true,
+        "log_line": 90
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 6) -> AX minute = 6)",
+        "result": true,
+        "log_line": 91
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 7) -> AX minute = 8)",
+        "result": true,
+        "log_line": 92
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 7) -> AX minute = 7)",
+        "result": true,
+        "log_line": 93
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 8) -> AX minute = 9)",
+        "result": true,
+        "log_line": 94
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 8) -> AX minute = 8)",
+        "result": true,
+        "log_line": 95
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 9) -> AX minute = 10)",
+        "result": true,
+        "log_line": 96
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 9) -> AX minute = 9)",
+        "result": true,
+        "log_line": 97
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 10) -> AX minute = 11)",
+        "result": true,
+        "log_line": 98
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 10) -> AX minute = 10)",
+        "result": true,
+        "log_line": 99
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 11) -> AX minute = 12)",
+        "result": true,
+        "log_line": 100
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 11) -> AX minute = 11)",
+        "result": true,
+        "log_line": 101
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 12) -> AX minute = 13)",
+        "result": true,
+        "log_line": 102
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 12) -> AX minute = 12)",
+        "result": true,
+        "log_line": 103
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 13) -> AX minute = 14)",
+        "result": true,
+        "log_line": 104
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 13) -> AX minute = 13)",
+        "result": true,
+        "log_line": 105
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 14) -> AX minute = 15)",
+        "result": true,
+        "log_line": 106
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 14) -> AX minute = 14)",
+        "result": true,
+        "log_line": 107
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 15) -> AX minute = 16)",
+        "result": true,
+        "log_line": 108
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 15) -> AX minute = 15)",
+        "result": true,
+        "log_line": 109
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 16) -> AX minute = 17)",
+        "result": true,
+        "log_line": 110
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 16) -> AX minute = 16)",
+        "result": true,
+        "log_line": 111
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 17) -> AX minute = 18)",
+        "result": true,
+        "log_line": 112
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 17) -> AX minute = 17)",
+        "result": true,
+        "log_line": 113
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 18) -> AX minute = 19)",
+        "result": true,
+        "log_line": 114
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 18) -> AX minute = 18)",
+        "result": true,
+        "log_line": 115
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 19) -> AX minute = 20)",
+        "result": true,
+        "log_line": 116
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 19) -> AX minute = 19)",
+        "result": true,
+        "log_line": 117
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 20) -> AX minute = 21)",
+        "result": true,
+        "log_line": 118
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 20) -> AX minute = 20)",
+        "result": true,
+        "log_line": 119
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 21) -> AX minute = 22)",
+        "result": true,
+        "log_line": 120
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 21) -> AX minute = 21)",
+        "result": true,
+        "log_line": 121
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 22) -> AX minute = 23)",
+        "result": true,
+        "log_line": 122
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 22) -> AX minute = 22)",
+        "result": true,
+        "log_line": 123
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 23) -> AX minute = 24)",
+        "result": true,
+        "log_line": 124
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 23) -> AX minute = 23)",
+        "result": true,
+        "log_line": 125
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 24) -> AX minute = 25)",
+        "result": true,
+        "log_line": 126
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 24) -> AX minute = 24)",
+        "result": true,
+        "log_line": 127
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 25) -> AX minute = 26)",
+        "result": true,
+        "log_line": 128
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 25) -> AX minute = 25)",
+        "result": true,
+        "log_line": 129
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 26) -> AX minute = 27)",
+        "result": true,
+        "log_line": 130
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 26) -> AX minute = 26)",
+        "result": true,
+        "log_line": 131
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 27) -> AX minute = 28)",
+        "result": true,
+        "log_line": 132
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 27) -> AX minute = 27)",
+        "result": true,
+        "log_line": 133
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 28) -> AX minute = 29)",
+        "result": true,
+        "log_line": 134
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 28) -> AX minute = 28)",
+        "result": true,
+        "log_line": 135
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 29) -> AX minute = 30)",
+        "result": true,
+        "log_line": 136
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 29) -> AX minute = 29)",
+        "result": true,
+        "log_line": 137
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 30) -> AX minute = 31)",
+        "result": true,
+        "log_line": 138
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 30) -> AX minute = 30)",
+        "result": true,
+        "log_line": 139
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 31) -> AX minute = 32)",
+        "result": true,
+        "log_line": 140
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 31) -> AX minute = 31)",
+        "result": true,
+        "log_line": 141
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 32) -> AX minute = 33)",
+        "result": true,
+        "log_line": 142
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 32) -> AX minute = 32)",
+        "result": true,
+        "log_line": 143
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 33) -> AX minute = 34)",
+        "result": true,
+        "log_line": 144
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 33) -> AX minute = 33)",
+        "result": true,
+        "log_line": 145
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 34) -> AX minute = 35)",
+        "result": true,
+        "log_line": 146
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 34) -> AX minute = 34)",
+        "result": true,
+        "log_line": 147
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 35) -> AX minute = 36)",
+        "result": true,
+        "log_line": 148
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 35) -> AX minute = 35)",
+        "result": true,
+        "log_line": 149
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 36) -> AX minute = 37)",
+        "result": true,
+        "log_line": 150
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 36) -> AX minute = 36)",
+        "result": true,
+        "log_line": 151
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 37) -> AX minute = 38)",
+        "result": true,
+        "log_line": 152
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 37) -> AX minute = 37)",
+        "result": true,
+        "log_line": 153
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 38) -> AX minute = 39)",
+        "result": true,
+        "log_line": 154
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 38) -> AX minute = 38)",
+        "result": true,
+        "log_line": 155
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 39) -> AX minute = 40)",
+        "result": true,
+        "log_line": 156
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 39) -> AX minute = 39)",
+        "result": true,
+        "log_line": 157
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 40) -> AX minute = 41)",
+        "result": true,
+        "log_line": 158
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 40) -> AX minute = 40)",
+        "result": true,
+        "log_line": 159
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 41) -> AX minute = 42)",
+        "result": true,
+        "log_line": 160
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 41) -> AX minute = 41)",
+        "result": true,
+        "log_line": 161
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 42) -> AX minute = 43)",
+        "result": true,
+        "log_line": 162
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 42) -> AX minute = 42)",
+        "result": true,
+        "log_line": 163
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 43) -> AX minute = 44)",
+        "result": true,
+        "log_line": 164
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 43) -> AX minute = 43)",
+        "result": true,
+        "log_line": 165
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 44) -> AX minute = 45)",
+        "result": true,
+        "log_line": 166
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 44) -> AX minute = 44)",
+        "result": true,
+        "log_line": 167
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 45) -> AX minute = 46)",
+        "result": true,
+        "log_line": 168
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 45) -> AX minute = 45)",
+        "result": true,
+        "log_line": 169
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 46) -> AX minute = 47)",
+        "result": true,
+        "log_line": 170
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 46) -> AX minute = 46)",
+        "result": true,
+        "log_line": 171
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 47) -> AX minute = 48)",
+        "result": true,
+        "log_line": 172
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 47) -> AX minute = 47)",
+        "result": true,
+        "log_line": 173
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 48) -> AX minute = 49)",
+        "result": true,
+        "log_line": 174
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 48) -> AX minute = 48)",
+        "result": true,
+        "log_line": 175
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 49) -> AX minute = 50)",
+        "result": true,
+        "log_line": 176
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 49) -> AX minute = 49)",
+        "result": true,
+        "log_line": 177
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 50) -> AX minute = 51)",
+        "result": true,
+        "log_line": 178
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 50) -> AX minute = 50)",
+        "result": true,
+        "log_line": 179
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 51) -> AX minute = 52)",
+        "result": true,
+        "log_line": 180
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 51) -> AX minute = 51)",
+        "result": true,
+        "log_line": 181
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 52) -> AX minute = 53)",
+        "result": true,
+        "log_line": 182
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 52) -> AX minute = 52)",
+        "result": true,
+        "log_line": 183
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 53) -> AX minute = 54)",
+        "result": true,
+        "log_line": 184
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 53) -> AX minute = 53)",
+        "result": true,
+        "log_line": 185
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 54) -> AX minute = 55)",
+        "result": true,
+        "log_line": 186
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 54) -> AX minute = 54)",
+        "result": true,
+        "log_line": 187
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 55) -> AX minute = 56)",
+        "result": true,
+        "log_line": 188
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 55) -> AX minute = 55)",
+        "result": true,
+        "log_line": 189
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 56) -> AX minute = 57)",
+        "result": true,
+        "log_line": 190
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 56) -> AX minute = 56)",
+        "result": true,
+        "log_line": 191
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 57) -> AX minute = 58)",
+        "result": true,
+        "log_line": 192
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 57) -> AX minute = 57)",
+        "result": true,
+        "log_line": 193
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 58) -> AX minute = 59)",
+        "result": true,
+        "log_line": 194
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 58) -> AX minute = 58)",
+        "result": true,
+        "log_line": 195
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 59) -> AX minute = 0)",
+        "result": true,
+        "log_line": 196
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 59) -> AX minute = 59)",
+        "result": true,
+        "log_line": 197
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 0) -> AX hour = 1)",
+        "result": true,
+        "log_line": 198
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 0) -> AX hour = 0)",
+        "result": true,
+        "log_line": 199
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 1) -> AX hour = 2)",
+        "result": true,
+        "log_line": 200
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 1) -> AX hour = 1)",
+        "result": true,
+        "log_line": 201
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 2) -> AX hour = 3)",
+        "result": true,
+        "log_line": 202
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 2) -> AX hour = 2)",
+        "result": true,
+        "log_line": 203
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 3) -> AX hour = 4)",
+        "result": true,
+        "log_line": 204
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 3) -> AX hour = 3)",
+        "result": true,
+        "log_line": 205
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 4) -> AX hour = 5)",
+        "result": true,
+        "log_line": 206
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 4) -> AX hour = 4)",
+        "result": true,
+        "log_line": 207
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 5) -> AX hour = 6)",
+        "result": true,
+        "log_line": 208
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 5) -> AX hour = 5)",
+        "result": true,
+        "log_line": 209
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 6) -> AX hour = 7)",
+        "result": true,
+        "log_line": 210
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 6) -> AX hour = 6)",
+        "result": true,
+        "log_line": 211
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 7) -> AX hour = 8)",
+        "result": true,
+        "log_line": 212
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 7) -> AX hour = 7)",
+        "result": true,
+        "log_line": 213
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 8) -> AX hour = 9)",
+        "result": true,
+        "log_line": 214
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 8) -> AX hour = 8)",
+        "result": true,
+        "log_line": 215
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 9) -> AX hour = 10)",
+        "result": true,
+        "log_line": 216
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 9) -> AX hour = 9)",
+        "result": true,
+        "log_line": 217
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 10) -> AX hour = 11)",
+        "result": true,
+        "log_line": 218
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 10) -> AX hour = 10)",
+        "result": true,
+        "log_line": 219
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 11) -> AX hour = 12)",
+        "result": true,
+        "log_line": 220
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 11) -> AX hour = 11)",
+        "result": true,
+        "log_line": 221
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 12) -> AX hour = 13)",
+        "result": true,
+        "log_line": 222
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 12) -> AX hour = 12)",
+        "result": true,
+        "log_line": 223
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 13) -> AX hour = 14)",
+        "result": true,
+        "log_line": 224
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 13) -> AX hour = 13)",
+        "result": true,
+        "log_line": 225
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 14) -> AX hour = 15)",
+        "result": true,
+        "log_line": 226
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 14) -> AX hour = 14)",
+        "result": true,
+        "log_line": 227
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 15) -> AX hour = 16)",
+        "result": true,
+        "log_line": 228
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 15) -> AX hour = 15)",
+        "result": true,
+        "log_line": 229
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 16) -> AX hour = 17)",
+        "result": true,
+        "log_line": 230
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 16) -> AX hour = 16)",
+        "result": true,
+        "log_line": 231
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 17) -> AX hour = 18)",
+        "result": true,
+        "log_line": 232
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 17) -> AX hour = 17)",
+        "result": true,
+        "log_line": 233
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 18) -> AX hour = 19)",
+        "result": true,
+        "log_line": 234
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 18) -> AX hour = 18)",
+        "result": true,
+        "log_line": 235
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 19) -> AX hour = 20)",
+        "result": true,
+        "log_line": 236
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 19) -> AX hour = 19)",
+        "result": true,
+        "log_line": 237
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 20) -> AX hour = 21)",
+        "result": true,
+        "log_line": 238
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 20) -> AX hour = 20)",
+        "result": true,
+        "log_line": 239
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 21) -> AX hour = 22)",
+        "result": true,
+        "log_line": 240
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 21) -> AX hour = 21)",
+        "result": true,
+        "log_line": 241
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 22) -> AX hour = 23)",
+        "result": true,
+        "log_line": 242
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 22) -> AX hour = 22)",
+        "result": true,
+        "log_line": 243
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 23) -> AX hour = 0)",
+        "result": true,
+        "log_line": 244
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 23) -> AX hour = 23)",
+        "result": true,
+        "log_line": 245
+      },
+      {
+        "formula": "AG (timer = 2 -> AX timer = 1)",
+        "result": true,
+        "log_line": 246
+      },
+      {
+        "formula": "AG (timer = 3 -> AX timer = 2)",
+        "result": true,
+        "log_line": 247
+      },
+      {
+        "formula": "AG (timer = 4 -> AX timer = 3)",
+        "result": true,
+        "log_line": 248
+      },
+      {
+        "formula": "AG (timer = 5 -> AX timer = 4)",
+        "result": true,
+        "log_line": 249
+      },
+      {
+        "formula": "AG (timer = 6 -> AX timer = 5)",
+        "result": true,
+        "log_line": 250
+      },
+      {
+        "formula": "AG (timer = 7 -> AX timer = 6)",
+        "result": true,
+        "log_line": 251
+      },
+      {
+        "formula": "AG (timer = 8 -> AX timer = 7)",
+        "result": true,
+        "log_line": 252
+      },
+      {
+        "formula": "AG (timer = 9 -> AX timer = 8)",
+        "result": true,
+        "log_line": 253
+      },
+      {
+        "formula": "AG (timer = 10 -> AX timer = 9)",
+        "result": true,
+        "log_line": 254
+      },
+      {
+        "formula": "AG (timer = 11 -> AX timer = 10)",
+        "result": true,
+        "log_line": 255
+      },
+      {
+        "formula": "AG (timer = 12 -> AX timer = 11)",
+        "result": true,
+        "log_line": 256
+      },
+      {
+        "formula": "AG (timer = 13 -> AX timer = 12)",
+        "result": true,
+        "log_line": 257
+      },
+      {
+        "formula": "AG (timer = 14 -> AX timer = 13)",
+        "result": true,
+        "log_line": 258
+      },
+      {
+        "formula": "AG (timer = 15 -> AX timer = 14)",
+        "result": true,
+        "log_line": 259
+      },
+      {
+        "formula": "AG (timer = 16 -> AX timer = 15)",
+        "result": true,
+        "log_line": 260
+      },
+      {
+        "formula": "AG (timer = 17 -> AX timer = 16)",
+        "result": true,
+        "log_line": 261
+      },
+      {
+        "formula": "AG (timer = 18 -> AX timer = 17)",
+        "result": true,
+        "log_line": 262
+      },
+      {
+        "formula": "AG (timer = 19 -> AX timer = 18)",
+        "result": true,
+        "log_line": 263
+      },
+      {
+        "formula": "AG (timer = 20 -> AX timer = 19)",
+        "result": true,
+        "log_line": 264
+      },
+      {
+        "formula": "AG (timer = 21 -> AX timer = 20)",
+        "result": true,
+        "log_line": 265
+      },
+      {
+        "formula": "AG (timer = 22 -> AX timer = 21)",
+        "result": true,
+        "log_line": 266
+      },
+      {
+        "formula": "AG (timer = 23 -> AX timer = 22)",
+        "result": true,
+        "log_line": 267
+      },
+      {
+        "formula": "AG (timer = 24 -> AX timer = 23)",
+        "result": true,
+        "log_line": 268
+      },
+      {
+        "formula": "AG (timer = 25 -> AX timer = 24)",
+        "result": true,
+        "log_line": 269
+      },
+      {
+        "formula": "AG (timer = 26 -> AX timer = 25)",
+        "result": true,
+        "log_line": 270
+      },
+      {
+        "formula": "AG (timer = 27 -> AX timer = 26)",
+        "result": true,
+        "log_line": 271
+      },
+      {
+        "formula": "AG (timer = 28 -> AX timer = 27)",
+        "result": true,
+        "log_line": 272
+      },
+      {
+        "formula": "AG (timer = 29 -> AX timer = 28)",
+        "result": true,
+        "log_line": 273
+      },
+      {
+        "formula": "AG (timer = 30 -> AX timer = 29)",
+        "result": true,
+        "log_line": 274
+      },
+      {
+        "formula": "AG (timer = 31 -> AX timer = 30)",
+        "result": true,
+        "log_line": 275
+      },
+      {
+        "formula": "AG (timer = 32 -> AX timer = 31)",
+        "result": true,
+        "log_line": 276
+      },
+      {
+        "formula": "AG (timer = 33 -> AX timer = 32)",
+        "result": true,
+        "log_line": 277
+      },
+      {
+        "formula": "AG (timer = 34 -> AX timer = 33)",
+        "result": true,
+        "log_line": 278
+      },
+      {
+        "formula": "AG (timer = 35 -> AX timer = 34)",
+        "result": true,
+        "log_line": 279
+      },
+      {
+        "formula": "AG (timer = 36 -> AX timer = 35)",
+        "result": true,
+        "log_line": 280
+      },
+      {
+        "formula": "AG (timer = 37 -> AX timer = 36)",
+        "result": true,
+        "log_line": 281
+      },
+      {
+        "formula": "AG (timer = 38 -> AX timer = 37)",
+        "result": true,
+        "log_line": 282
+      },
+      {
+        "formula": "AG (timer = 39 -> AX timer = 38)",
+        "result": true,
+        "log_line": 283
+      },
+      {
+        "formula": "AG (timer = 40 -> AX timer = 39)",
+        "result": true,
+        "log_line": 284
+      },
+      {
+        "formula": "AG (timer = 41 -> AX timer = 40)",
+        "result": true,
+        "log_line": 285
+      },
+      {
+        "formula": "AG (timer = 42 -> AX timer = 41)",
+        "result": true,
+        "log_line": 286
+      },
+      {
+        "formula": "AG (timer = 43 -> AX timer = 42)",
+        "result": true,
+        "log_line": 287
+      },
+      {
+        "formula": "AG (timer = 44 -> AX timer = 43)",
+        "result": true,
+        "log_line": 288
+      },
+      {
+        "formula": "AG (timer = 45 -> AX timer = 44)",
+        "result": true,
+        "log_line": 289
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer > 1) -> AX phase = NS_GREEN)",
+        "result": true,
+        "log_line": 290
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer = 1) -> AX phase = NS_YELLOW)",
+        "result": true,
+        "log_line": 291
+      },
+      {
+        "formula": "EF phase = NS_GREEN",
+        "result": true,
+        "log_line": 292
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer > 1) -> AX phase = NS_YELLOW)",
+        "result": true,
+        "log_line": 293
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer = 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true,
+        "log_line": 294
+      },
+      {
+        "formula": "EF phase = NS_YELLOW",
+        "result": true,
+        "log_line": 295
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer > 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true,
+        "log_line": 296
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer = 1) -> AX phase = EW_GREEN)",
+        "result": true,
+        "log_line": 297
+      },
+      {
+        "formula": "EF phase = ALL_RED_NS_TO_EW",
+        "result": true,
+        "log_line": 298
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer > 1) -> AX phase = EW_GREEN)",
+        "result": true,
+        "log_line": 299
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer = 1) -> AX phase = EW_YELLOW)",
+        "result": true,
+        "log_line": 300
+      },
+      {
+        "formula": "EF phase = EW_GREEN",
+        "result": true,
+        "log_line": 301
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer > 1) -> AX phase = EW_YELLOW)",
+        "result": true,
+        "log_line": 302
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer = 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true,
+        "log_line": 303
+      },
+      {
+        "formula": "EF phase = EW_YELLOW",
+        "result": true,
+        "log_line": 304
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer > 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true,
+        "log_line": 305
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer = 1) -> AX phase = NS_GREEN)",
+        "result": true,
+        "log_line": 306
+      },
+      {
+        "formula": "EF phase = ALL_RED_EW_TO_NS",
+        "result": true,
+        "log_line": 307
+      },
+      {
+        "formula": "AG (AF n_green)",
+        "result": true,
+        "log_line": 308
+      },
+      {
+        "formula": "AG (AF s_green)",
+        "result": true,
+        "log_line": 309
+      },
+      {
+        "formula": "AG (AF e_green)",
+        "result": true,
+        "log_line": 310
+      },
+      {
+        "formula": "AG (AF w_green)",
+        "result": true,
+        "log_line": 311
+      },
+      {
+        "formula": "AG (timer >= 1 & timer <= phase_duration)",
+        "result": true,
+        "log_line": 312
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 313
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 314
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 315
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 316
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 317
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 318
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 319
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 320
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_GREEN & timer = 35) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 321
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 322
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_GREEN & timer = 45) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 323
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 324
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 325
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 326
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 327
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 328
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 329
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 330
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 331
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 332
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_GREEN & timer = 45) & entry_period = MORNING_PEAK))",
+        "result": true,
+        "log_line": 333
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true,
+        "log_line": 334
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_GREEN & timer = 35) & entry_period = EVENING_PEAK))",
+        "result": true,
+        "log_line": 335
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true,
+        "log_line": 336
+      },
+      {
+        "formula": "AG ((entry_period = MORNING_PEAK & timer > 1) -> AX entry_period = MORNING_PEAK)",
+        "result": true,
+        "log_line": 337
+      },
+      {
+        "formula": "AG ((entry_period = NORMAL & timer > 1) -> AX entry_period = NORMAL)",
+        "result": true,
+        "log_line": 338
+      },
+      {
+        "formula": "AG ((entry_period = EVENING_PEAK & timer > 1) -> AX entry_period = EVENING_PEAK)",
+        "result": true,
+        "log_line": 339
+      },
+      {
+        "formula": "AG ((entry_period = NIGHT_LOW & timer > 1) -> AX entry_period = NIGHT_LOW)",
+        "result": true,
+        "log_line": 340
+      },
+      {
+        "formula": "AG (((((n_red | n_yellow) | n_green) & !(n_red & n_yellow)) & !(n_red & n_green)) & !(n_yellow & n_green))",
+        "result": true,
+        "log_line": 341
+      },
+      {
+        "formula": "AG (((((s_red | s_yellow) | s_green) & !(s_red & s_yellow)) & !(s_red & s_green)) & !(s_yellow & s_green))",
+        "result": true,
+        "log_line": 342
+      },
+      {
+        "formula": "AG (((((e_red | e_yellow) | e_green) & !(e_red & e_yellow)) & !(e_red & e_green)) & !(e_yellow & e_green))",
+        "result": true,
+        "log_line": 343
+      },
+      {
+        "formula": "AG (((((w_red | w_yellow) | w_green) & !(w_red & w_yellow)) & !(w_red & w_green)) & !(w_yellow & w_green))",
+        "result": true,
+        "log_line": 344
+      },
+      {
+        "formula": "AG !conflicting_green",
+        "result": true,
+        "log_line": 345
+      },
+      {
+        "formula": "AG (n_red = s_red & e_red = w_red)",
+        "result": true,
+        "log_line": 346
+      },
+      {
+        "formula": "AG (n_yellow = s_yellow & e_yellow = w_yellow)",
+        "result": true,
+        "log_line": 347
+      },
+      {
+        "formula": "AG (n_green = s_green & e_green = w_green)",
+        "result": true,
+        "log_line": 348
+      },
+      {
+        "formula": "AG ((n_yellow | s_yellow) -> (e_red & w_red))",
+        "result": true,
+        "log_line": 349
+      },
+      {
+        "formula": "AG ((e_yellow | w_yellow) -> (n_red & s_red))",
+        "result": true,
+        "log_line": 350
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW | phase = ALL_RED_EW_TO_NS) -> all_red)",
+        "result": true,
+        "log_line": 351
+      }
+    ],
+    "expected": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/v1_main_recheck.smv",
+    "log": "output/official_report_20261024/evidence/v1_main_recheck.log"
+  },
+  {
+    "id": "v0_timer_added_query",
+    "started_utc": "2026-10-23T23:59:02.670090+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v0_timer_added_query.smv"
+    ],
+    "seconds": 0.031,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "AG ((state = NS_GREEN & timer = 1) -> AX state = NS_YELLOW)",
+        "result": false,
+        "log_line": 17
+      },
+      {
+        "formula": "G (state = NS_GREEN -> timer <= 30)",
+        "result": true,
+        "log_line": 84
+      },
+      {
+        "formula": "G (state = NS_YELLOW -> timer <= 5)",
+        "result": true,
+        "log_line": 85
+      }
+    ],
+    "expected": [
+      false,
+      true,
+      true
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/v0_timer_added_query.smv",
+    "log": "output/official_report_20261024/evidence/v0_timer_added_query.log"
+  },
+  {
+    "id": "v0_adaptive_added_queries",
+    "started_utc": "2026-10-23T23:59:02.715663+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\v0_adaptive_added_queries.smv"
+    ],
+    "seconds": 0.094,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "EF time_period = EVENING_PEAK",
+        "result": false,
+        "log_line": 17
+      },
+      {
+        "formula": "EF time_period = NIGHT_LOW",
+        "result": false,
+        "log_line": 23
+      },
+      {
+        "formula": "AG ((state = NS_GREEN & timer = 0) -> AX (state = NS_YELLOW & timer = 5))",
+        "result": false,
+        "log_line": 29
+      },
+      {
+        "formula": "G (time_period = MORNING_PEAK ->  F traffic_mode = PEAK)",
+        "result": true,
+        "log_line": 162
+      },
+      {
+        "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+        "result": true,
+        "log_line": 163
+      },
+      {
+        "formula": "G ((time_period = MORNING_PEAK | time_period = EVENING_PEAK) ->  F traffic_mode = PEAK)",
+        "result": true,
+        "log_line": 164
+      },
+      {
+        "formula": "G (time_period = NIGHT_LOW ->  F traffic_mode = LOW)",
+        "result": true,
+        "log_line": 165
+      },
+      {
+        "formula": "G !(state = NS_GREEN & state = EW_GREEN)",
+        "result": true,
+        "log_line": 166
+      },
+      {
+        "formula": "G (state = NS_GREEN ->  F state = NS_YELLOW)",
+        "result": true,
+        "log_line": 167
+      },
+      {
+        "formula": "G (state = EW_GREEN ->  F state = EW_YELLOW)",
+        "result": true,
+        "log_line": 168
+      },
+      {
+        "formula": "G (((traffic_mode = PEAK & state = NS_GREEN) & timer = 0) ->  X timer = 45)",
+        "result": true,
+        "log_line": 169
+      },
+      {
+        "formula": "G (((traffic_mode = NORMAL & state = NS_GREEN) & timer = 0) ->  X timer = 30)",
+        "result": true,
+        "log_line": 170
+      },
+      {
+        "formula": "G (((traffic_mode = LOW & state = NS_GREEN) & timer = 0) ->  X timer = 20)",
+        "result": true,
+        "log_line": 171
+      }
+    ],
+    "expected": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/v0_adaptive_added_queries.smv",
+    "log": "output/official_report_20261024/evidence/v0_adaptive_added_queries.log"
+  },
+  {
+    "id": "recheck_negative_conflicting_green",
+    "started_utc": "2026-10-23T23:59:02.806012+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_conflicting_green.smv"
+    ],
+    "seconds": 0.078,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "AG !conflicting_green",
+        "result": false,
+        "log_line": 17
+      }
+    ],
+    "expected": [
+      false
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/recheck_negative_conflicting_green.smv",
+    "log": "output/official_report_20261024/evidence/recheck_negative_conflicting_green.log"
+  },
+  {
+    "id": "recheck_negative_timer_reset",
+    "started_utc": "2026-10-23T23:59:02.883018+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_timer_reset.smv"
+    ],
+    "seconds": 4.906,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX timer = 15)",
+        "result": false,
+        "log_line": 17
+      }
+    ],
+    "expected": [
+      false
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/recheck_negative_timer_reset.smv",
+    "log": "output/official_report_20261024/evidence/recheck_negative_timer_reset.log"
+  },
+  {
+    "id": "recheck_negative_skip_all_red",
+    "started_utc": "2026-10-23T23:59:07.793543+00:00",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\output\\official_report_20261024\\evidence\\recheck_negative_skip_all_red.smv"
+    ],
+    "seconds": 0.094,
+    "returncode": 0,
+    "checks": [
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer = 1) -> AX all_red)",
+        "result": false,
+        "log_line": 17
+      }
+    ],
+    "expected": [
+      false
+    ],
+    "status": "PASS",
+    "model": "output/official_report_20261024/evidence/recheck_negative_skip_all_red.smv",
+    "log": "output/official_report_20261024/evidence/recheck_negative_skip_all_red.log"
+  }
+]

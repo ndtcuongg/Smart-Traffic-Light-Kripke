@@ -1,0 +1,2012 @@
+[
+  {
+    "name": "physical_green_exclusion",
+    "formula": "AG(!conflicting_green)",
+    "category": "safety",
+    "source_line": 76
+  },
+  {
+    "name": "one_hot_n",
+    "formula": "AG((n_red | n_yellow | n_green) & !(n_red & n_yellow) & !(n_red & n_green) & !(n_yellow & n_green))",
+    "category": "safety",
+    "source_line": 77
+  },
+  {
+    "name": "recurring_green_n",
+    "formula": "AG(AF(n_green))",
+    "category": "liveness",
+    "source_line": 78
+  },
+  {
+    "name": "one_hot_s",
+    "formula": "AG((s_red | s_yellow | s_green) & !(s_red & s_yellow) & !(s_red & s_green) & !(s_yellow & s_green))",
+    "category": "safety",
+    "source_line": 79
+  },
+  {
+    "name": "recurring_green_s",
+    "formula": "AG(AF(s_green))",
+    "category": "liveness",
+    "source_line": 80
+  },
+  {
+    "name": "one_hot_e",
+    "formula": "AG((e_red | e_yellow | e_green) & !(e_red & e_yellow) & !(e_red & e_green) & !(e_yellow & e_green))",
+    "category": "safety",
+    "source_line": 81
+  },
+  {
+    "name": "recurring_green_e",
+    "formula": "AG(AF(e_green))",
+    "category": "liveness",
+    "source_line": 82
+  },
+  {
+    "name": "one_hot_w",
+    "formula": "AG((w_red | w_yellow | w_green) & !(w_red & w_yellow) & !(w_red & w_green) & !(w_yellow & w_green))",
+    "category": "safety",
+    "source_line": 83
+  },
+  {
+    "name": "recurring_green_w",
+    "formula": "AG(AF(w_green))",
+    "category": "liveness",
+    "source_line": 84
+  },
+  {
+    "name": "synchronized_red",
+    "formula": "AG((n_red = s_red) & (e_red = w_red))",
+    "category": "safety",
+    "source_line": 85
+  },
+  {
+    "name": "synchronized_yellow",
+    "formula": "AG((n_yellow = s_yellow) & (e_yellow = w_yellow))",
+    "category": "safety",
+    "source_line": 86
+  },
+  {
+    "name": "synchronized_green",
+    "formula": "AG((n_green = s_green) & (e_green = w_green))",
+    "category": "safety",
+    "source_line": 87
+  },
+  {
+    "name": "yellow_ns_other_red",
+    "formula": "AG((n_yellow | s_yellow) -> (e_red & w_red))",
+    "category": "safety",
+    "source_line": 88
+  },
+  {
+    "name": "yellow_ew_other_red",
+    "formula": "AG((e_yellow | w_yellow) -> (n_red & s_red))",
+    "category": "safety",
+    "source_line": 89
+  },
+  {
+    "name": "clearance_all_red",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW | phase = ALL_RED_EW_TO_NS) -> all_red)",
+    "category": "safety",
+    "source_line": 90
+  },
+  {
+    "name": "deadlock_free",
+    "formula": "AG(EX(TRUE))",
+    "category": "deadlock",
+    "source_line": 91
+  },
+  {
+    "name": "timer_bounds",
+    "formula": "AG(timer >= 1 & timer <= phase_duration)",
+    "category": "timer",
+    "source_line": 92
+  },
+  {
+    "name": "clock_second_0",
+    "formula": "AG(second = 0 -> AX(second = 1))",
+    "category": "clock",
+    "source_line": 93
+  },
+  {
+    "name": "clock_minute_tick_0",
+    "formula": "AG((second = 59 & minute = 0) -> AX(minute = 1))",
+    "category": "clock",
+    "source_line": 94
+  },
+  {
+    "name": "clock_minute_hold_0",
+    "formula": "AG((second < 59 & minute = 0) -> AX(minute = 0))",
+    "category": "clock",
+    "source_line": 95
+  },
+  {
+    "name": "clock_second_1",
+    "formula": "AG(second = 1 -> AX(second = 2))",
+    "category": "clock",
+    "source_line": 96
+  },
+  {
+    "name": "clock_minute_tick_1",
+    "formula": "AG((second = 59 & minute = 1) -> AX(minute = 2))",
+    "category": "clock",
+    "source_line": 97
+  },
+  {
+    "name": "clock_minute_hold_1",
+    "formula": "AG((second < 59 & minute = 1) -> AX(minute = 1))",
+    "category": "clock",
+    "source_line": 98
+  },
+  {
+    "name": "clock_second_2",
+    "formula": "AG(second = 2 -> AX(second = 3))",
+    "category": "clock",
+    "source_line": 99
+  },
+  {
+    "name": "clock_minute_tick_2",
+    "formula": "AG((second = 59 & minute = 2) -> AX(minute = 3))",
+    "category": "clock",
+    "source_line": 100
+  },
+  {
+    "name": "clock_minute_hold_2",
+    "formula": "AG((second < 59 & minute = 2) -> AX(minute = 2))",
+    "category": "clock",
+    "source_line": 101
+  },
+  {
+    "name": "clock_second_3",
+    "formula": "AG(second = 3 -> AX(second = 4))",
+    "category": "clock",
+    "source_line": 102
+  },
+  {
+    "name": "clock_minute_tick_3",
+    "formula": "AG((second = 59 & minute = 3) -> AX(minute = 4))",
+    "category": "clock",
+    "source_line": 103
+  },
+  {
+    "name": "clock_minute_hold_3",
+    "formula": "AG((second < 59 & minute = 3) -> AX(minute = 3))",
+    "category": "clock",
+    "source_line": 104
+  },
+  {
+    "name": "clock_second_4",
+    "formula": "AG(second = 4 -> AX(second = 5))",
+    "category": "clock",
+    "source_line": 105
+  },
+  {
+    "name": "clock_minute_tick_4",
+    "formula": "AG((second = 59 & minute = 4) -> AX(minute = 5))",
+    "category": "clock",
+    "source_line": 106
+  },
+  {
+    "name": "clock_minute_hold_4",
+    "formula": "AG((second < 59 & minute = 4) -> AX(minute = 4))",
+    "category": "clock",
+    "source_line": 107
+  },
+  {
+    "name": "clock_second_5",
+    "formula": "AG(second = 5 -> AX(second = 6))",
+    "category": "clock",
+    "source_line": 108
+  },
+  {
+    "name": "clock_minute_tick_5",
+    "formula": "AG((second = 59 & minute = 5) -> AX(minute = 6))",
+    "category": "clock",
+    "source_line": 109
+  },
+  {
+    "name": "clock_minute_hold_5",
+    "formula": "AG((second < 59 & minute = 5) -> AX(minute = 5))",
+    "category": "clock",
+    "source_line": 110
+  },
+  {
+    "name": "clock_second_6",
+    "formula": "AG(second = 6 -> AX(second = 7))",
+    "category": "clock",
+    "source_line": 111
+  },
+  {
+    "name": "clock_minute_tick_6",
+    "formula": "AG((second = 59 & minute = 6) -> AX(minute = 7))",
+    "category": "clock",
+    "source_line": 112
+  },
+  {
+    "name": "clock_minute_hold_6",
+    "formula": "AG((second < 59 & minute = 6) -> AX(minute = 6))",
+    "category": "clock",
+    "source_line": 113
+  },
+  {
+    "name": "clock_second_7",
+    "formula": "AG(second = 7 -> AX(second = 8))",
+    "category": "clock",
+    "source_line": 114
+  },
+  {
+    "name": "clock_minute_tick_7",
+    "formula": "AG((second = 59 & minute = 7) -> AX(minute = 8))",
+    "category": "clock",
+    "source_line": 115
+  },
+  {
+    "name": "clock_minute_hold_7",
+    "formula": "AG((second < 59 & minute = 7) -> AX(minute = 7))",
+    "category": "clock",
+    "source_line": 116
+  },
+  {
+    "name": "clock_second_8",
+    "formula": "AG(second = 8 -> AX(second = 9))",
+    "category": "clock",
+    "source_line": 117
+  },
+  {
+    "name": "clock_minute_tick_8",
+    "formula": "AG((second = 59 & minute = 8) -> AX(minute = 9))",
+    "category": "clock",
+    "source_line": 118
+  },
+  {
+    "name": "clock_minute_hold_8",
+    "formula": "AG((second < 59 & minute = 8) -> AX(minute = 8))",
+    "category": "clock",
+    "source_line": 119
+  },
+  {
+    "name": "clock_second_9",
+    "formula": "AG(second = 9 -> AX(second = 10))",
+    "category": "clock",
+    "source_line": 120
+  },
+  {
+    "name": "clock_minute_tick_9",
+    "formula": "AG((second = 59 & minute = 9) -> AX(minute = 10))",
+    "category": "clock",
+    "source_line": 121
+  },
+  {
+    "name": "clock_minute_hold_9",
+    "formula": "AG((second < 59 & minute = 9) -> AX(minute = 9))",
+    "category": "clock",
+    "source_line": 122
+  },
+  {
+    "name": "clock_second_10",
+    "formula": "AG(second = 10 -> AX(second = 11))",
+    "category": "clock",
+    "source_line": 123
+  },
+  {
+    "name": "clock_minute_tick_10",
+    "formula": "AG((second = 59 & minute = 10) -> AX(minute = 11))",
+    "category": "clock",
+    "source_line": 124
+  },
+  {
+    "name": "clock_minute_hold_10",
+    "formula": "AG((second < 59 & minute = 10) -> AX(minute = 10))",
+    "category": "clock",
+    "source_line": 125
+  },
+  {
+    "name": "clock_second_11",
+    "formula": "AG(second = 11 -> AX(second = 12))",
+    "category": "clock",
+    "source_line": 126
+  },
+  {
+    "name": "clock_minute_tick_11",
+    "formula": "AG((second = 59 & minute = 11) -> AX(minute = 12))",
+    "category": "clock",
+    "source_line": 127
+  },
+  {
+    "name": "clock_minute_hold_11",
+    "formula": "AG((second < 59 & minute = 11) -> AX(minute = 11))",
+    "category": "clock",
+    "source_line": 128
+  },
+  {
+    "name": "clock_second_12",
+    "formula": "AG(second = 12 -> AX(second = 13))",
+    "category": "clock",
+    "source_line": 129
+  },
+  {
+    "name": "clock_minute_tick_12",
+    "formula": "AG((second = 59 & minute = 12) -> AX(minute = 13))",
+    "category": "clock",
+    "source_line": 130
+  },
+  {
+    "name": "clock_minute_hold_12",
+    "formula": "AG((second < 59 & minute = 12) -> AX(minute = 12))",
+    "category": "clock",
+    "source_line": 131
+  },
+  {
+    "name": "clock_second_13",
+    "formula": "AG(second = 13 -> AX(second = 14))",
+    "category": "clock",
+    "source_line": 132
+  },
+  {
+    "name": "clock_minute_tick_13",
+    "formula": "AG((second = 59 & minute = 13) -> AX(minute = 14))",
+    "category": "clock",
+    "source_line": 133
+  },
+  {
+    "name": "clock_minute_hold_13",
+    "formula": "AG((second < 59 & minute = 13) -> AX(minute = 13))",
+    "category": "clock",
+    "source_line": 134
+  },
+  {
+    "name": "clock_second_14",
+    "formula": "AG(second = 14 -> AX(second = 15))",
+    "category": "clock",
+    "source_line": 135
+  },
+  {
+    "name": "clock_minute_tick_14",
+    "formula": "AG((second = 59 & minute = 14) -> AX(minute = 15))",
+    "category": "clock",
+    "source_line": 136
+  },
+  {
+    "name": "clock_minute_hold_14",
+    "formula": "AG((second < 59 & minute = 14) -> AX(minute = 14))",
+    "category": "clock",
+    "source_line": 137
+  },
+  {
+    "name": "clock_second_15",
+    "formula": "AG(second = 15 -> AX(second = 16))",
+    "category": "clock",
+    "source_line": 138
+  },
+  {
+    "name": "clock_minute_tick_15",
+    "formula": "AG((second = 59 & minute = 15) -> AX(minute = 16))",
+    "category": "clock",
+    "source_line": 139
+  },
+  {
+    "name": "clock_minute_hold_15",
+    "formula": "AG((second < 59 & minute = 15) -> AX(minute = 15))",
+    "category": "clock",
+    "source_line": 140
+  },
+  {
+    "name": "clock_second_16",
+    "formula": "AG(second = 16 -> AX(second = 17))",
+    "category": "clock",
+    "source_line": 141
+  },
+  {
+    "name": "clock_minute_tick_16",
+    "formula": "AG((second = 59 & minute = 16) -> AX(minute = 17))",
+    "category": "clock",
+    "source_line": 142
+  },
+  {
+    "name": "clock_minute_hold_16",
+    "formula": "AG((second < 59 & minute = 16) -> AX(minute = 16))",
+    "category": "clock",
+    "source_line": 143
+  },
+  {
+    "name": "clock_second_17",
+    "formula": "AG(second = 17 -> AX(second = 18))",
+    "category": "clock",
+    "source_line": 144
+  },
+  {
+    "name": "clock_minute_tick_17",
+    "formula": "AG((second = 59 & minute = 17) -> AX(minute = 18))",
+    "category": "clock",
+    "source_line": 145
+  },
+  {
+    "name": "clock_minute_hold_17",
+    "formula": "AG((second < 59 & minute = 17) -> AX(minute = 17))",
+    "category": "clock",
+    "source_line": 146
+  },
+  {
+    "name": "clock_second_18",
+    "formula": "AG(second = 18 -> AX(second = 19))",
+    "category": "clock",
+    "source_line": 147
+  },
+  {
+    "name": "clock_minute_tick_18",
+    "formula": "AG((second = 59 & minute = 18) -> AX(minute = 19))",
+    "category": "clock",
+    "source_line": 148
+  },
+  {
+    "name": "clock_minute_hold_18",
+    "formula": "AG((second < 59 & minute = 18) -> AX(minute = 18))",
+    "category": "clock",
+    "source_line": 149
+  },
+  {
+    "name": "clock_second_19",
+    "formula": "AG(second = 19 -> AX(second = 20))",
+    "category": "clock",
+    "source_line": 150
+  },
+  {
+    "name": "clock_minute_tick_19",
+    "formula": "AG((second = 59 & minute = 19) -> AX(minute = 20))",
+    "category": "clock",
+    "source_line": 151
+  },
+  {
+    "name": "clock_minute_hold_19",
+    "formula": "AG((second < 59 & minute = 19) -> AX(minute = 19))",
+    "category": "clock",
+    "source_line": 152
+  },
+  {
+    "name": "clock_second_20",
+    "formula": "AG(second = 20 -> AX(second = 21))",
+    "category": "clock",
+    "source_line": 153
+  },
+  {
+    "name": "clock_minute_tick_20",
+    "formula": "AG((second = 59 & minute = 20) -> AX(minute = 21))",
+    "category": "clock",
+    "source_line": 154
+  },
+  {
+    "name": "clock_minute_hold_20",
+    "formula": "AG((second < 59 & minute = 20) -> AX(minute = 20))",
+    "category": "clock",
+    "source_line": 155
+  },
+  {
+    "name": "clock_second_21",
+    "formula": "AG(second = 21 -> AX(second = 22))",
+    "category": "clock",
+    "source_line": 156
+  },
+  {
+    "name": "clock_minute_tick_21",
+    "formula": "AG((second = 59 & minute = 21) -> AX(minute = 22))",
+    "category": "clock",
+    "source_line": 157
+  },
+  {
+    "name": "clock_minute_hold_21",
+    "formula": "AG((second < 59 & minute = 21) -> AX(minute = 21))",
+    "category": "clock",
+    "source_line": 158
+  },
+  {
+    "name": "clock_second_22",
+    "formula": "AG(second = 22 -> AX(second = 23))",
+    "category": "clock",
+    "source_line": 159
+  },
+  {
+    "name": "clock_minute_tick_22",
+    "formula": "AG((second = 59 & minute = 22) -> AX(minute = 23))",
+    "category": "clock",
+    "source_line": 160
+  },
+  {
+    "name": "clock_minute_hold_22",
+    "formula": "AG((second < 59 & minute = 22) -> AX(minute = 22))",
+    "category": "clock",
+    "source_line": 161
+  },
+  {
+    "name": "clock_second_23",
+    "formula": "AG(second = 23 -> AX(second = 24))",
+    "category": "clock",
+    "source_line": 162
+  },
+  {
+    "name": "clock_minute_tick_23",
+    "formula": "AG((second = 59 & minute = 23) -> AX(minute = 24))",
+    "category": "clock",
+    "source_line": 163
+  },
+  {
+    "name": "clock_minute_hold_23",
+    "formula": "AG((second < 59 & minute = 23) -> AX(minute = 23))",
+    "category": "clock",
+    "source_line": 164
+  },
+  {
+    "name": "clock_second_24",
+    "formula": "AG(second = 24 -> AX(second = 25))",
+    "category": "clock",
+    "source_line": 165
+  },
+  {
+    "name": "clock_minute_tick_24",
+    "formula": "AG((second = 59 & minute = 24) -> AX(minute = 25))",
+    "category": "clock",
+    "source_line": 166
+  },
+  {
+    "name": "clock_minute_hold_24",
+    "formula": "AG((second < 59 & minute = 24) -> AX(minute = 24))",
+    "category": "clock",
+    "source_line": 167
+  },
+  {
+    "name": "clock_second_25",
+    "formula": "AG(second = 25 -> AX(second = 26))",
+    "category": "clock",
+    "source_line": 168
+  },
+  {
+    "name": "clock_minute_tick_25",
+    "formula": "AG((second = 59 & minute = 25) -> AX(minute = 26))",
+    "category": "clock",
+    "source_line": 169
+  },
+  {
+    "name": "clock_minute_hold_25",
+    "formula": "AG((second < 59 & minute = 25) -> AX(minute = 25))",
+    "category": "clock",
+    "source_line": 170
+  },
+  {
+    "name": "clock_second_26",
+    "formula": "AG(second = 26 -> AX(second = 27))",
+    "category": "clock",
+    "source_line": 171
+  },
+  {
+    "name": "clock_minute_tick_26",
+    "formula": "AG((second = 59 & minute = 26) -> AX(minute = 27))",
+    "category": "clock",
+    "source_line": 172
+  },
+  {
+    "name": "clock_minute_hold_26",
+    "formula": "AG((second < 59 & minute = 26) -> AX(minute = 26))",
+    "category": "clock",
+    "source_line": 173
+  },
+  {
+    "name": "clock_second_27",
+    "formula": "AG(second = 27 -> AX(second = 28))",
+    "category": "clock",
+    "source_line": 174
+  },
+  {
+    "name": "clock_minute_tick_27",
+    "formula": "AG((second = 59 & minute = 27) -> AX(minute = 28))",
+    "category": "clock",
+    "source_line": 175
+  },
+  {
+    "name": "clock_minute_hold_27",
+    "formula": "AG((second < 59 & minute = 27) -> AX(minute = 27))",
+    "category": "clock",
+    "source_line": 176
+  },
+  {
+    "name": "clock_second_28",
+    "formula": "AG(second = 28 -> AX(second = 29))",
+    "category": "clock",
+    "source_line": 177
+  },
+  {
+    "name": "clock_minute_tick_28",
+    "formula": "AG((second = 59 & minute = 28) -> AX(minute = 29))",
+    "category": "clock",
+    "source_line": 178
+  },
+  {
+    "name": "clock_minute_hold_28",
+    "formula": "AG((second < 59 & minute = 28) -> AX(minute = 28))",
+    "category": "clock",
+    "source_line": 179
+  },
+  {
+    "name": "clock_second_29",
+    "formula": "AG(second = 29 -> AX(second = 30))",
+    "category": "clock",
+    "source_line": 180
+  },
+  {
+    "name": "clock_minute_tick_29",
+    "formula": "AG((second = 59 & minute = 29) -> AX(minute = 30))",
+    "category": "clock",
+    "source_line": 181
+  },
+  {
+    "name": "clock_minute_hold_29",
+    "formula": "AG((second < 59 & minute = 29) -> AX(minute = 29))",
+    "category": "clock",
+    "source_line": 182
+  },
+  {
+    "name": "clock_second_30",
+    "formula": "AG(second = 30 -> AX(second = 31))",
+    "category": "clock",
+    "source_line": 183
+  },
+  {
+    "name": "clock_minute_tick_30",
+    "formula": "AG((second = 59 & minute = 30) -> AX(minute = 31))",
+    "category": "clock",
+    "source_line": 184
+  },
+  {
+    "name": "clock_minute_hold_30",
+    "formula": "AG((second < 59 & minute = 30) -> AX(minute = 30))",
+    "category": "clock",
+    "source_line": 185
+  },
+  {
+    "name": "clock_second_31",
+    "formula": "AG(second = 31 -> AX(second = 32))",
+    "category": "clock",
+    "source_line": 186
+  },
+  {
+    "name": "clock_minute_tick_31",
+    "formula": "AG((second = 59 & minute = 31) -> AX(minute = 32))",
+    "category": "clock",
+    "source_line": 187
+  },
+  {
+    "name": "clock_minute_hold_31",
+    "formula": "AG((second < 59 & minute = 31) -> AX(minute = 31))",
+    "category": "clock",
+    "source_line": 188
+  },
+  {
+    "name": "clock_second_32",
+    "formula": "AG(second = 32 -> AX(second = 33))",
+    "category": "clock",
+    "source_line": 189
+  },
+  {
+    "name": "clock_minute_tick_32",
+    "formula": "AG((second = 59 & minute = 32) -> AX(minute = 33))",
+    "category": "clock",
+    "source_line": 190
+  },
+  {
+    "name": "clock_minute_hold_32",
+    "formula": "AG((second < 59 & minute = 32) -> AX(minute = 32))",
+    "category": "clock",
+    "source_line": 191
+  },
+  {
+    "name": "clock_second_33",
+    "formula": "AG(second = 33 -> AX(second = 34))",
+    "category": "clock",
+    "source_line": 192
+  },
+  {
+    "name": "clock_minute_tick_33",
+    "formula": "AG((second = 59 & minute = 33) -> AX(minute = 34))",
+    "category": "clock",
+    "source_line": 193
+  },
+  {
+    "name": "clock_minute_hold_33",
+    "formula": "AG((second < 59 & minute = 33) -> AX(minute = 33))",
+    "category": "clock",
+    "source_line": 194
+  },
+  {
+    "name": "clock_second_34",
+    "formula": "AG(second = 34 -> AX(second = 35))",
+    "category": "clock",
+    "source_line": 195
+  },
+  {
+    "name": "clock_minute_tick_34",
+    "formula": "AG((second = 59 & minute = 34) -> AX(minute = 35))",
+    "category": "clock",
+    "source_line": 196
+  },
+  {
+    "name": "clock_minute_hold_34",
+    "formula": "AG((second < 59 & minute = 34) -> AX(minute = 34))",
+    "category": "clock",
+    "source_line": 197
+  },
+  {
+    "name": "clock_second_35",
+    "formula": "AG(second = 35 -> AX(second = 36))",
+    "category": "clock",
+    "source_line": 198
+  },
+  {
+    "name": "clock_minute_tick_35",
+    "formula": "AG((second = 59 & minute = 35) -> AX(minute = 36))",
+    "category": "clock",
+    "source_line": 199
+  },
+  {
+    "name": "clock_minute_hold_35",
+    "formula": "AG((second < 59 & minute = 35) -> AX(minute = 35))",
+    "category": "clock",
+    "source_line": 200
+  },
+  {
+    "name": "clock_second_36",
+    "formula": "AG(second = 36 -> AX(second = 37))",
+    "category": "clock",
+    "source_line": 201
+  },
+  {
+    "name": "clock_minute_tick_36",
+    "formula": "AG((second = 59 & minute = 36) -> AX(minute = 37))",
+    "category": "clock",
+    "source_line": 202
+  },
+  {
+    "name": "clock_minute_hold_36",
+    "formula": "AG((second < 59 & minute = 36) -> AX(minute = 36))",
+    "category": "clock",
+    "source_line": 203
+  },
+  {
+    "name": "clock_second_37",
+    "formula": "AG(second = 37 -> AX(second = 38))",
+    "category": "clock",
+    "source_line": 204
+  },
+  {
+    "name": "clock_minute_tick_37",
+    "formula": "AG((second = 59 & minute = 37) -> AX(minute = 38))",
+    "category": "clock",
+    "source_line": 205
+  },
+  {
+    "name": "clock_minute_hold_37",
+    "formula": "AG((second < 59 & minute = 37) -> AX(minute = 37))",
+    "category": "clock",
+    "source_line": 206
+  },
+  {
+    "name": "clock_second_38",
+    "formula": "AG(second = 38 -> AX(second = 39))",
+    "category": "clock",
+    "source_line": 207
+  },
+  {
+    "name": "clock_minute_tick_38",
+    "formula": "AG((second = 59 & minute = 38) -> AX(minute = 39))",
+    "category": "clock",
+    "source_line": 208
+  },
+  {
+    "name": "clock_minute_hold_38",
+    "formula": "AG((second < 59 & minute = 38) -> AX(minute = 38))",
+    "category": "clock",
+    "source_line": 209
+  },
+  {
+    "name": "clock_second_39",
+    "formula": "AG(second = 39 -> AX(second = 40))",
+    "category": "clock",
+    "source_line": 210
+  },
+  {
+    "name": "clock_minute_tick_39",
+    "formula": "AG((second = 59 & minute = 39) -> AX(minute = 40))",
+    "category": "clock",
+    "source_line": 211
+  },
+  {
+    "name": "clock_minute_hold_39",
+    "formula": "AG((second < 59 & minute = 39) -> AX(minute = 39))",
+    "category": "clock",
+    "source_line": 212
+  },
+  {
+    "name": "clock_second_40",
+    "formula": "AG(second = 40 -> AX(second = 41))",
+    "category": "clock",
+    "source_line": 213
+  },
+  {
+    "name": "clock_minute_tick_40",
+    "formula": "AG((second = 59 & minute = 40) -> AX(minute = 41))",
+    "category": "clock",
+    "source_line": 214
+  },
+  {
+    "name": "clock_minute_hold_40",
+    "formula": "AG((second < 59 & minute = 40) -> AX(minute = 40))",
+    "category": "clock",
+    "source_line": 215
+  },
+  {
+    "name": "clock_second_41",
+    "formula": "AG(second = 41 -> AX(second = 42))",
+    "category": "clock",
+    "source_line": 216
+  },
+  {
+    "name": "clock_minute_tick_41",
+    "formula": "AG((second = 59 & minute = 41) -> AX(minute = 42))",
+    "category": "clock",
+    "source_line": 217
+  },
+  {
+    "name": "clock_minute_hold_41",
+    "formula": "AG((second < 59 & minute = 41) -> AX(minute = 41))",
+    "category": "clock",
+    "source_line": 218
+  },
+  {
+    "name": "clock_second_42",
+    "formula": "AG(second = 42 -> AX(second = 43))",
+    "category": "clock",
+    "source_line": 219
+  },
+  {
+    "name": "clock_minute_tick_42",
+    "formula": "AG((second = 59 & minute = 42) -> AX(minute = 43))",
+    "category": "clock",
+    "source_line": 220
+  },
+  {
+    "name": "clock_minute_hold_42",
+    "formula": "AG((second < 59 & minute = 42) -> AX(minute = 42))",
+    "category": "clock",
+    "source_line": 221
+  },
+  {
+    "name": "clock_second_43",
+    "formula": "AG(second = 43 -> AX(second = 44))",
+    "category": "clock",
+    "source_line": 222
+  },
+  {
+    "name": "clock_minute_tick_43",
+    "formula": "AG((second = 59 & minute = 43) -> AX(minute = 44))",
+    "category": "clock",
+    "source_line": 223
+  },
+  {
+    "name": "clock_minute_hold_43",
+    "formula": "AG((second < 59 & minute = 43) -> AX(minute = 43))",
+    "category": "clock",
+    "source_line": 224
+  },
+  {
+    "name": "clock_second_44",
+    "formula": "AG(second = 44 -> AX(second = 45))",
+    "category": "clock",
+    "source_line": 225
+  },
+  {
+    "name": "clock_minute_tick_44",
+    "formula": "AG((second = 59 & minute = 44) -> AX(minute = 45))",
+    "category": "clock",
+    "source_line": 226
+  },
+  {
+    "name": "clock_minute_hold_44",
+    "formula": "AG((second < 59 & minute = 44) -> AX(minute = 44))",
+    "category": "clock",
+    "source_line": 227
+  },
+  {
+    "name": "clock_second_45",
+    "formula": "AG(second = 45 -> AX(second = 46))",
+    "category": "clock",
+    "source_line": 228
+  },
+  {
+    "name": "clock_minute_tick_45",
+    "formula": "AG((second = 59 & minute = 45) -> AX(minute = 46))",
+    "category": "clock",
+    "source_line": 229
+  },
+  {
+    "name": "clock_minute_hold_45",
+    "formula": "AG((second < 59 & minute = 45) -> AX(minute = 45))",
+    "category": "clock",
+    "source_line": 230
+  },
+  {
+    "name": "clock_second_46",
+    "formula": "AG(second = 46 -> AX(second = 47))",
+    "category": "clock",
+    "source_line": 231
+  },
+  {
+    "name": "clock_minute_tick_46",
+    "formula": "AG((second = 59 & minute = 46) -> AX(minute = 47))",
+    "category": "clock",
+    "source_line": 232
+  },
+  {
+    "name": "clock_minute_hold_46",
+    "formula": "AG((second < 59 & minute = 46) -> AX(minute = 46))",
+    "category": "clock",
+    "source_line": 233
+  },
+  {
+    "name": "clock_second_47",
+    "formula": "AG(second = 47 -> AX(second = 48))",
+    "category": "clock",
+    "source_line": 234
+  },
+  {
+    "name": "clock_minute_tick_47",
+    "formula": "AG((second = 59 & minute = 47) -> AX(minute = 48))",
+    "category": "clock",
+    "source_line": 235
+  },
+  {
+    "name": "clock_minute_hold_47",
+    "formula": "AG((second < 59 & minute = 47) -> AX(minute = 47))",
+    "category": "clock",
+    "source_line": 236
+  },
+  {
+    "name": "clock_second_48",
+    "formula": "AG(second = 48 -> AX(second = 49))",
+    "category": "clock",
+    "source_line": 237
+  },
+  {
+    "name": "clock_minute_tick_48",
+    "formula": "AG((second = 59 & minute = 48) -> AX(minute = 49))",
+    "category": "clock",
+    "source_line": 238
+  },
+  {
+    "name": "clock_minute_hold_48",
+    "formula": "AG((second < 59 & minute = 48) -> AX(minute = 48))",
+    "category": "clock",
+    "source_line": 239
+  },
+  {
+    "name": "clock_second_49",
+    "formula": "AG(second = 49 -> AX(second = 50))",
+    "category": "clock",
+    "source_line": 240
+  },
+  {
+    "name": "clock_minute_tick_49",
+    "formula": "AG((second = 59 & minute = 49) -> AX(minute = 50))",
+    "category": "clock",
+    "source_line": 241
+  },
+  {
+    "name": "clock_minute_hold_49",
+    "formula": "AG((second < 59 & minute = 49) -> AX(minute = 49))",
+    "category": "clock",
+    "source_line": 242
+  },
+  {
+    "name": "clock_second_50",
+    "formula": "AG(second = 50 -> AX(second = 51))",
+    "category": "clock",
+    "source_line": 243
+  },
+  {
+    "name": "clock_minute_tick_50",
+    "formula": "AG((second = 59 & minute = 50) -> AX(minute = 51))",
+    "category": "clock",
+    "source_line": 244
+  },
+  {
+    "name": "clock_minute_hold_50",
+    "formula": "AG((second < 59 & minute = 50) -> AX(minute = 50))",
+    "category": "clock",
+    "source_line": 245
+  },
+  {
+    "name": "clock_second_51",
+    "formula": "AG(second = 51 -> AX(second = 52))",
+    "category": "clock",
+    "source_line": 246
+  },
+  {
+    "name": "clock_minute_tick_51",
+    "formula": "AG((second = 59 & minute = 51) -> AX(minute = 52))",
+    "category": "clock",
+    "source_line": 247
+  },
+  {
+    "name": "clock_minute_hold_51",
+    "formula": "AG((second < 59 & minute = 51) -> AX(minute = 51))",
+    "category": "clock",
+    "source_line": 248
+  },
+  {
+    "name": "clock_second_52",
+    "formula": "AG(second = 52 -> AX(second = 53))",
+    "category": "clock",
+    "source_line": 249
+  },
+  {
+    "name": "clock_minute_tick_52",
+    "formula": "AG((second = 59 & minute = 52) -> AX(minute = 53))",
+    "category": "clock",
+    "source_line": 250
+  },
+  {
+    "name": "clock_minute_hold_52",
+    "formula": "AG((second < 59 & minute = 52) -> AX(minute = 52))",
+    "category": "clock",
+    "source_line": 251
+  },
+  {
+    "name": "clock_second_53",
+    "formula": "AG(second = 53 -> AX(second = 54))",
+    "category": "clock",
+    "source_line": 252
+  },
+  {
+    "name": "clock_minute_tick_53",
+    "formula": "AG((second = 59 & minute = 53) -> AX(minute = 54))",
+    "category": "clock",
+    "source_line": 253
+  },
+  {
+    "name": "clock_minute_hold_53",
+    "formula": "AG((second < 59 & minute = 53) -> AX(minute = 53))",
+    "category": "clock",
+    "source_line": 254
+  },
+  {
+    "name": "clock_second_54",
+    "formula": "AG(second = 54 -> AX(second = 55))",
+    "category": "clock",
+    "source_line": 255
+  },
+  {
+    "name": "clock_minute_tick_54",
+    "formula": "AG((second = 59 & minute = 54) -> AX(minute = 55))",
+    "category": "clock",
+    "source_line": 256
+  },
+  {
+    "name": "clock_minute_hold_54",
+    "formula": "AG((second < 59 & minute = 54) -> AX(minute = 54))",
+    "category": "clock",
+    "source_line": 257
+  },
+  {
+    "name": "clock_second_55",
+    "formula": "AG(second = 55 -> AX(second = 56))",
+    "category": "clock",
+    "source_line": 258
+  },
+  {
+    "name": "clock_minute_tick_55",
+    "formula": "AG((second = 59 & minute = 55) -> AX(minute = 56))",
+    "category": "clock",
+    "source_line": 259
+  },
+  {
+    "name": "clock_minute_hold_55",
+    "formula": "AG((second < 59 & minute = 55) -> AX(minute = 55))",
+    "category": "clock",
+    "source_line": 260
+  },
+  {
+    "name": "clock_second_56",
+    "formula": "AG(second = 56 -> AX(second = 57))",
+    "category": "clock",
+    "source_line": 261
+  },
+  {
+    "name": "clock_minute_tick_56",
+    "formula": "AG((second = 59 & minute = 56) -> AX(minute = 57))",
+    "category": "clock",
+    "source_line": 262
+  },
+  {
+    "name": "clock_minute_hold_56",
+    "formula": "AG((second < 59 & minute = 56) -> AX(minute = 56))",
+    "category": "clock",
+    "source_line": 263
+  },
+  {
+    "name": "clock_second_57",
+    "formula": "AG(second = 57 -> AX(second = 58))",
+    "category": "clock",
+    "source_line": 264
+  },
+  {
+    "name": "clock_minute_tick_57",
+    "formula": "AG((second = 59 & minute = 57) -> AX(minute = 58))",
+    "category": "clock",
+    "source_line": 265
+  },
+  {
+    "name": "clock_minute_hold_57",
+    "formula": "AG((second < 59 & minute = 57) -> AX(minute = 57))",
+    "category": "clock",
+    "source_line": 266
+  },
+  {
+    "name": "clock_second_58",
+    "formula": "AG(second = 58 -> AX(second = 59))",
+    "category": "clock",
+    "source_line": 267
+  },
+  {
+    "name": "clock_minute_tick_58",
+    "formula": "AG((second = 59 & minute = 58) -> AX(minute = 59))",
+    "category": "clock",
+    "source_line": 268
+  },
+  {
+    "name": "clock_minute_hold_58",
+    "formula": "AG((second < 59 & minute = 58) -> AX(minute = 58))",
+    "category": "clock",
+    "source_line": 269
+  },
+  {
+    "name": "clock_second_59",
+    "formula": "AG(second = 59 -> AX(second = 0))",
+    "category": "clock",
+    "source_line": 270
+  },
+  {
+    "name": "clock_minute_tick_59",
+    "formula": "AG((second = 59 & minute = 59) -> AX(minute = 0))",
+    "category": "clock",
+    "source_line": 271
+  },
+  {
+    "name": "clock_minute_hold_59",
+    "formula": "AG((second < 59 & minute = 59) -> AX(minute = 59))",
+    "category": "clock",
+    "source_line": 272
+  },
+  {
+    "name": "clock_hour_tick_0",
+    "formula": "AG((second = 59 & minute = 59 & hour = 0) -> AX(hour = 1))",
+    "category": "clock",
+    "source_line": 273
+  },
+  {
+    "name": "clock_hour_hold_0",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 0) -> AX(hour = 0))",
+    "category": "clock",
+    "source_line": 274
+  },
+  {
+    "name": "clock_hour_tick_1",
+    "formula": "AG((second = 59 & minute = 59 & hour = 1) -> AX(hour = 2))",
+    "category": "clock",
+    "source_line": 275
+  },
+  {
+    "name": "clock_hour_hold_1",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 1) -> AX(hour = 1))",
+    "category": "clock",
+    "source_line": 276
+  },
+  {
+    "name": "clock_hour_tick_2",
+    "formula": "AG((second = 59 & minute = 59 & hour = 2) -> AX(hour = 3))",
+    "category": "clock",
+    "source_line": 277
+  },
+  {
+    "name": "clock_hour_hold_2",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 2) -> AX(hour = 2))",
+    "category": "clock",
+    "source_line": 278
+  },
+  {
+    "name": "clock_hour_tick_3",
+    "formula": "AG((second = 59 & minute = 59 & hour = 3) -> AX(hour = 4))",
+    "category": "clock",
+    "source_line": 279
+  },
+  {
+    "name": "clock_hour_hold_3",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 3) -> AX(hour = 3))",
+    "category": "clock",
+    "source_line": 280
+  },
+  {
+    "name": "clock_hour_tick_4",
+    "formula": "AG((second = 59 & minute = 59 & hour = 4) -> AX(hour = 5))",
+    "category": "clock",
+    "source_line": 281
+  },
+  {
+    "name": "clock_hour_hold_4",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 4) -> AX(hour = 4))",
+    "category": "clock",
+    "source_line": 282
+  },
+  {
+    "name": "clock_hour_tick_5",
+    "formula": "AG((second = 59 & minute = 59 & hour = 5) -> AX(hour = 6))",
+    "category": "clock",
+    "source_line": 283
+  },
+  {
+    "name": "clock_hour_hold_5",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 5) -> AX(hour = 5))",
+    "category": "clock",
+    "source_line": 284
+  },
+  {
+    "name": "clock_hour_tick_6",
+    "formula": "AG((second = 59 & minute = 59 & hour = 6) -> AX(hour = 7))",
+    "category": "clock",
+    "source_line": 285
+  },
+  {
+    "name": "clock_hour_hold_6",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 6) -> AX(hour = 6))",
+    "category": "clock",
+    "source_line": 286
+  },
+  {
+    "name": "clock_hour_tick_7",
+    "formula": "AG((second = 59 & minute = 59 & hour = 7) -> AX(hour = 8))",
+    "category": "clock",
+    "source_line": 287
+  },
+  {
+    "name": "clock_hour_hold_7",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 7) -> AX(hour = 7))",
+    "category": "clock",
+    "source_line": 288
+  },
+  {
+    "name": "clock_hour_tick_8",
+    "formula": "AG((second = 59 & minute = 59 & hour = 8) -> AX(hour = 9))",
+    "category": "clock",
+    "source_line": 289
+  },
+  {
+    "name": "clock_hour_hold_8",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 8) -> AX(hour = 8))",
+    "category": "clock",
+    "source_line": 290
+  },
+  {
+    "name": "clock_hour_tick_9",
+    "formula": "AG((second = 59 & minute = 59 & hour = 9) -> AX(hour = 10))",
+    "category": "clock",
+    "source_line": 291
+  },
+  {
+    "name": "clock_hour_hold_9",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 9) -> AX(hour = 9))",
+    "category": "clock",
+    "source_line": 292
+  },
+  {
+    "name": "clock_hour_tick_10",
+    "formula": "AG((second = 59 & minute = 59 & hour = 10) -> AX(hour = 11))",
+    "category": "clock",
+    "source_line": 293
+  },
+  {
+    "name": "clock_hour_hold_10",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 10) -> AX(hour = 10))",
+    "category": "clock",
+    "source_line": 294
+  },
+  {
+    "name": "clock_hour_tick_11",
+    "formula": "AG((second = 59 & minute = 59 & hour = 11) -> AX(hour = 12))",
+    "category": "clock",
+    "source_line": 295
+  },
+  {
+    "name": "clock_hour_hold_11",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 11) -> AX(hour = 11))",
+    "category": "clock",
+    "source_line": 296
+  },
+  {
+    "name": "clock_hour_tick_12",
+    "formula": "AG((second = 59 & minute = 59 & hour = 12) -> AX(hour = 13))",
+    "category": "clock",
+    "source_line": 297
+  },
+  {
+    "name": "clock_hour_hold_12",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 12) -> AX(hour = 12))",
+    "category": "clock",
+    "source_line": 298
+  },
+  {
+    "name": "clock_hour_tick_13",
+    "formula": "AG((second = 59 & minute = 59 & hour = 13) -> AX(hour = 14))",
+    "category": "clock",
+    "source_line": 299
+  },
+  {
+    "name": "clock_hour_hold_13",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 13) -> AX(hour = 13))",
+    "category": "clock",
+    "source_line": 300
+  },
+  {
+    "name": "clock_hour_tick_14",
+    "formula": "AG((second = 59 & minute = 59 & hour = 14) -> AX(hour = 15))",
+    "category": "clock",
+    "source_line": 301
+  },
+  {
+    "name": "clock_hour_hold_14",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 14) -> AX(hour = 14))",
+    "category": "clock",
+    "source_line": 302
+  },
+  {
+    "name": "clock_hour_tick_15",
+    "formula": "AG((second = 59 & minute = 59 & hour = 15) -> AX(hour = 16))",
+    "category": "clock",
+    "source_line": 303
+  },
+  {
+    "name": "clock_hour_hold_15",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 15) -> AX(hour = 15))",
+    "category": "clock",
+    "source_line": 304
+  },
+  {
+    "name": "clock_hour_tick_16",
+    "formula": "AG((second = 59 & minute = 59 & hour = 16) -> AX(hour = 17))",
+    "category": "clock",
+    "source_line": 305
+  },
+  {
+    "name": "clock_hour_hold_16",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 16) -> AX(hour = 16))",
+    "category": "clock",
+    "source_line": 306
+  },
+  {
+    "name": "clock_hour_tick_17",
+    "formula": "AG((second = 59 & minute = 59 & hour = 17) -> AX(hour = 18))",
+    "category": "clock",
+    "source_line": 307
+  },
+  {
+    "name": "clock_hour_hold_17",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 17) -> AX(hour = 17))",
+    "category": "clock",
+    "source_line": 308
+  },
+  {
+    "name": "clock_hour_tick_18",
+    "formula": "AG((second = 59 & minute = 59 & hour = 18) -> AX(hour = 19))",
+    "category": "clock",
+    "source_line": 309
+  },
+  {
+    "name": "clock_hour_hold_18",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 18) -> AX(hour = 18))",
+    "category": "clock",
+    "source_line": 310
+  },
+  {
+    "name": "clock_hour_tick_19",
+    "formula": "AG((second = 59 & minute = 59 & hour = 19) -> AX(hour = 20))",
+    "category": "clock",
+    "source_line": 311
+  },
+  {
+    "name": "clock_hour_hold_19",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 19) -> AX(hour = 19))",
+    "category": "clock",
+    "source_line": 312
+  },
+  {
+    "name": "clock_hour_tick_20",
+    "formula": "AG((second = 59 & minute = 59 & hour = 20) -> AX(hour = 21))",
+    "category": "clock",
+    "source_line": 313
+  },
+  {
+    "name": "clock_hour_hold_20",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 20) -> AX(hour = 20))",
+    "category": "clock",
+    "source_line": 314
+  },
+  {
+    "name": "clock_hour_tick_21",
+    "formula": "AG((second = 59 & minute = 59 & hour = 21) -> AX(hour = 22))",
+    "category": "clock",
+    "source_line": 315
+  },
+  {
+    "name": "clock_hour_hold_21",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 21) -> AX(hour = 21))",
+    "category": "clock",
+    "source_line": 316
+  },
+  {
+    "name": "clock_hour_tick_22",
+    "formula": "AG((second = 59 & minute = 59 & hour = 22) -> AX(hour = 23))",
+    "category": "clock",
+    "source_line": 317
+  },
+  {
+    "name": "clock_hour_hold_22",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 22) -> AX(hour = 22))",
+    "category": "clock",
+    "source_line": 318
+  },
+  {
+    "name": "clock_hour_tick_23",
+    "formula": "AG((second = 59 & minute = 59 & hour = 23) -> AX(hour = 0))",
+    "category": "clock",
+    "source_line": 319
+  },
+  {
+    "name": "clock_hour_hold_23",
+    "formula": "AG(((second < 59 | minute < 59) & hour = 23) -> AX(hour = 23))",
+    "category": "clock",
+    "source_line": 320
+  },
+  {
+    "name": "countdown_2",
+    "formula": "AG(timer = 2 -> AX(timer = 1))",
+    "category": "timer",
+    "source_line": 321
+  },
+  {
+    "name": "countdown_3",
+    "formula": "AG(timer = 3 -> AX(timer = 2))",
+    "category": "timer",
+    "source_line": 322
+  },
+  {
+    "name": "countdown_4",
+    "formula": "AG(timer = 4 -> AX(timer = 3))",
+    "category": "timer",
+    "source_line": 323
+  },
+  {
+    "name": "countdown_5",
+    "formula": "AG(timer = 5 -> AX(timer = 4))",
+    "category": "timer",
+    "source_line": 324
+  },
+  {
+    "name": "countdown_6",
+    "formula": "AG(timer = 6 -> AX(timer = 5))",
+    "category": "timer",
+    "source_line": 325
+  },
+  {
+    "name": "countdown_7",
+    "formula": "AG(timer = 7 -> AX(timer = 6))",
+    "category": "timer",
+    "source_line": 326
+  },
+  {
+    "name": "countdown_8",
+    "formula": "AG(timer = 8 -> AX(timer = 7))",
+    "category": "timer",
+    "source_line": 327
+  },
+  {
+    "name": "countdown_9",
+    "formula": "AG(timer = 9 -> AX(timer = 8))",
+    "category": "timer",
+    "source_line": 328
+  },
+  {
+    "name": "countdown_10",
+    "formula": "AG(timer = 10 -> AX(timer = 9))",
+    "category": "timer",
+    "source_line": 329
+  },
+  {
+    "name": "countdown_11",
+    "formula": "AG(timer = 11 -> AX(timer = 10))",
+    "category": "timer",
+    "source_line": 330
+  },
+  {
+    "name": "countdown_12",
+    "formula": "AG(timer = 12 -> AX(timer = 11))",
+    "category": "timer",
+    "source_line": 331
+  },
+  {
+    "name": "countdown_13",
+    "formula": "AG(timer = 13 -> AX(timer = 12))",
+    "category": "timer",
+    "source_line": 332
+  },
+  {
+    "name": "countdown_14",
+    "formula": "AG(timer = 14 -> AX(timer = 13))",
+    "category": "timer",
+    "source_line": 333
+  },
+  {
+    "name": "countdown_15",
+    "formula": "AG(timer = 15 -> AX(timer = 14))",
+    "category": "timer",
+    "source_line": 334
+  },
+  {
+    "name": "countdown_16",
+    "formula": "AG(timer = 16 -> AX(timer = 15))",
+    "category": "timer",
+    "source_line": 335
+  },
+  {
+    "name": "countdown_17",
+    "formula": "AG(timer = 17 -> AX(timer = 16))",
+    "category": "timer",
+    "source_line": 336
+  },
+  {
+    "name": "countdown_18",
+    "formula": "AG(timer = 18 -> AX(timer = 17))",
+    "category": "timer",
+    "source_line": 337
+  },
+  {
+    "name": "countdown_19",
+    "formula": "AG(timer = 19 -> AX(timer = 18))",
+    "category": "timer",
+    "source_line": 338
+  },
+  {
+    "name": "countdown_20",
+    "formula": "AG(timer = 20 -> AX(timer = 19))",
+    "category": "timer",
+    "source_line": 339
+  },
+  {
+    "name": "countdown_21",
+    "formula": "AG(timer = 21 -> AX(timer = 20))",
+    "category": "timer",
+    "source_line": 340
+  },
+  {
+    "name": "countdown_22",
+    "formula": "AG(timer = 22 -> AX(timer = 21))",
+    "category": "timer",
+    "source_line": 341
+  },
+  {
+    "name": "countdown_23",
+    "formula": "AG(timer = 23 -> AX(timer = 22))",
+    "category": "timer",
+    "source_line": 342
+  },
+  {
+    "name": "countdown_24",
+    "formula": "AG(timer = 24 -> AX(timer = 23))",
+    "category": "timer",
+    "source_line": 343
+  },
+  {
+    "name": "countdown_25",
+    "formula": "AG(timer = 25 -> AX(timer = 24))",
+    "category": "timer",
+    "source_line": 344
+  },
+  {
+    "name": "countdown_26",
+    "formula": "AG(timer = 26 -> AX(timer = 25))",
+    "category": "timer",
+    "source_line": 345
+  },
+  {
+    "name": "countdown_27",
+    "formula": "AG(timer = 27 -> AX(timer = 26))",
+    "category": "timer",
+    "source_line": 346
+  },
+  {
+    "name": "countdown_28",
+    "formula": "AG(timer = 28 -> AX(timer = 27))",
+    "category": "timer",
+    "source_line": 347
+  },
+  {
+    "name": "countdown_29",
+    "formula": "AG(timer = 29 -> AX(timer = 28))",
+    "category": "timer",
+    "source_line": 348
+  },
+  {
+    "name": "countdown_30",
+    "formula": "AG(timer = 30 -> AX(timer = 29))",
+    "category": "timer",
+    "source_line": 349
+  },
+  {
+    "name": "countdown_31",
+    "formula": "AG(timer = 31 -> AX(timer = 30))",
+    "category": "timer",
+    "source_line": 350
+  },
+  {
+    "name": "countdown_32",
+    "formula": "AG(timer = 32 -> AX(timer = 31))",
+    "category": "timer",
+    "source_line": 351
+  },
+  {
+    "name": "countdown_33",
+    "formula": "AG(timer = 33 -> AX(timer = 32))",
+    "category": "timer",
+    "source_line": 352
+  },
+  {
+    "name": "countdown_34",
+    "formula": "AG(timer = 34 -> AX(timer = 33))",
+    "category": "timer",
+    "source_line": 353
+  },
+  {
+    "name": "countdown_35",
+    "formula": "AG(timer = 35 -> AX(timer = 34))",
+    "category": "timer",
+    "source_line": 354
+  },
+  {
+    "name": "countdown_36",
+    "formula": "AG(timer = 36 -> AX(timer = 35))",
+    "category": "timer",
+    "source_line": 355
+  },
+  {
+    "name": "countdown_37",
+    "formula": "AG(timer = 37 -> AX(timer = 36))",
+    "category": "timer",
+    "source_line": 356
+  },
+  {
+    "name": "countdown_38",
+    "formula": "AG(timer = 38 -> AX(timer = 37))",
+    "category": "timer",
+    "source_line": 357
+  },
+  {
+    "name": "countdown_39",
+    "formula": "AG(timer = 39 -> AX(timer = 38))",
+    "category": "timer",
+    "source_line": 358
+  },
+  {
+    "name": "countdown_40",
+    "formula": "AG(timer = 40 -> AX(timer = 39))",
+    "category": "timer",
+    "source_line": 359
+  },
+  {
+    "name": "countdown_41",
+    "formula": "AG(timer = 41 -> AX(timer = 40))",
+    "category": "timer",
+    "source_line": 360
+  },
+  {
+    "name": "countdown_42",
+    "formula": "AG(timer = 42 -> AX(timer = 41))",
+    "category": "timer",
+    "source_line": 361
+  },
+  {
+    "name": "countdown_43",
+    "formula": "AG(timer = 43 -> AX(timer = 42))",
+    "category": "timer",
+    "source_line": 362
+  },
+  {
+    "name": "countdown_44",
+    "formula": "AG(timer = 44 -> AX(timer = 43))",
+    "category": "timer",
+    "source_line": 363
+  },
+  {
+    "name": "countdown_45",
+    "formula": "AG(timer = 45 -> AX(timer = 44))",
+    "category": "timer",
+    "source_line": 364
+  },
+  {
+    "name": "hold_NS_GREEN",
+    "formula": "AG((phase = NS_GREEN & timer > 1) -> AX(phase = NS_GREEN))",
+    "category": "transition",
+    "source_line": 365
+  },
+  {
+    "name": "advance_NS_GREEN",
+    "formula": "AG((phase = NS_GREEN & timer = 1) -> AX(phase = NS_YELLOW))",
+    "category": "transition",
+    "source_line": 366
+  },
+  {
+    "name": "reachable_NS_GREEN",
+    "formula": "EF(phase = NS_GREEN)",
+    "category": "reachability",
+    "source_line": 367
+  },
+  {
+    "name": "reset_NS_GREEN_MORNING_PEAK",
+    "formula": "AG((phase = NS_GREEN & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = NS_YELLOW & timer = 3 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 368
+  },
+  {
+    "name": "reset_NS_GREEN_NORMAL",
+    "formula": "AG((phase = NS_GREEN & timer = 1 & period_next = NORMAL) -> AX(phase = NS_YELLOW & timer = 3 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 369
+  },
+  {
+    "name": "reset_NS_GREEN_EVENING_PEAK",
+    "formula": "AG((phase = NS_GREEN & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = NS_YELLOW & timer = 3 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 370
+  },
+  {
+    "name": "reset_NS_GREEN_NIGHT_LOW",
+    "formula": "AG((phase = NS_GREEN & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = NS_YELLOW & timer = 3 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 371
+  },
+  {
+    "name": "hold_NS_YELLOW",
+    "formula": "AG((phase = NS_YELLOW & timer > 1) -> AX(phase = NS_YELLOW))",
+    "category": "transition",
+    "source_line": 372
+  },
+  {
+    "name": "advance_NS_YELLOW",
+    "formula": "AG((phase = NS_YELLOW & timer = 1) -> AX(phase = ALL_RED_NS_TO_EW))",
+    "category": "transition",
+    "source_line": 373
+  },
+  {
+    "name": "reachable_NS_YELLOW",
+    "formula": "EF(phase = NS_YELLOW)",
+    "category": "reachability",
+    "source_line": 374
+  },
+  {
+    "name": "reset_NS_YELLOW_MORNING_PEAK",
+    "formula": "AG((phase = NS_YELLOW & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = ALL_RED_NS_TO_EW & timer = 2 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 375
+  },
+  {
+    "name": "reset_NS_YELLOW_NORMAL",
+    "formula": "AG((phase = NS_YELLOW & timer = 1 & period_next = NORMAL) -> AX(phase = ALL_RED_NS_TO_EW & timer = 2 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 376
+  },
+  {
+    "name": "reset_NS_YELLOW_EVENING_PEAK",
+    "formula": "AG((phase = NS_YELLOW & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = ALL_RED_NS_TO_EW & timer = 2 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 377
+  },
+  {
+    "name": "reset_NS_YELLOW_NIGHT_LOW",
+    "formula": "AG((phase = NS_YELLOW & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = ALL_RED_NS_TO_EW & timer = 2 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 378
+  },
+  {
+    "name": "hold_ALL_RED_NS_TO_EW",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer > 1) -> AX(phase = ALL_RED_NS_TO_EW))",
+    "category": "transition",
+    "source_line": 379
+  },
+  {
+    "name": "advance_ALL_RED_NS_TO_EW",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer = 1) -> AX(phase = EW_GREEN))",
+    "category": "transition",
+    "source_line": 380
+  },
+  {
+    "name": "reachable_ALL_RED_NS_TO_EW",
+    "formula": "EF(phase = ALL_RED_NS_TO_EW)",
+    "category": "reachability",
+    "source_line": 381
+  },
+  {
+    "name": "reset_ALL_RED_NS_TO_EW_MORNING_PEAK",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = EW_GREEN & timer = 35 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 382
+  },
+  {
+    "name": "reset_ALL_RED_NS_TO_EW_NORMAL",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer = 1 & period_next = NORMAL) -> AX(phase = EW_GREEN & timer = 25 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 383
+  },
+  {
+    "name": "reset_ALL_RED_NS_TO_EW_EVENING_PEAK",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = EW_GREEN & timer = 45 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 384
+  },
+  {
+    "name": "reset_ALL_RED_NS_TO_EW_NIGHT_LOW",
+    "formula": "AG((phase = ALL_RED_NS_TO_EW & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = EW_GREEN & timer = 15 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 385
+  },
+  {
+    "name": "hold_EW_GREEN",
+    "formula": "AG((phase = EW_GREEN & timer > 1) -> AX(phase = EW_GREEN))",
+    "category": "transition",
+    "source_line": 386
+  },
+  {
+    "name": "advance_EW_GREEN",
+    "formula": "AG((phase = EW_GREEN & timer = 1) -> AX(phase = EW_YELLOW))",
+    "category": "transition",
+    "source_line": 387
+  },
+  {
+    "name": "reachable_EW_GREEN",
+    "formula": "EF(phase = EW_GREEN)",
+    "category": "reachability",
+    "source_line": 388
+  },
+  {
+    "name": "reset_EW_GREEN_MORNING_PEAK",
+    "formula": "AG((phase = EW_GREEN & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = EW_YELLOW & timer = 3 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 389
+  },
+  {
+    "name": "reset_EW_GREEN_NORMAL",
+    "formula": "AG((phase = EW_GREEN & timer = 1 & period_next = NORMAL) -> AX(phase = EW_YELLOW & timer = 3 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 390
+  },
+  {
+    "name": "reset_EW_GREEN_EVENING_PEAK",
+    "formula": "AG((phase = EW_GREEN & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = EW_YELLOW & timer = 3 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 391
+  },
+  {
+    "name": "reset_EW_GREEN_NIGHT_LOW",
+    "formula": "AG((phase = EW_GREEN & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = EW_YELLOW & timer = 3 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 392
+  },
+  {
+    "name": "hold_EW_YELLOW",
+    "formula": "AG((phase = EW_YELLOW & timer > 1) -> AX(phase = EW_YELLOW))",
+    "category": "transition",
+    "source_line": 393
+  },
+  {
+    "name": "advance_EW_YELLOW",
+    "formula": "AG((phase = EW_YELLOW & timer = 1) -> AX(phase = ALL_RED_EW_TO_NS))",
+    "category": "transition",
+    "source_line": 394
+  },
+  {
+    "name": "reachable_EW_YELLOW",
+    "formula": "EF(phase = EW_YELLOW)",
+    "category": "reachability",
+    "source_line": 395
+  },
+  {
+    "name": "reset_EW_YELLOW_MORNING_PEAK",
+    "formula": "AG((phase = EW_YELLOW & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = ALL_RED_EW_TO_NS & timer = 2 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 396
+  },
+  {
+    "name": "reset_EW_YELLOW_NORMAL",
+    "formula": "AG((phase = EW_YELLOW & timer = 1 & period_next = NORMAL) -> AX(phase = ALL_RED_EW_TO_NS & timer = 2 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 397
+  },
+  {
+    "name": "reset_EW_YELLOW_EVENING_PEAK",
+    "formula": "AG((phase = EW_YELLOW & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = ALL_RED_EW_TO_NS & timer = 2 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 398
+  },
+  {
+    "name": "reset_EW_YELLOW_NIGHT_LOW",
+    "formula": "AG((phase = EW_YELLOW & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = ALL_RED_EW_TO_NS & timer = 2 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 399
+  },
+  {
+    "name": "hold_ALL_RED_EW_TO_NS",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer > 1) -> AX(phase = ALL_RED_EW_TO_NS))",
+    "category": "transition",
+    "source_line": 400
+  },
+  {
+    "name": "advance_ALL_RED_EW_TO_NS",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer = 1) -> AX(phase = NS_GREEN))",
+    "category": "transition",
+    "source_line": 401
+  },
+  {
+    "name": "reachable_ALL_RED_EW_TO_NS",
+    "formula": "EF(phase = ALL_RED_EW_TO_NS)",
+    "category": "reachability",
+    "source_line": 402
+  },
+  {
+    "name": "reset_ALL_RED_EW_TO_NS_MORNING_PEAK",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer = 1 & period_next = MORNING_PEAK) -> AX(phase = NS_GREEN & timer = 45 & entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 403
+  },
+  {
+    "name": "reset_ALL_RED_EW_TO_NS_NORMAL",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer = 1 & period_next = NORMAL) -> AX(phase = NS_GREEN & timer = 25 & entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 404
+  },
+  {
+    "name": "reset_ALL_RED_EW_TO_NS_EVENING_PEAK",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer = 1 & period_next = EVENING_PEAK) -> AX(phase = NS_GREEN & timer = 35 & entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 405
+  },
+  {
+    "name": "reset_ALL_RED_EW_TO_NS_NIGHT_LOW",
+    "formula": "AG((phase = ALL_RED_EW_TO_NS & timer = 1 & period_next = NIGHT_LOW) -> AX(phase = NS_GREEN & timer = 15 & entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 406
+  },
+  {
+    "name": "latch_MORNING_PEAK",
+    "formula": "AG((entry_period = MORNING_PEAK & timer > 1) -> AX(entry_period = MORNING_PEAK))",
+    "category": "adaptive",
+    "source_line": 407
+  },
+  {
+    "name": "latch_NORMAL",
+    "formula": "AG((entry_period = NORMAL & timer > 1) -> AX(entry_period = NORMAL))",
+    "category": "adaptive",
+    "source_line": 408
+  },
+  {
+    "name": "latch_EVENING_PEAK",
+    "formula": "AG((entry_period = EVENING_PEAK & timer > 1) -> AX(entry_period = EVENING_PEAK))",
+    "category": "adaptive",
+    "source_line": 409
+  },
+  {
+    "name": "latch_NIGHT_LOW",
+    "formula": "AG((entry_period = NIGHT_LOW & timer > 1) -> AX(entry_period = NIGHT_LOW))",
+    "category": "adaptive",
+    "source_line": 410
+  }
+]

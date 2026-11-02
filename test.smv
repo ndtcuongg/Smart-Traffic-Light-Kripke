@@ -1,0 +1,23 @@
+MODULE main
+
+VAR
+    state : {logged_out, logged_in};
+
+ASSIGN
+
+init(state) := logged_out;
+
+next(state) :=
+case
+
+    state = logged_out :
+        logged_in;
+
+    state = logged_in :
+        logged_out;
+
+esac;
+
+
+SPEC
+AG !(state = logged_in & state = logged_out)

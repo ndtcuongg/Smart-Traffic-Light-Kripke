@@ -1,0 +1,31 @@
+{
+  "report_layout_units": 20,
+  "report_top_level_sections": [
+    "Trang bìa & Thông tin nhóm",
+    "Tổng quan đề tài",
+    "Phương pháp luận",
+    "Phân tích lỗ hổng & Bản vá",
+    "Bảng tổng hợp before/after",
+    "Bằng chứng kiểm chứng",
+    "Phản biện & Bài học",
+    "Phụ lục"
+  ],
+  "test_record_rows": 838,
+  "test_record_categories": {
+    "fresh NuSMV": 335,
+    "fresh Python JSON": 26,
+    "fresh supplemental v0": 16,
+    "fresh negative v1": 3,
+    "fresh exhaustive graph": 2,
+    "fresh full-state count": 1,
+    "archived graph test": 71,
+    "archived NuSMV": 339,
+    "archived browser": 32,
+    "archived backend": 13
+  },
+  "all_preexisting_inventory_files_unchanged": true,
+  "phase1_before_phase2": true,
+  "docx_body_font": "Times New Roman 11.5pt",
+  "margins_cm": 2,
+  "pdf_rendering": "Same structured content as DOCX; Edge print HTML; pagination may differ"
+}

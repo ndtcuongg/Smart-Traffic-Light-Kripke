@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Mô phỏng giao lộ bốn hướng và kiểm chứng hình thức Chương 1 bằng cấu trúc Kripke."><title>Giao Lộ — Phòng kiểm chứng Chương 1</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script></head>
+<body>
+<aside class="sidebar" id="sidebar">
+ <a class="brand" href="#mo-phong" aria-label="Giao Lộ, trang mô phỏng"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>Giao Lộ<small>PHÒNG KIỂM CHỨNG</small></span></a>
+ <div class="nav-caption">KHÔNG GIAN CHƯƠNG 1</div>
+ <nav aria-label="Điều hướng chính">
+ <a href="#mo-phong" data-view="simulation" class="nav-link active"><span class="nav-icon">↔</span>Mô phỏng ngã tư<span class="nav-number">01</span></a>
+ <a href="#kripke" data-view="kripke" class="nav-link"><span class="nav-icon">⌘</span>Mô hình Kripke<span class="nav-number">02</span></a>
+ <a href="#kiem-chung" data-view="verification" class="nav-link"><span class="nav-icon">✓</span>Kiểm chứng hình thức<span class="nav-number">03</span></a>
+ <a href="#cau-hinh" data-view="configuration" class="nav-link"><span class="nav-icon">◷</span>Cấu hình thời gian<span class="nav-number">04</span></a>
+ <a href="#so-sanh" data-view="comparison" class="nav-link"><span class="nav-icon">⇄</span>So sánh Before/After<span class="nav-number">05</span></a>
+ <a href="#bang-chung" data-view="evidence" class="nav-link"><span class="nav-icon">▤</span>Bằng chứng và kết quả<span class="nav-number">06</span></a>
+ </nav>
+ <div class="sidebar-foot"><div class="scope-tag"><span class="status-dot"></span>Chỉ Chương 1</div><p>Một mô hình.<br>Mọi trạng thái đều có căn cứ.</p><button class="source-link" data-artifact="chapter1/smart_intersection.smv">Xem mô hình NuSMV <span>↗</span></button><small>Kripke · CTL · Giao lộ bốn hướng</small></div>
+</aside>
+<div class="app-shell">
+ <header class="topbar"><button class="icon-button menu-toggle" id="menu-toggle" aria-label="Mở điều hướng">☰</button><div class="breadcrumb">ĐỒ ÁN KIỂM CHỨNG <span>/</span> <strong id="breadcrumb-current">Mô phỏng ngã tư</strong></div><div class="topbar-right"><span class="local-badge"><span class="status-dot"></span>Chạy cục bộ</span><span class="version-badge">MÔ HÌNH v1</span></div></header>
+ <main id="main">
+ <div id="loading" class="loading-panel">Đang đọc mô hình và bằng chứng nguồn…</div>
+ <div id="error-banner" class="notice error hidden" role="alert"></div>
+ <section class="view active" id="view-simulation" aria-labelledby="simulation-heading">
+  <div class="page-heading"><div><div class="eyebrow">TỪ MÔ HÌNH ĐẾN CHUYỂN ĐỘNG</div><h1 id="simulation-heading">Một ngã tư. Bốn hướng an toàn.</h1><p>Mô phỏng từng giây từ logic Python đã được đối chiếu với NuSMV.</p></div><span class="pill neutral" id="source-integrity">Đang đối chiếu nguồn</span></div>
+  <div class="stat-grid">
+   <article class="stat-card"><span class="stat-label">ĐỒNG HỒ MÔ PHỎNG</span><strong id="clock-display" class="clock-display">—</strong><span id="period-display" class="stat-foot">Đang đọc cấu hình</span></article>
+   <article class="stat-card"><span class="stat-label">THỜI GIAN CÒN LẠI CỦA PHA</span><strong><span id="timer-display">—</span><small> giây</small></strong><span id="latch-display" class="stat-foot">Khung giờ được chốt lúc vào pha</span></article>
+   <article class="stat-card"><span class="stat-label">CTL NUSMV ĐÃ LƯU</span><strong id="recorded-ctl-stat">—</strong><span class="stat-foot"><span class="tiny-dot"></span>Bản ghi kiểm chứng, không phải lượt mới</span></article>
+   <article class="stat-card"><span class="stat-label">TRẠNG THÁI ĐẠT ĐƯỢC</span><strong id="reachable-stat">—</strong><span class="stat-foot">Đếm BDD · quỹ đạo mặc định 24 giờ</span></article>
+  </div>
+  <div class="simulation-grid">
+   <article class="panel intersection-panel">
+    <div class="panel-heading"><div><h2>Giao lộ trực quan</h2><p><span class="status-dot"></span><span id="simulation-status">Chưa bắt đầu</span> <span class="dot-separator">·</span> 1 bước = 1 giây mô hình</p></div><span class="pill safe" id="safety-badge">Đang đọc trạng thái</span></div>
+    <div class="road-scene" id="road-scene" data-running="false">
+    <svg id="road-svg" viewBox="0 0 720 550" role="img" aria-label="Ngã tư với 12 đèn đỏ vàng xanh của Bắc Nam Đông Tây">
+     <defs><pattern id="paving" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#e5eaf0" stroke-width="1"/></pattern><filter id="pole-shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".12"/></filter></defs>
+     <rect width="720" height="550" fill="#edf2f6"/><rect width="720" height="550" fill="url(#paving)"/>
+     <rect x="24" y="24" width="201" height="130" rx="16" fill="#dfece4"/><rect x="494" y="25" width="202" height="129" rx="16" fill="#e2e9f3"/>
+     <rect x="24" y="398" width="177" height="128" rx="16" fill="#e2e9f3"/><rect x="494" y="398" width="202" height="128" rx="16" fill="#dfece4"/>
+     <path d="M50 128h142M51 111h89M523 49h145M523 66h100M50 427h121M50 445h78M522 504h141M522 487h90" stroke="#b8c7cf" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+     <circle cx="63" cy="62" r="18" fill="#aecdb7"/><circle cx="98" cy="69" r="13" fill="#b8d5bf"/><circle cx="647" cy="441" r="19" fill="#aecdb7"/>
+     <path d="M249 0h222v550H249z" fill="#344252"/><path d="M0 164h720v222H0z" fill="#344252"/>
+     <path d="M255 0v155M465 0v155M255 394v156M465 394v156M0 170h239M481 170h239M0 380h239M481 380h239" stroke="#647384" stroke-width="3"/>
+     <path d="M360 0v155M360 398v152M0 275h239M481 275h239" stroke="#d1d8de" stroke-width="2" stroke-dasharray="12 13"/>
+     <path d="M255 151h93M372 398h93M235 286v94M484 170v94" stroke="#fff" stroke-width="6"/>
+     <path d="M306 57v45m-8-9 8 9 8-9M414 494v-45m-8 9 8-9 8 9M59 329h45m-9-8 9 8-9 8M657 221h-45m9-8-9 8 9 8" stroke="#a9b5c2" stroke-width="3" fill="none" stroke-linecap="round"/>
+     <rect x="262" y="177" width="196" height="196" rx="14" fill="none" stroke="#718093" stroke-dasharray="4 8" opacity=".35"/>
+     <text x="360" y="269" text-anchor="middle" class="road-center">VÙNG GIAO CẮT</text><text x="360" y="290" text-anchor="middle" class="road-center small">hai luồng loại trừ lẫn nhau</text>
+     <g class="car" data-flow="n"><rect x="299" y="109" width="20" height="36" rx="6" fill="#73c4d2"/><rect x="303" y="118" width="12" height="10" rx="2" fill="#bce2eb"/></g>
+     <g class="car" data-flow="s"><rect x="399" y="407" width="20" height="36" rx="6" fill="#b6c1d8"/><rect x="403" y="416" width="12" height="10" rx="2" fill="#e0e8f4"/></g>
+     <g class="car" data-flow="e"><rect x="491" y="211" width="36" height="20" rx="6" fill="#e8b77b"/><rect x="500" y="215" width="10" height="12" rx="2" fill="#f7debe"/></g>
+     <g class="car" data-flow="w"><rect x="193" y="319" width="36" height="20" rx="6" fill="#8ec6af"/><rect x="202" y="323" width="10" height="12" rx="2" fill="#cae8da"/></g>
+     <g filter="url(#pole-shadow)"><rect x="388" y="94" width="128" height="53" rx="13" fill="#182333"/><circle data-lamp="n_red" class="lamp red" cx="412" cy="120" r="12"/><circle data-lamp="n_yellow" class="lamp yellow" cx="452" cy="120" r="12"/><circle data-lamp="n_green" class="lamp green" cx="492" cy="120" r="12"/></g>
+     <text x="452" y="80" class="road-direction" text-anchor="middle">BẮC</text><text id="road-n-time" x="452" y="166" text-anchor="middle" class="road-timer">—</text>
+     <g filter="url(#pole-shadow)"><rect x="204" y="410" width="128" height="53" rx="13" fill="#182333"/><circle data-lamp="s_red" class="lamp red" cx="228" cy="436" r="12"/><circle data-lamp="s_yellow" class="lamp yellow" cx="268" cy="436" r="12"/><circle data-lamp="s_green" class="lamp green" cx="308" cy="436" r="12"/></g>
+     <text x="268" y="490" class="road-direction" text-anchor="middle">NAM</text><text id="road-s-time" x="268" y="397" text-anchor="middle" class="road-timer">—</text>
+     <g filter="url(#pole-shadow)"><rect x="533" y="306" width="128" height="53" rx="13" fill="#182333"/><circle data-lamp="e_red" class="lamp red" cx="557" cy="332" r="12"/><circle data-lamp="e_yellow" class="lamp yellow" cx="597" cy="332" r="12"/><circle data-lamp="e_green" class="lamp green" cx="637" cy="332" r="12"/></g>
+     <text x="597" y="385" class="road-direction" text-anchor="middle">ĐÔNG</text><text id="road-e-time" x="597" y="292" text-anchor="middle" class="road-timer">—</text>
+     <g filter="url(#pole-shadow)"><rect x="59" y="196" width="128" height="53" rx="13" fill="#182333"/><circle data-lamp="w_red" class="lamp red" cx="83" cy="222" r="12"/><circle data-lamp="w_yellow" class="lamp yellow" cx="123" cy="222" r="12"/><circle data-lamp="w_green" class="lamp green" cx="163" cy="222" r="12"/></g>
+     <text x="123" y="181" class="road-direction" text-anchor="middle">TÂY</text><text id="road-w-time" x="123" y="276" text-anchor="middle" class="road-timer">—</text>
+    </svg>
+    <div class="scene-legend"><span><i class="legend-dot red"></i>Đỏ</span><span><i class="legend-dot yellow"></i>Vàng</span><span><i class="legend-dot green"></i>Xanh</span><small>Xe chỉ minh họa; không là biến hình thức.</small></div>
+    </div>
+    <div class="transport-bar"><div class="transport-buttons"><button id="start-btn" class="button primary">▶ Bắt đầu</button><button id="pause-btn" class="button" disabled>Ⅱ Tạm dừng</button><button id="resume-btn" class="button primary hidden">▶ Tiếp tục</button><button id="reset-btn" class="button icon-button" title="Đặt lại" aria-label="Đặt lại">↺</button><button id="step-btn" class="button">+1 giây</button></div><label class="speed-label" for="speed-select">Tốc độ <select id="speed-select"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option><option value="8">8×</option></select></label></div>
+   </article>
+   <div class="simulation-side">
+    <article class="panel phase-panel"><div class="eyebrow">PHA ĐANG HOẠT ĐỘNG</div><h2 id="current-phase">—</h2><code id="current-phase-code">—</code><div class="phase-progress"><i id="phase-progress"></i></div><div class="mini-pair"><span>Pha kế tiếp</span><strong id="next-phase">—</strong></div><div class="mini-pair"><span>Bước +1 giây</span><strong id="next-step-label">—</strong></div><div class="mini-pair"><span>Thời lượng đã chốt</span><strong id="duration-label">—</strong></div><div id="latch-note" class="latch-note">Khung giờ đầu pha được giữ đến khi timer hết.</div></article>
+    <article class="panel lamps-panel"><div class="panel-heading compact"><h2>12 đèn · trạng thái thật</h2><span class="small-muted">BẬT / TẮT</span></div><div id="lamp-list"></div><p class="fine-print">Bắc ↔ Nam đồng bộ<br>Đông ↔ Tây đồng bộ</p></article>
+   </div>
+  </div>
+  <article class="panel cycle-panel"><div class="panel-heading compact"><h2>Chu kỳ sáu pha an toàn</h2><span class="small-muted">Tổng quan · không thay thế đồ thị có timer</span></div><div id="phase-cycle" class="phase-cycle"></div></article>
+  <article class="panel boundary-panel"><div><h2>Đi qua một mốc đổi giờ</h2><p>Chuẩn bị 12 giây theo đúng mô hình trước mốc chọn, để quan sát pha xanh đang chạy.</p></div><div class="start-time-row"><label for="start-time">Thời điểm bắt đầu <input id="start-time" type="time" step="1" value="00:00:00"></label><button class="button" id="apply-time-btn">Áp dụng giờ</button></div><div id="boundary-buttons" class="boundary-buttons"></div><p class="fine-print">Chọn mốc rồi bấm +1 giây. Khung giờ có thể đổi; thời lượng pha đang chạy không bị nạp lại.</p></article>
+ </section>
+ <section class="view" id="view-kripke" aria-labelledby="kripke-heading" hidden>
+  <div class="page-heading"><div><div class="eyebrow">ĐỌC ĐƯỢC TỪNG TRẠNG THÁI</div><h1 id="kripke-heading">Cấu trúc Kripke</h1><p>K = (S, S₀, R, L) · xem lân cận, không vẽ toàn bộ 86.400 nút.</p></div><button class="button" id="inspect-current">Xem trạng thái mô phỏng ↗</button></div>
+  <div class="segmented kripke-explain-tabs" role="group" aria-label="Các cách nhìn Kripke"><button data-explain="combined" class="selected">Kết hợp</button><button data-explain="directions">Quan hệ hướng</button><button data-explain="timer">Theo timer</button><button data-explain="periods">Theo khung giờ</button></div>
+  <article class="panel explain-panel" id="kripke-explanation"></article>
+  <div class="kripke-toolbar"><div class="segmented" role="group" aria-label="Mô hình Kripke"><button data-model="abstract" class="selected">Chiếu theo khung giờ</button><button data-model="exact">Giữ đồng hồ 24 giờ</button></div><span class="small-muted" id="graph-mode-note"></span></div>
+  <div class="kripke-grid"><article class="panel state-browser"><div class="panel-heading compact"><h2>Tập trạng thái S</h2><span class="pill neutral" id="state-count">—</span></div><label class="sr-only" for="state-search">Tìm mã trạng thái</label><input id="state-search" placeholder="Tìm pha, timer, nhãn trong mã…"><div class="filter-row"><label for="state-phase">Pha<select id="state-phase"><option value="">Tất cả pha</option></select></label><label for="state-period">Khung giờ<select id="state-period"><option value="">Tất cả giờ</option></select></label></div><div id="state-results" class="state-results"></div><div class="pagination"><button class="button small" id="state-prev">← Trước</button><span id="state-page"></span><button class="button small" id="state-next">Sau →</button></div></article>
+   <article class="panel state-inspector"><div class="panel-heading"><div><h2>Quan hệ chuyển tiếp R</h2><p id="graph-detail-caption">Mỗi cạnh là 1 giây.</p></div><span id="state-initial-badge" class="pill neutral">S₀</span></div><div id="state-membership" class="notice hidden"></div><code id="inspected-state" class="state-code">—</code><svg id="neighbor-graph" viewBox="0 0 900 330" aria-label="Trạng thái được chọn và các trạng thái kế tiếp"></svg><div id="neighbor-actions" class="neighbor-actions"></div><div class="state-detail-grid"><div><h3>Hàm gán nhãn L(s)</h3><div id="atomic-labels" class="atomic-labels"></div></div><div><h3>Thông tin trạng thái</h3><dl id="state-detail-list"></dl><h3>Trạng thái khởi tạo S₀</h3><code id="initial-state-code" class="state-code"></code></div></div></article>
+  </div>
+ </section>
+ <section class="view" id="view-verification" aria-labelledby="verification-heading" hidden>
+  <div class="page-heading"><div><div class="eyebrow">KẾT QUẢ PHẢI CÓ BẰNG CHỨNG</div><h1 id="verification-heading">Kiểm chứng hình thức</h1><p>Đọc lại kết quả thật hoặc thực hiện một lượt NuSMV mới, độc lập với log cũ.</p></div><button class="button primary" id="verify-run-btn">▷ Chạy kiểm chứng mới</button></div>
+  <div class="evidence-source-bar"><label for="verification-source">Nguồn kết quả<select id="verification-source"><option value="recorded">Bằng chứng đã lưu từ dự án</option></select></label><span id="verification-provenance" class="pill neutral">Bản ghi lịch sử</span></div>
+  <div id="verification-job" class="notice hidden" role="status"></div><div id="verification-stats" class="stat-grid"></div>
+  <div class="notice subtle" id="verification-scope">Kiểm thử trình duyệt xác nhận giao diện; không thay thế kiểm chứng hình thức.</div>
+  <div class="segmented verification-tabs"><button data-check-tab="nusmv" class="selected">CTL NuSMV</button><button data-check-tab="json">CTL từ JSON</button><button data-check-tab="negative">Đối chứng cố ý lỗi</button></div>
+  <article class="panel verification-panel"><div class="table-toolbar"><div><h2 id="property-table-heading">Các thuộc tính CTL</h2><p id="property-table-count"></p></div><div class="table-filters"><label class="sr-only" for="property-search">Tìm thuộc tính</label><input id="property-search" placeholder="Tìm tên hoặc công thức…"><label class="sr-only" for="property-category">Nhóm thuộc tính</label><select id="property-category"><option value="">Mọi nhóm</option></select><label class="sr-only" for="property-status">Kết quả</label><select id="property-status"><option value="">Mọi kết quả</option><option value="PASS">Đạt</option><option value="FAIL">Không đạt</option><option value="UNVERIFIED">Chưa xác minh</option></select></div></div><div id="properties-table" class="table-wrap"></div><div id="property-pagination" class="pagination"></div></article>
+ </section>
+ <section class="view" id="view-configuration" aria-labelledby="configuration-heading" hidden>
+  <div class="page-heading"><div><div class="eyebrow">MỘT NGUỒN CẤU HÌNH</div><h1 id="configuration-heading">Lịch điều khiển 24 giờ</h1><p>Đọc trực tiếp chapter1/config.json. Thay đổi lịch cần được dựng và kiểm chứng lại ngoài giao diện.</p></div><button class="button" data-artifact="chapter1/config.json">Xem tệp nguồn ↗</button></div>
+  <article class="panel"><div class="panel-heading"><div><h2>Các khoảng thời gian</h2><p>Đầu khoảng được bao gồm, cuối khoảng không được bao gồm.</p></div><span class="pill neutral">00:00 → 24:00</span></div><div id="day-timeline" class="day-timeline"></div><div id="period-ranges-table" class="table-wrap"></div></article>
+  <article class="panel"><div class="panel-heading"><div><h2>Thời lượng từng pha</h2><p>Giây mô hình · tham số được chốt vào entry_period khi bắt đầu pha.</p></div></div><div id="durations-table" class="table-wrap"></div></article>
+  <div class="two-column"><article class="panel prose"><h2>Đổi giờ không cắt ngắn pha</h2><p>Khung giờ hiện tại đi theo đồng hồ. Khung giờ đầu pha được giữ riêng. Chỉ khi timer bằng 1, bước kế tiếp mới lấy thời lượng của pha đích theo khung giờ mới.</p><code>r &gt; 1 → giữ pha, r − 1<br>r = 1 → pha kế, D(pha kế, giờ mới)</code></article><article class="panel prose"><h2>Giới hạn của mô hình</h2><p>Thích nghi dựa trên thời gian trong ngày; chưa có cảm biến đếm xe, ưu tiên xe khẩn cấp hoặc người đi bộ. Xe trên hình là minh họa, không phải mô hình lưu lượng đã được kiểm chứng.</p></article></div>
+ </section>
+ <section class="view" id="view-comparison" aria-labelledby="comparison-heading" hidden>
+  <div class="page-heading"><div><div class="eyebrow">GIỮ BASELINE. CHỨNG MINH CẢI TIẾN.</div><h1 id="comparison-heading">Before (v0) / After (v1)</h1><p>Tái sử dụng đối chiếu 14 nguồn gốc. Phân biệt lỗi hiện hữu, giới hạn và mẫu cố ý lỗi.</p></div><button class="button" data-artifact="chapter1/BEFORE_AFTER_V0_V1.md">Tài liệu đối chiếu ↗</button></div>
+  <div id="improvement-grid" class="improvement-grid"></div><div class="comparison-toolbar"><label for="comparison-select">Chọn file gốc để đối chiếu<select id="comparison-select"></select></label><span id="comparison-classification" class="pill neutral"></span></div><div id="comparison-content"></div>
+ </section>
+ <section class="view" id="view-evidence" aria-labelledby="evidence-heading" hidden>
+  <div class="page-heading"><div><div class="eyebrow">TRUY VẾT ĐẾN TỪNG KẾT LUẬN</div><h1 id="evidence-heading">Bằng chứng và kết quả</h1><p>Mỗi kết quả gắn với tệp nguồn, log và hash. Lượt mới được lưu riêng trong web/runs.</p></div><button class="button" id="check-preservation">Kiểm tra bảo toàn tệp</button></div>
+  <div id="preservation-result" class="notice subtle">Đang đọc dấu vết nguồn.</div><div class="two-column evidence-intro"><article class="panel prose"><h2>Phân biệt hai loại kết quả</h2><p><strong>Đã lưu:</strong> bằng chứng được đọc từ dự án, không giả làm lần chạy mới. <strong>Mới thực thi:</strong> có thời gian bắt đầu, lệnh chạy, stdout và kết quả checker trong thư mục riêng.</p></article><article class="panel prose"><h2>Phục vụ báo cáo học phần</h2><p>Đã chuẩn bị bản ánh xạ tám phần báo cáo. Thông tin sinh viên/nhóm để trống. Yêu cầu CWE/CERT của mẫu cần được giảng viên xác nhận cho phạm vi logic giao thông.</p><button class="text-button" data-artifact="chapter1/web/REPORT_SUPPORT_VI.md">Mở hướng dẫn báo cáo →</button></article></div><div id="evidence-catalog"></div><article class="panel"><div class="panel-heading"><h2>Các lượt kiểm chứng mới</h2><button class="button small" id="refresh-jobs">Làm mới</button></div><div id="jobs-list"></div></article>
+ </section>
+ <footer class="main-footer"><span>Đồ án Chương 1 · Kripke & kiểm chứng hình thức</span><span>Logic nguồn: Python + NuSMV <span class="tiny-dot"></span> Giao diện độc lập</span></footer>
+ </main>
+</div>
+<dialog id="artifact-dialog"><div class="dialog-heading"><div><div class="eyebrow">TỆP NGUỒN / BẰNG CHỨNG</div><h2 id="artifact-title">Nội dung tệp</h2></div><button class="icon-button" id="close-artifact" aria-label="Đóng tệp">×</button></div><p id="artifact-meta" class="fine-print"></p><pre id="artifact-text"></pre><div class="dialog-footer"><span id="artifact-truncated"></span><a id="artifact-download" class="button primary" href="#" download>Tải tệp đầy đủ ↓</a></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>

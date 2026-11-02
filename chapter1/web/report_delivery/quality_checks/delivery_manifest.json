@@ -1,0 +1,41 @@
+{
+  "document_date": "2026-10-23",
+  "files": {
+    "BIEN_BAN_KIEM_THU_PHAN_MEM_CHUONG_1.docx": {
+      "bytes": 767011,
+      "sha256": "47d24e10c912b68ce810d5ce748d7259e063518076fa871130c11b5559914d50"
+    },
+    "BIEN_BAN_KIEM_THU_PHAN_MEM_CHUONG_1.pdf": {
+      "bytes": 1151624,
+      "sha256": "8b01167da88d50163f3807206475e57189968b6a851e79843e9461545d05e2e5"
+    },
+    "README.md": {
+      "bytes": 2063,
+      "sha256": "862884b735aee0843451ed72bf24721f0c7fc58233e5299ec47dbf4870e739bc"
+    },
+    "quality_checks/evidence_audit.json": {
+      "bytes": 204198,
+      "sha256": "93bd04cf5bb61e63b82451b256b6d751cdeccf536ea526fe43eeb647df12691b"
+    },
+    "quality_checks/document_validation.json": {
+      "bytes": 7849,
+      "sha256": "9757235a3a55d14ecbe46f7036703e4faf5a68b771e2630b157bd32b9c591b9b"
+    },
+    "quality_checks/visual_review.json": {
+      "bytes": 1388,
+      "sha256": "18c3d0de3481281f1c65c968f94ada1245559555fb78a8358048da3e67411af5"
+    },
+    "quality_checks/test_case_traceability.json": {
+      "bytes": 33507,
+      "sha256": "00517b1d5aa1ff23f4fb72535d35acbaaee5b601a14280e2055f6cec5d6bacfe"
+    },
+    "quality_checks/preservation_snapshot.json": {
+      "bytes": 23232,
+      "sha256": "a226a1ec6b4c8aea84cd5aef846676de36c0af5b1277b1957c6d44e7dd7f7004"
+    },
+    "quality_checks/word_open.json": {
+      "bytes": 205,
+      "sha256": "b3dcc5459fcfa814bfd4dd2bda968646e4a3db1ea5831065e8aa10d7c984074f"
+    }
+  }
+}

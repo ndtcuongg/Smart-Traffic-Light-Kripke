@@ -1,0 +1,2824 @@
+[
+  {
+    "name": "nusmv_main",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\nusmv_main.smv"
+    ],
+    "seconds": 0.194,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 335,
+    "checks": [
+      {
+        "formula": "AG (EX TRUE)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 0 -> AX second = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 1 -> AX second = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 2 -> AX second = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 3 -> AX second = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 4 -> AX second = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 5 -> AX second = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 6 -> AX second = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 7 -> AX second = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 8 -> AX second = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 9 -> AX second = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 10 -> AX second = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 11 -> AX second = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 12 -> AX second = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 13 -> AX second = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 14 -> AX second = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 15 -> AX second = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 16 -> AX second = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 17 -> AX second = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 18 -> AX second = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 19 -> AX second = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 20 -> AX second = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 21 -> AX second = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 22 -> AX second = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 23 -> AX second = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 24 -> AX second = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 25 -> AX second = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 26 -> AX second = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 27 -> AX second = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 28 -> AX second = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 29 -> AX second = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 30 -> AX second = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 31 -> AX second = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 32 -> AX second = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 33 -> AX second = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 34 -> AX second = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 35 -> AX second = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 36 -> AX second = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 37 -> AX second = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 38 -> AX second = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 39 -> AX second = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 40 -> AX second = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 41 -> AX second = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 42 -> AX second = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 43 -> AX second = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 44 -> AX second = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 45 -> AX second = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 46 -> AX second = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 47 -> AX second = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 48 -> AX second = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 49 -> AX second = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 50 -> AX second = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 51 -> AX second = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 52 -> AX second = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 53 -> AX second = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 54 -> AX second = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 55 -> AX second = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 56 -> AX second = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 57 -> AX second = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 58 -> AX second = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 59 -> AX second = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 0) -> AX minute = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 0) -> AX minute = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 1) -> AX minute = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 1) -> AX minute = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 2) -> AX minute = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 2) -> AX minute = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 3) -> AX minute = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 3) -> AX minute = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 4) -> AX minute = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 4) -> AX minute = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 5) -> AX minute = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 5) -> AX minute = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 6) -> AX minute = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 6) -> AX minute = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 7) -> AX minute = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 7) -> AX minute = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 8) -> AX minute = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 8) -> AX minute = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 9) -> AX minute = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 9) -> AX minute = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 10) -> AX minute = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 10) -> AX minute = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 11) -> AX minute = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 11) -> AX minute = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 12) -> AX minute = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 12) -> AX minute = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 13) -> AX minute = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 13) -> AX minute = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 14) -> AX minute = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 14) -> AX minute = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 15) -> AX minute = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 15) -> AX minute = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 16) -> AX minute = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 16) -> AX minute = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 17) -> AX minute = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 17) -> AX minute = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 18) -> AX minute = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 18) -> AX minute = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 19) -> AX minute = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 19) -> AX minute = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 20) -> AX minute = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 20) -> AX minute = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 21) -> AX minute = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 21) -> AX minute = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 22) -> AX minute = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 22) -> AX minute = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 23) -> AX minute = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 23) -> AX minute = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 24) -> AX minute = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 24) -> AX minute = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 25) -> AX minute = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 25) -> AX minute = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 26) -> AX minute = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 26) -> AX minute = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 27) -> AX minute = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 27) -> AX minute = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 28) -> AX minute = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 28) -> AX minute = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 29) -> AX minute = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 29) -> AX minute = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 30) -> AX minute = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 30) -> AX minute = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 31) -> AX minute = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 31) -> AX minute = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 32) -> AX minute = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 32) -> AX minute = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 33) -> AX minute = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 33) -> AX minute = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 34) -> AX minute = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 34) -> AX minute = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 35) -> AX minute = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 35) -> AX minute = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 36) -> AX minute = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 36) -> AX minute = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 37) -> AX minute = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 37) -> AX minute = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 38) -> AX minute = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 38) -> AX minute = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 39) -> AX minute = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 39) -> AX minute = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 40) -> AX minute = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 40) -> AX minute = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 41) -> AX minute = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 41) -> AX minute = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 42) -> AX minute = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 42) -> AX minute = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 43) -> AX minute = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 43) -> AX minute = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 44) -> AX minute = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 44) -> AX minute = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 45) -> AX minute = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 45) -> AX minute = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 46) -> AX minute = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 46) -> AX minute = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 47) -> AX minute = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 47) -> AX minute = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 48) -> AX minute = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 48) -> AX minute = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 49) -> AX minute = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 49) -> AX minute = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 50) -> AX minute = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 50) -> AX minute = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 51) -> AX minute = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 51) -> AX minute = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 52) -> AX minute = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 52) -> AX minute = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 53) -> AX minute = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 53) -> AX minute = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 54) -> AX minute = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 54) -> AX minute = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 55) -> AX minute = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 55) -> AX minute = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 56) -> AX minute = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 56) -> AX minute = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 57) -> AX minute = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 57) -> AX minute = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 58) -> AX minute = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 58) -> AX minute = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 59) -> AX minute = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 59) -> AX minute = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 0) -> AX hour = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 0) -> AX hour = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 1) -> AX hour = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 1) -> AX hour = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 2) -> AX hour = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 2) -> AX hour = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 3) -> AX hour = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 3) -> AX hour = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 4) -> AX hour = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 4) -> AX hour = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 5) -> AX hour = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 5) -> AX hour = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 6) -> AX hour = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 6) -> AX hour = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 7) -> AX hour = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 7) -> AX hour = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 8) -> AX hour = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 8) -> AX hour = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 9) -> AX hour = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 9) -> AX hour = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 10) -> AX hour = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 10) -> AX hour = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 11) -> AX hour = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 11) -> AX hour = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 12) -> AX hour = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 12) -> AX hour = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 13) -> AX hour = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 13) -> AX hour = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 14) -> AX hour = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 14) -> AX hour = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 15) -> AX hour = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 15) -> AX hour = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 16) -> AX hour = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 16) -> AX hour = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 17) -> AX hour = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 17) -> AX hour = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 18) -> AX hour = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 18) -> AX hour = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 19) -> AX hour = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 19) -> AX hour = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 20) -> AX hour = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 20) -> AX hour = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 21) -> AX hour = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 21) -> AX hour = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 22) -> AX hour = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 22) -> AX hour = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 23) -> AX hour = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 23) -> AX hour = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 2 -> AX timer = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 3 -> AX timer = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 4 -> AX timer = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 5 -> AX timer = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 6 -> AX timer = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 7 -> AX timer = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 8 -> AX timer = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 9 -> AX timer = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 10 -> AX timer = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 11 -> AX timer = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 12 -> AX timer = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 13 -> AX timer = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 14 -> AX timer = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 15 -> AX timer = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 16 -> AX timer = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 17 -> AX timer = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 18 -> AX timer = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 19 -> AX timer = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 20 -> AX timer = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 21 -> AX timer = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 22 -> AX timer = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 23 -> AX timer = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 24 -> AX timer = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 25 -> AX timer = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 26 -> AX timer = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 27 -> AX timer = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 28 -> AX timer = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 29 -> AX timer = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 30 -> AX timer = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 31 -> AX timer = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 32 -> AX timer = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 33 -> AX timer = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 34 -> AX timer = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 35 -> AX timer = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 36 -> AX timer = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 37 -> AX timer = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 38 -> AX timer = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 39 -> AX timer = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 40 -> AX timer = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 41 -> AX timer = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 42 -> AX timer = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 43 -> AX timer = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 44 -> AX timer = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 45 -> AX timer = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer > 1) -> AX phase = NS_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer = 1) -> AX phase = NS_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = NS_GREEN",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer > 1) -> AX phase = NS_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer = 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = NS_YELLOW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer > 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer = 1) -> AX phase = EW_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = ALL_RED_NS_TO_EW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer > 1) -> AX phase = EW_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer = 1) -> AX phase = EW_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = EW_GREEN",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer > 1) -> AX phase = EW_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer = 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = EW_YELLOW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer > 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer = 1) -> AX phase = NS_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = ALL_RED_EW_TO_NS",
+        "result": true
+      },
+      {
+        "formula": "AG (AF n_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF s_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF e_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF w_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer >= 1 & timer <= phase_duration)",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_GREEN & timer = 35) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_GREEN & timer = 45) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_GREEN & timer = 45) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_GREEN & timer = 35) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = MORNING_PEAK & timer > 1) -> AX entry_period = MORNING_PEAK)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = NORMAL & timer > 1) -> AX entry_period = NORMAL)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = EVENING_PEAK & timer > 1) -> AX entry_period = EVENING_PEAK)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = NIGHT_LOW & timer > 1) -> AX entry_period = NIGHT_LOW)",
+        "result": true
+      },
+      {
+        "formula": "AG (((((n_red | n_yellow) | n_green) & !(n_red & n_yellow)) & !(n_red & n_green)) & !(n_yellow & n_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((s_red | s_yellow) | s_green) & !(s_red & s_yellow)) & !(s_red & s_green)) & !(s_yellow & s_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((e_red | e_yellow) | e_green) & !(e_red & e_yellow)) & !(e_red & e_green)) & !(e_yellow & e_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((w_red | w_yellow) | w_green) & !(w_red & w_yellow)) & !(w_red & w_green)) & !(w_yellow & w_green))",
+        "result": true
+      },
+      {
+        "formula": "AG !conflicting_green",
+        "result": true
+      },
+      {
+        "formula": "AG (n_red = s_red & e_red = w_red)",
+        "result": true
+      },
+      {
+        "formula": "AG (n_yellow = s_yellow & e_yellow = w_yellow)",
+        "result": true
+      },
+      {
+        "formula": "AG (n_green = s_green & e_green = w_green)",
+        "result": true
+      },
+      {
+        "formula": "AG ((n_yellow | s_yellow) -> (e_red & w_red))",
+        "result": true
+      },
+      {
+        "formula": "AG ((e_yellow | w_yellow) -> (n_red & s_red))",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW | phase = ALL_RED_EW_TO_NS) -> all_red)",
+        "result": true
+      }
+    ],
+    "expected_truth": true,
+    "status": "PASS",
+    "counterexample_log": null
+  },
+  {
+    "name": "nusmv_any_start_time",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\nusmv_any_start_time.smv"
+    ],
+    "seconds": 0.182,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 335,
+    "checks": [
+      {
+        "formula": "AG (EX TRUE)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 0 -> AX second = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 1 -> AX second = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 2 -> AX second = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 3 -> AX second = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 4 -> AX second = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 5 -> AX second = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 6 -> AX second = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 7 -> AX second = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 8 -> AX second = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 9 -> AX second = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 10 -> AX second = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 11 -> AX second = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 12 -> AX second = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 13 -> AX second = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 14 -> AX second = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 15 -> AX second = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 16 -> AX second = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 17 -> AX second = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 18 -> AX second = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 19 -> AX second = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 20 -> AX second = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 21 -> AX second = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 22 -> AX second = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 23 -> AX second = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 24 -> AX second = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 25 -> AX second = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 26 -> AX second = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 27 -> AX second = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 28 -> AX second = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 29 -> AX second = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 30 -> AX second = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 31 -> AX second = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 32 -> AX second = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 33 -> AX second = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 34 -> AX second = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 35 -> AX second = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 36 -> AX second = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 37 -> AX second = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 38 -> AX second = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 39 -> AX second = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 40 -> AX second = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 41 -> AX second = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 42 -> AX second = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 43 -> AX second = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 44 -> AX second = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 45 -> AX second = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 46 -> AX second = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 47 -> AX second = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 48 -> AX second = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 49 -> AX second = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 50 -> AX second = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 51 -> AX second = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 52 -> AX second = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 53 -> AX second = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 54 -> AX second = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 55 -> AX second = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 56 -> AX second = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 57 -> AX second = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 58 -> AX second = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG (second = 59 -> AX second = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 0) -> AX minute = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 0) -> AX minute = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 1) -> AX minute = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 1) -> AX minute = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 2) -> AX minute = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 2) -> AX minute = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 3) -> AX minute = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 3) -> AX minute = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 4) -> AX minute = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 4) -> AX minute = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 5) -> AX minute = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 5) -> AX minute = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 6) -> AX minute = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 6) -> AX minute = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 7) -> AX minute = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 7) -> AX minute = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 8) -> AX minute = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 8) -> AX minute = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 9) -> AX minute = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 9) -> AX minute = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 10) -> AX minute = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 10) -> AX minute = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 11) -> AX minute = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 11) -> AX minute = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 12) -> AX minute = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 12) -> AX minute = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 13) -> AX minute = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 13) -> AX minute = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 14) -> AX minute = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 14) -> AX minute = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 15) -> AX minute = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 15) -> AX minute = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 16) -> AX minute = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 16) -> AX minute = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 17) -> AX minute = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 17) -> AX minute = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 18) -> AX minute = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 18) -> AX minute = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 19) -> AX minute = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 19) -> AX minute = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 20) -> AX minute = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 20) -> AX minute = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 21) -> AX minute = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 21) -> AX minute = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 22) -> AX minute = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 22) -> AX minute = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 23) -> AX minute = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 23) -> AX minute = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 24) -> AX minute = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 24) -> AX minute = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 25) -> AX minute = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 25) -> AX minute = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 26) -> AX minute = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 26) -> AX minute = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 27) -> AX minute = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 27) -> AX minute = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 28) -> AX minute = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 28) -> AX minute = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 29) -> AX minute = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 29) -> AX minute = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 30) -> AX minute = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 30) -> AX minute = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 31) -> AX minute = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 31) -> AX minute = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 32) -> AX minute = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 32) -> AX minute = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 33) -> AX minute = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 33) -> AX minute = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 34) -> AX minute = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 34) -> AX minute = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 35) -> AX minute = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 35) -> AX minute = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 36) -> AX minute = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 36) -> AX minute = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 37) -> AX minute = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 37) -> AX minute = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 38) -> AX minute = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 38) -> AX minute = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 39) -> AX minute = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 39) -> AX minute = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 40) -> AX minute = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 40) -> AX minute = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 41) -> AX minute = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 41) -> AX minute = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 42) -> AX minute = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 42) -> AX minute = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 43) -> AX minute = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 43) -> AX minute = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 44) -> AX minute = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 44) -> AX minute = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 45) -> AX minute = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 45) -> AX minute = 45)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 46) -> AX minute = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 46) -> AX minute = 46)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 47) -> AX minute = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 47) -> AX minute = 47)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 48) -> AX minute = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 48) -> AX minute = 48)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 49) -> AX minute = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 49) -> AX minute = 49)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 50) -> AX minute = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 50) -> AX minute = 50)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 51) -> AX minute = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 51) -> AX minute = 51)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 52) -> AX minute = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 52) -> AX minute = 52)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 53) -> AX minute = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 53) -> AX minute = 53)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 54) -> AX minute = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 54) -> AX minute = 54)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 55) -> AX minute = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 55) -> AX minute = 55)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 56) -> AX minute = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 56) -> AX minute = 56)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 57) -> AX minute = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 57) -> AX minute = 57)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 58) -> AX minute = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 58) -> AX minute = 58)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second = 59 & minute = 59) -> AX minute = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG ((second < 59 & minute = 59) -> AX minute = 59)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 0) -> AX hour = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 0) -> AX hour = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 1) -> AX hour = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 1) -> AX hour = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 2) -> AX hour = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 2) -> AX hour = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 3) -> AX hour = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 3) -> AX hour = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 4) -> AX hour = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 4) -> AX hour = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 5) -> AX hour = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 5) -> AX hour = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 6) -> AX hour = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 6) -> AX hour = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 7) -> AX hour = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 7) -> AX hour = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 8) -> AX hour = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 8) -> AX hour = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 9) -> AX hour = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 9) -> AX hour = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 10) -> AX hour = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 10) -> AX hour = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 11) -> AX hour = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 11) -> AX hour = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 12) -> AX hour = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 12) -> AX hour = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 13) -> AX hour = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 13) -> AX hour = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 14) -> AX hour = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 14) -> AX hour = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 15) -> AX hour = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 15) -> AX hour = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 16) -> AX hour = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 16) -> AX hour = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 17) -> AX hour = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 17) -> AX hour = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 18) -> AX hour = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 18) -> AX hour = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 19) -> AX hour = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 19) -> AX hour = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 20) -> AX hour = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 20) -> AX hour = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 21) -> AX hour = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 21) -> AX hour = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 22) -> AX hour = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 22) -> AX hour = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second = 59 & minute = 59) & hour = 23) -> AX hour = 0)",
+        "result": true
+      },
+      {
+        "formula": "AG (((second < 59 | minute < 59) & hour = 23) -> AX hour = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 2 -> AX timer = 1)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 3 -> AX timer = 2)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 4 -> AX timer = 3)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 5 -> AX timer = 4)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 6 -> AX timer = 5)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 7 -> AX timer = 6)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 8 -> AX timer = 7)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 9 -> AX timer = 8)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 10 -> AX timer = 9)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 11 -> AX timer = 10)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 12 -> AX timer = 11)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 13 -> AX timer = 12)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 14 -> AX timer = 13)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 15 -> AX timer = 14)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 16 -> AX timer = 15)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 17 -> AX timer = 16)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 18 -> AX timer = 17)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 19 -> AX timer = 18)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 20 -> AX timer = 19)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 21 -> AX timer = 20)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 22 -> AX timer = 21)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 23 -> AX timer = 22)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 24 -> AX timer = 23)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 25 -> AX timer = 24)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 26 -> AX timer = 25)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 27 -> AX timer = 26)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 28 -> AX timer = 27)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 29 -> AX timer = 28)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 30 -> AX timer = 29)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 31 -> AX timer = 30)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 32 -> AX timer = 31)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 33 -> AX timer = 32)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 34 -> AX timer = 33)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 35 -> AX timer = 34)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 36 -> AX timer = 35)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 37 -> AX timer = 36)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 38 -> AX timer = 37)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 39 -> AX timer = 38)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 40 -> AX timer = 39)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 41 -> AX timer = 40)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 42 -> AX timer = 41)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 43 -> AX timer = 42)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 44 -> AX timer = 43)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer = 45 -> AX timer = 44)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer > 1) -> AX phase = NS_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_GREEN & timer = 1) -> AX phase = NS_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = NS_GREEN",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer > 1) -> AX phase = NS_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer = 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = NS_YELLOW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer > 1) -> AX phase = ALL_RED_NS_TO_EW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW & timer = 1) -> AX phase = EW_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = ALL_RED_NS_TO_EW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer > 1) -> AX phase = EW_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_GREEN & timer = 1) -> AX phase = EW_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = EW_GREEN",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer > 1) -> AX phase = EW_YELLOW)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = EW_YELLOW & timer = 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = EW_YELLOW",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer > 1) -> AX phase = ALL_RED_EW_TO_NS)",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_EW_TO_NS & timer = 1) -> AX phase = NS_GREEN)",
+        "result": true
+      },
+      {
+        "formula": "EF phase = ALL_RED_EW_TO_NS",
+        "result": true
+      },
+      {
+        "formula": "AG (AF n_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF s_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF e_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (AF w_green)",
+        "result": true
+      },
+      {
+        "formula": "AG (timer >= 1 & timer <= phase_duration)",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = NS_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_GREEN & timer = 35) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_GREEN & timer = 45) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = EW_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_GREEN & timer = 45) & entry_period = MORNING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_GREEN & timer = 25) & entry_period = NORMAL))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_GREEN & timer = 35) & entry_period = EVENING_PEAK))",
+        "result": true
+      },
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_GREEN & timer = 15) & entry_period = NIGHT_LOW))",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = MORNING_PEAK & timer > 1) -> AX entry_period = MORNING_PEAK)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = NORMAL & timer > 1) -> AX entry_period = NORMAL)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = EVENING_PEAK & timer > 1) -> AX entry_period = EVENING_PEAK)",
+        "result": true
+      },
+      {
+        "formula": "AG ((entry_period = NIGHT_LOW & timer > 1) -> AX entry_period = NIGHT_LOW)",
+        "result": true
+      },
+      {
+        "formula": "AG (((((n_red | n_yellow) | n_green) & !(n_red & n_yellow)) & !(n_red & n_green)) & !(n_yellow & n_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((s_red | s_yellow) | s_green) & !(s_red & s_yellow)) & !(s_red & s_green)) & !(s_yellow & s_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((e_red | e_yellow) | e_green) & !(e_red & e_yellow)) & !(e_red & e_green)) & !(e_yellow & e_green))",
+        "result": true
+      },
+      {
+        "formula": "AG (((((w_red | w_yellow) | w_green) & !(w_red & w_yellow)) & !(w_red & w_green)) & !(w_yellow & w_green))",
+        "result": true
+      },
+      {
+        "formula": "AG !conflicting_green",
+        "result": true
+      },
+      {
+        "formula": "AG (n_red = s_red & e_red = w_red)",
+        "result": true
+      },
+      {
+        "formula": "AG (n_yellow = s_yellow & e_yellow = w_yellow)",
+        "result": true
+      },
+      {
+        "formula": "AG (n_green = s_green & e_green = w_green)",
+        "result": true
+      },
+      {
+        "formula": "AG ((n_yellow | s_yellow) -> (e_red & w_red))",
+        "result": true
+      },
+      {
+        "formula": "AG ((e_yellow | w_yellow) -> (n_red & s_red))",
+        "result": true
+      },
+      {
+        "formula": "AG ((phase = ALL_RED_NS_TO_EW | phase = ALL_RED_EW_TO_NS) -> all_red)",
+        "result": true
+      }
+    ],
+    "expected_truth": true,
+    "status": "PASS",
+    "counterexample_log": null
+  },
+  {
+    "name": "nusmv_period_reachability",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\nusmv_period_reachability.smv"
+    ],
+    "seconds": 1.582,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 4,
+    "checks": [
+      {
+        "formula": "EF period = MORNING_PEAK",
+        "result": true
+      },
+      {
+        "formula": "EF period = NORMAL",
+        "result": true
+      },
+      {
+        "formula": "EF period = EVENING_PEAK",
+        "result": true
+      },
+      {
+        "formula": "EF period = NIGHT_LOW",
+        "result": true
+      }
+    ],
+    "expected_truth": true,
+    "status": "PASS",
+    "counterexample_log": null
+  },
+  {
+    "name": "negative_conflicting_green",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\negative_conflicting_green.smv"
+    ],
+    "seconds": 0.053,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 1,
+    "checks": [
+      {
+        "formula": "AG !conflicting_green",
+        "result": false
+      }
+    ],
+    "expected_truth": false,
+    "status": "PASS",
+    "counterexample_log": "negative_conflicting_green.log"
+  },
+  {
+    "name": "negative_timer_reset",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\negative_timer_reset.smv"
+    ],
+    "seconds": 2.654,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 1,
+    "checks": [
+      {
+        "formula": "AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX timer = 15)",
+        "result": false
+      }
+    ],
+    "expected_truth": false,
+    "status": "PASS",
+    "counterexample_log": "negative_timer_reset.log"
+  },
+  {
+    "name": "negative_skip_all_red",
+    "command": [
+      "C:\\Users\\Admin\\Downloads\\NuSMV-2.7.1-win64\\NuSMV-2.7.1-win64\\bin\\NuSMV.EXE",
+      "-dynamic",
+      "-df",
+      "-coi",
+      "C:\\Users\\Admin\\Desktop\\NuSMV_project\\chapter1\\evidence\\negative_skip_all_red.smv"
+    ],
+    "seconds": 0.073,
+    "returncode": 0,
+    "timeout": false,
+    "expected_properties": 1,
+    "checks": [
+      {
+        "formula": "AG ((phase = NS_YELLOW & timer = 1) -> AX all_red)",
+        "result": false
+      }
+    ],
+    "expected_truth": false,
+    "status": "PASS",
+    "counterexample_log": "negative_skip_all_red.log"
+  }
+]

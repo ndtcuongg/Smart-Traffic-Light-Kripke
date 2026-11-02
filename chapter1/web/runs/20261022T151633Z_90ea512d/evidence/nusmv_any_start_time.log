@@ -1,0 +1,353 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AG (EX TRUE)  is true
+-- specification AG (second = 0 -> AX second = 1)  is true
+-- specification AG (second = 1 -> AX second = 2)  is true
+-- specification AG (second = 2 -> AX second = 3)  is true
+-- specification AG (second = 3 -> AX second = 4)  is true
+-- specification AG (second = 4 -> AX second = 5)  is true
+-- specification AG (second = 5 -> AX second = 6)  is true
+-- specification AG (second = 6 -> AX second = 7)  is true
+-- specification AG (second = 7 -> AX second = 8)  is true
+-- specification AG (second = 8 -> AX second = 9)  is true
+-- specification AG (second = 9 -> AX second = 10)  is true
+-- specification AG (second = 10 -> AX second = 11)  is true
+-- specification AG (second = 11 -> AX second = 12)  is true
+-- specification AG (second = 12 -> AX second = 13)  is true
+-- specification AG (second = 13 -> AX second = 14)  is true
+-- specification AG (second = 14 -> AX second = 15)  is true
+-- specification AG (second = 15 -> AX second = 16)  is true
+-- specification AG (second = 16 -> AX second = 17)  is true
+-- specification AG (second = 17 -> AX second = 18)  is true
+-- specification AG (second = 18 -> AX second = 19)  is true
+-- specification AG (second = 19 -> AX second = 20)  is true
+-- specification AG (second = 20 -> AX second = 21)  is true
+-- specification AG (second = 21 -> AX second = 22)  is true
+-- specification AG (second = 22 -> AX second = 23)  is true
+-- specification AG (second = 23 -> AX second = 24)  is true
+-- specification AG (second = 24 -> AX second = 25)  is true
+-- specification AG (second = 25 -> AX second = 26)  is true
+-- specification AG (second = 26 -> AX second = 27)  is true
+-- specification AG (second = 27 -> AX second = 28)  is true
+-- specification AG (second = 28 -> AX second = 29)  is true
+-- specification AG (second = 29 -> AX second = 30)  is true
+-- specification AG (second = 30 -> AX second = 31)  is true
+-- specification AG (second = 31 -> AX second = 32)  is true
+-- specification AG (second = 32 -> AX second = 33)  is true
+-- specification AG (second = 33 -> AX second = 34)  is true
+-- specification AG (second = 34 -> AX second = 35)  is true
+-- specification AG (second = 35 -> AX second = 36)  is true
+-- specification AG (second = 36 -> AX second = 37)  is true
+-- specification AG (second = 37 -> AX second = 38)  is true
+-- specification AG (second = 38 -> AX second = 39)  is true
+-- specification AG (second = 39 -> AX second = 40)  is true
+-- specification AG (second = 40 -> AX second = 41)  is true
+-- specification AG (second = 41 -> AX second = 42)  is true
+-- specification AG (second = 42 -> AX second = 43)  is true
+-- specification AG (second = 43 -> AX second = 44)  is true
+-- specification AG (second = 44 -> AX second = 45)  is true
+-- specification AG (second = 45 -> AX second = 46)  is true
+-- specification AG (second = 46 -> AX second = 47)  is true
+-- specification AG (second = 47 -> AX second = 48)  is true
+-- specification AG (second = 48 -> AX second = 49)  is true
+-- specification AG (second = 49 -> AX second = 50)  is true
+-- specification AG (second = 50 -> AX second = 51)  is true
+-- specification AG (second = 51 -> AX second = 52)  is true
+-- specification AG (second = 52 -> AX second = 53)  is true
+-- specification AG (second = 53 -> AX second = 54)  is true
+-- specification AG (second = 54 -> AX second = 55)  is true
+-- specification AG (second = 55 -> AX second = 56)  is true
+-- specification AG (second = 56 -> AX second = 57)  is true
+-- specification AG (second = 57 -> AX second = 58)  is true
+-- specification AG (second = 58 -> AX second = 59)  is true
+-- specification AG (second = 59 -> AX second = 0)  is true
+-- specification AG ((second = 59 & minute = 0) -> AX minute = 1)  is true
+-- specification AG ((second < 59 & minute = 0) -> AX minute = 0)  is true
+-- specification AG ((second = 59 & minute = 1) -> AX minute = 2)  is true
+-- specification AG ((second < 59 & minute = 1) -> AX minute = 1)  is true
+-- specification AG ((second = 59 & minute = 2) -> AX minute = 3)  is true
+-- specification AG ((second < 59 & minute = 2) -> AX minute = 2)  is true
+-- specification AG ((second = 59 & minute = 3) -> AX minute = 4)  is true
+-- specification AG ((second < 59 & minute = 3) -> AX minute = 3)  is true
+-- specification AG ((second = 59 & minute = 4) -> AX minute = 5)  is true
+-- specification AG ((second < 59 & minute = 4) -> AX minute = 4)  is true
+-- specification AG ((second = 59 & minute = 5) -> AX minute = 6)  is true
+-- specification AG ((second < 59 & minute = 5) -> AX minute = 5)  is true
+-- specification AG ((second = 59 & minute = 6) -> AX minute = 7)  is true
+-- specification AG ((second < 59 & minute = 6) -> AX minute = 6)  is true
+-- specification AG ((second = 59 & minute = 7) -> AX minute = 8)  is true
+-- specification AG ((second < 59 & minute = 7) -> AX minute = 7)  is true
+-- specification AG ((second = 59 & minute = 8) -> AX minute = 9)  is true
+-- specification AG ((second < 59 & minute = 8) -> AX minute = 8)  is true
+-- specification AG ((second = 59 & minute = 9) -> AX minute = 10)  is true
+-- specification AG ((second < 59 & minute = 9) -> AX minute = 9)  is true
+-- specification AG ((second = 59 & minute = 10) -> AX minute = 11)  is true
+-- specification AG ((second < 59 & minute = 10) -> AX minute = 10)  is true
+-- specification AG ((second = 59 & minute = 11) -> AX minute = 12)  is true
+-- specification AG ((second < 59 & minute = 11) -> AX minute = 11)  is true
+-- specification AG ((second = 59 & minute = 12) -> AX minute = 13)  is true
+-- specification AG ((second < 59 & minute = 12) -> AX minute = 12)  is true
+-- specification AG ((second = 59 & minute = 13) -> AX minute = 14)  is true
+-- specification AG ((second < 59 & minute = 13) -> AX minute = 13)  is true
+-- specification AG ((second = 59 & minute = 14) -> AX minute = 15)  is true
+-- specification AG ((second < 59 & minute = 14) -> AX minute = 14)  is true
+-- specification AG ((second = 59 & minute = 15) -> AX minute = 16)  is true
+-- specification AG ((second < 59 & minute = 15) -> AX minute = 15)  is true
+-- specification AG ((second = 59 & minute = 16) -> AX minute = 17)  is true
+-- specification AG ((second < 59 & minute = 16) -> AX minute = 16)  is true
+-- specification AG ((second = 59 & minute = 17) -> AX minute = 18)  is true
+-- specification AG ((second < 59 & minute = 17) -> AX minute = 17)  is true
+-- specification AG ((second = 59 & minute = 18) -> AX minute = 19)  is true
+-- specification AG ((second < 59 & minute = 18) -> AX minute = 18)  is true
+-- specification AG ((second = 59 & minute = 19) -> AX minute = 20)  is true
+-- specification AG ((second < 59 & minute = 19) -> AX minute = 19)  is true
+-- specification AG ((second = 59 & minute = 20) -> AX minute = 21)  is true
+-- specification AG ((second < 59 & minute = 20) -> AX minute = 20)  is true
+-- specification AG ((second = 59 & minute = 21) -> AX minute = 22)  is true
+-- specification AG ((second < 59 & minute = 21) -> AX minute = 21)  is true
+-- specification AG ((second = 59 & minute = 22) -> AX minute = 23)  is true
+-- specification AG ((second < 59 & minute = 22) -> AX minute = 22)  is true
+-- specification AG ((second = 59 & minute = 23) -> AX minute = 24)  is true
+-- specification AG ((second < 59 & minute = 23) -> AX minute = 23)  is true
+-- specification AG ((second = 59 & minute = 24) -> AX minute = 25)  is true
+-- specification AG ((second < 59 & minute = 24) -> AX minute = 24)  is true
+-- specification AG ((second = 59 & minute = 25) -> AX minute = 26)  is true
+-- specification AG ((second < 59 & minute = 25) -> AX minute = 25)  is true
+-- specification AG ((second = 59 & minute = 26) -> AX minute = 27)  is true
+-- specification AG ((second < 59 & minute = 26) -> AX minute = 26)  is true
+-- specification AG ((second = 59 & minute = 27) -> AX minute = 28)  is true
+-- specification AG ((second < 59 & minute = 27) -> AX minute = 27)  is true
+-- specification AG ((second = 59 & minute = 28) -> AX minute = 29)  is true
+-- specification AG ((second < 59 & minute = 28) -> AX minute = 28)  is true
+-- specification AG ((second = 59 & minute = 29) -> AX minute = 30)  is true
+-- specification AG ((second < 59 & minute = 29) -> AX minute = 29)  is true
+-- specification AG ((second = 59 & minute = 30) -> AX minute = 31)  is true
+-- specification AG ((second < 59 & minute = 30) -> AX minute = 30)  is true
+-- specification AG ((second = 59 & minute = 31) -> AX minute = 32)  is true
+-- specification AG ((second < 59 & minute = 31) -> AX minute = 31)  is true
+-- specification AG ((second = 59 & minute = 32) -> AX minute = 33)  is true
+-- specification AG ((second < 59 & minute = 32) -> AX minute = 32)  is true
+-- specification AG ((second = 59 & minute = 33) -> AX minute = 34)  is true
+-- specification AG ((second < 59 & minute = 33) -> AX minute = 33)  is true
+-- specification AG ((second = 59 & minute = 34) -> AX minute = 35)  is true
+-- specification AG ((second < 59 & minute = 34) -> AX minute = 34)  is true
+-- specification AG ((second = 59 & minute = 35) -> AX minute = 36)  is true
+-- specification AG ((second < 59 & minute = 35) -> AX minute = 35)  is true
+-- specification AG ((second = 59 & minute = 36) -> AX minute = 37)  is true
+-- specification AG ((second < 59 & minute = 36) -> AX minute = 36)  is true
+-- specification AG ((second = 59 & minute = 37) -> AX minute = 38)  is true
+-- specification AG ((second < 59 & minute = 37) -> AX minute = 37)  is true
+-- specification AG ((second = 59 & minute = 38) -> AX minute = 39)  is true
+-- specification AG ((second < 59 & minute = 38) -> AX minute = 38)  is true
+-- specification AG ((second = 59 & minute = 39) -> AX minute = 40)  is true
+-- specification AG ((second < 59 & minute = 39) -> AX minute = 39)  is true
+-- specification AG ((second = 59 & minute = 40) -> AX minute = 41)  is true
+-- specification AG ((second < 59 & minute = 40) -> AX minute = 40)  is true
+-- specification AG ((second = 59 & minute = 41) -> AX minute = 42)  is true
+-- specification AG ((second < 59 & minute = 41) -> AX minute = 41)  is true
+-- specification AG ((second = 59 & minute = 42) -> AX minute = 43)  is true
+-- specification AG ((second < 59 & minute = 42) -> AX minute = 42)  is true
+-- specification AG ((second = 59 & minute = 43) -> AX minute = 44)  is true
+-- specification AG ((second < 59 & minute = 43) -> AX minute = 43)  is true
+-- specification AG ((second = 59 & minute = 44) -> AX minute = 45)  is true
+-- specification AG ((second < 59 & minute = 44) -> AX minute = 44)  is true
+-- specification AG ((second = 59 & minute = 45) -> AX minute = 46)  is true
+-- specification AG ((second < 59 & minute = 45) -> AX minute = 45)  is true
+-- specification AG ((second = 59 & minute = 46) -> AX minute = 47)  is true
+-- specification AG ((second < 59 & minute = 46) -> AX minute = 46)  is true
+-- specification AG ((second = 59 & minute = 47) -> AX minute = 48)  is true
+-- specification AG ((second < 59 & minute = 47) -> AX minute = 47)  is true
+-- specification AG ((second = 59 & minute = 48) -> AX minute = 49)  is true
+-- specification AG ((second < 59 & minute = 48) -> AX minute = 48)  is true
+-- specification AG ((second = 59 & minute = 49) -> AX minute = 50)  is true
+-- specification AG ((second < 59 & minute = 49) -> AX minute = 49)  is true
+-- specification AG ((second = 59 & minute = 50) -> AX minute = 51)  is true
+-- specification AG ((second < 59 & minute = 50) -> AX minute = 50)  is true
+-- specification AG ((second = 59 & minute = 51) -> AX minute = 52)  is true
+-- specification AG ((second < 59 & minute = 51) -> AX minute = 51)  is true
+-- specification AG ((second = 59 & minute = 52) -> AX minute = 53)  is true
+-- specification AG ((second < 59 & minute = 52) -> AX minute = 52)  is true
+-- specification AG ((second = 59 & minute = 53) -> AX minute = 54)  is true
+-- specification AG ((second < 59 & minute = 53) -> AX minute = 53)  is true
+-- specification AG ((second = 59 & minute = 54) -> AX minute = 55)  is true
+-- specification AG ((second < 59 & minute = 54) -> AX minute = 54)  is true
+-- specification AG ((second = 59 & minute = 55) -> AX minute = 56)  is true
+-- specification AG ((second < 59 & minute = 55) -> AX minute = 55)  is true
+-- specification AG ((second = 59 & minute = 56) -> AX minute = 57)  is true
+-- specification AG ((second < 59 & minute = 56) -> AX minute = 56)  is true
+-- specification AG ((second = 59 & minute = 57) -> AX minute = 58)  is true
+-- specification AG ((second < 59 & minute = 57) -> AX minute = 57)  is true
+-- specification AG ((second = 59 & minute = 58) -> AX minute = 59)  is true
+-- specification AG ((second < 59 & minute = 58) -> AX minute = 58)  is true
+-- specification AG ((second = 59 & minute = 59) -> AX minute = 0)  is true
+-- specification AG ((second < 59 & minute = 59) -> AX minute = 59)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 0) -> AX hour = 1)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 0) -> AX hour = 0)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 1) -> AX hour = 2)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 1) -> AX hour = 1)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 2) -> AX hour = 3)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 2) -> AX hour = 2)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 3) -> AX hour = 4)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 3) -> AX hour = 3)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 4) -> AX hour = 5)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 4) -> AX hour = 4)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 5) -> AX hour = 6)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 5) -> AX hour = 5)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 6) -> AX hour = 7)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 6) -> AX hour = 6)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 7) -> AX hour = 8)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 7) -> AX hour = 7)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 8) -> AX hour = 9)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 8) -> AX hour = 8)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 9) -> AX hour = 10)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 9) -> AX hour = 9)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 10) -> AX hour = 11)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 10) -> AX hour = 10)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 11) -> AX hour = 12)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 11) -> AX hour = 11)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 12) -> AX hour = 13)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 12) -> AX hour = 12)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 13) -> AX hour = 14)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 13) -> AX hour = 13)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 14) -> AX hour = 15)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 14) -> AX hour = 14)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 15) -> AX hour = 16)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 15) -> AX hour = 15)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 16) -> AX hour = 17)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 16) -> AX hour = 16)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 17) -> AX hour = 18)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 17) -> AX hour = 17)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 18) -> AX hour = 19)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 18) -> AX hour = 18)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 19) -> AX hour = 20)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 19) -> AX hour = 19)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 20) -> AX hour = 21)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 20) -> AX hour = 20)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 21) -> AX hour = 22)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 21) -> AX hour = 21)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 22) -> AX hour = 23)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 22) -> AX hour = 22)  is true
+-- specification AG (((second = 59 & minute = 59) & hour = 23) -> AX hour = 0)  is true
+-- specification AG (((second < 59 | minute < 59) & hour = 23) -> AX hour = 23)  is true
+-- specification AG (timer = 2 -> AX timer = 1)  is true
+-- specification AG (timer = 3 -> AX timer = 2)  is true
+-- specification AG (timer = 4 -> AX timer = 3)  is true
+-- specification AG (timer = 5 -> AX timer = 4)  is true
+-- specification AG (timer = 6 -> AX timer = 5)  is true
+-- specification AG (timer = 7 -> AX timer = 6)  is true
+-- specification AG (timer = 8 -> AX timer = 7)  is true
+-- specification AG (timer = 9 -> AX timer = 8)  is true
+-- specification AG (timer = 10 -> AX timer = 9)  is true
+-- specification AG (timer = 11 -> AX timer = 10)  is true
+-- specification AG (timer = 12 -> AX timer = 11)  is true
+-- specification AG (timer = 13 -> AX timer = 12)  is true
+-- specification AG (timer = 14 -> AX timer = 13)  is true
+-- specification AG (timer = 15 -> AX timer = 14)  is true
+-- specification AG (timer = 16 -> AX timer = 15)  is true
+-- specification AG (timer = 17 -> AX timer = 16)  is true
+-- specification AG (timer = 18 -> AX timer = 17)  is true
+-- specification AG (timer = 19 -> AX timer = 18)  is true
+-- specification AG (timer = 20 -> AX timer = 19)  is true
+-- specification AG (timer = 21 -> AX timer = 20)  is true
+-- specification AG (timer = 22 -> AX timer = 21)  is true
+-- specification AG (timer = 23 -> AX timer = 22)  is true
+-- specification AG (timer = 24 -> AX timer = 23)  is true
+-- specification AG (timer = 25 -> AX timer = 24)  is true
+-- specification AG (timer = 26 -> AX timer = 25)  is true
+-- specification AG (timer = 27 -> AX timer = 26)  is true
+-- specification AG (timer = 28 -> AX timer = 27)  is true
+-- specification AG (timer = 29 -> AX timer = 28)  is true
+-- specification AG (timer = 30 -> AX timer = 29)  is true
+-- specification AG (timer = 31 -> AX timer = 30)  is true
+-- specification AG (timer = 32 -> AX timer = 31)  is true
+-- specification AG (timer = 33 -> AX timer = 32)  is true
+-- specification AG (timer = 34 -> AX timer = 33)  is true
+-- specification AG (timer = 35 -> AX timer = 34)  is true
+-- specification AG (timer = 36 -> AX timer = 35)  is true
+-- specification AG (timer = 37 -> AX timer = 36)  is true
+-- specification AG (timer = 38 -> AX timer = 37)  is true
+-- specification AG (timer = 39 -> AX timer = 38)  is true
+-- specification AG (timer = 40 -> AX timer = 39)  is true
+-- specification AG (timer = 41 -> AX timer = 40)  is true
+-- specification AG (timer = 42 -> AX timer = 41)  is true
+-- specification AG (timer = 43 -> AX timer = 42)  is true
+-- specification AG (timer = 44 -> AX timer = 43)  is true
+-- specification AG (timer = 45 -> AX timer = 44)  is true
+-- specification AG ((phase = NS_GREEN & timer > 1) -> AX phase = NS_GREEN)  is true
+-- specification AG ((phase = NS_GREEN & timer = 1) -> AX phase = NS_YELLOW)  is true
+-- specification EF phase = NS_GREEN  is true
+-- specification AG ((phase = NS_YELLOW & timer > 1) -> AX phase = NS_YELLOW)  is true
+-- specification AG ((phase = NS_YELLOW & timer = 1) -> AX phase = ALL_RED_NS_TO_EW)  is true
+-- specification EF phase = NS_YELLOW  is true
+-- specification AG ((phase = ALL_RED_NS_TO_EW & timer > 1) -> AX phase = ALL_RED_NS_TO_EW)  is true
+-- specification AG ((phase = ALL_RED_NS_TO_EW & timer = 1) -> AX phase = EW_GREEN)  is true
+-- specification EF phase = ALL_RED_NS_TO_EW  is true
+-- specification AG ((phase = EW_GREEN & timer > 1) -> AX phase = EW_GREEN)  is true
+-- specification AG ((phase = EW_GREEN & timer = 1) -> AX phase = EW_YELLOW)  is true
+-- specification EF phase = EW_GREEN  is true
+-- specification AG ((phase = EW_YELLOW & timer > 1) -> AX phase = EW_YELLOW)  is true
+-- specification AG ((phase = EW_YELLOW & timer = 1) -> AX phase = ALL_RED_EW_TO_NS)  is true
+-- specification EF phase = EW_YELLOW  is true
+-- specification AG ((phase = ALL_RED_EW_TO_NS & timer > 1) -> AX phase = ALL_RED_EW_TO_NS)  is true
+-- specification AG ((phase = ALL_RED_EW_TO_NS & timer = 1) -> AX phase = NS_GREEN)  is true
+-- specification EF phase = ALL_RED_EW_TO_NS  is true
+-- specification AG (AF n_green)  is true
+-- specification AG (AF s_green)  is true
+-- specification AG (AF e_green)  is true
+-- specification AG (AF w_green)  is true
+-- specification AG (timer >= 1 & timer <= phase_duration)  is true
+-- specification AG (((phase = NS_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = NS_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NORMAL))  is true
+-- specification AG (((phase = NS_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = NS_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_YELLOW & timer = 3) & entry_period = NIGHT_LOW))  is true
+-- specification AG (((phase = NS_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = NS_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NORMAL))  is true
+-- specification AG (((phase = NS_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = NS_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_NS_TO_EW & timer = 2) & entry_period = NIGHT_LOW))  is true
+-- specification AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_GREEN & timer = 35) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_GREEN & timer = 25) & entry_period = NORMAL))  is true
+-- specification AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_GREEN & timer = 45) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = ALL_RED_NS_TO_EW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_GREEN & timer = 15) & entry_period = NIGHT_LOW))  is true
+-- specification AG (((phase = EW_GREEN & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = EW_GREEN & timer = 1) & period_next = NORMAL) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NORMAL))  is true
+-- specification AG (((phase = EW_GREEN & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = EW_GREEN & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = EW_YELLOW & timer = 3) & entry_period = NIGHT_LOW))  is true
+-- specification AG (((phase = EW_YELLOW & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = EW_YELLOW & timer = 1) & period_next = NORMAL) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NORMAL))  is true
+-- specification AG (((phase = EW_YELLOW & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = EW_YELLOW & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = ALL_RED_EW_TO_NS & timer = 2) & entry_period = NIGHT_LOW))  is true
+-- specification AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = MORNING_PEAK) -> AX ((phase = NS_GREEN & timer = 45) & entry_period = MORNING_PEAK))  is true
+-- specification AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NORMAL) -> AX ((phase = NS_GREEN & timer = 25) & entry_period = NORMAL))  is true
+-- specification AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = EVENING_PEAK) -> AX ((phase = NS_GREEN & timer = 35) & entry_period = EVENING_PEAK))  is true
+-- specification AG (((phase = ALL_RED_EW_TO_NS & timer = 1) & period_next = NIGHT_LOW) -> AX ((phase = NS_GREEN & timer = 15) & entry_period = NIGHT_LOW))  is true
+-- specification AG ((entry_period = MORNING_PEAK & timer > 1) -> AX entry_period = MORNING_PEAK)  is true
+-- specification AG ((entry_period = NORMAL & timer > 1) -> AX entry_period = NORMAL)  is true
+-- specification AG ((entry_period = EVENING_PEAK & timer > 1) -> AX entry_period = EVENING_PEAK)  is true
+-- specification AG ((entry_period = NIGHT_LOW & timer > 1) -> AX entry_period = NIGHT_LOW)  is true
+-- specification AG (((((n_red | n_yellow) | n_green) & !(n_red & n_yellow)) & !(n_red & n_green)) & !(n_yellow & n_green))  is true
+-- specification AG (((((s_red | s_yellow) | s_green) & !(s_red & s_yellow)) & !(s_red & s_green)) & !(s_yellow & s_green))  is true
+-- specification AG (((((e_red | e_yellow) | e_green) & !(e_red & e_yellow)) & !(e_red & e_green)) & !(e_yellow & e_green))  is true
+-- specification AG (((((w_red | w_yellow) | w_green) & !(w_red & w_yellow)) & !(w_red & w_green)) & !(w_yellow & w_green))  is true
+-- specification AG !conflicting_green  is true
+-- specification AG (n_red = s_red & e_red = w_red)  is true
+-- specification AG (n_yellow = s_yellow & e_yellow = w_yellow)  is true
+-- specification AG (n_green = s_green & e_green = w_green)  is true
+-- specification AG ((n_yellow | s_yellow) -> (e_red & w_red))  is true
+-- specification AG ((e_yellow | w_yellow) -> (n_red & s_red))  is true
+-- specification AG ((phase = ALL_RED_NS_TO_EW | phase = ALL_RED_EW_TO_NS) -> all_red)  is true
+
+STDERR

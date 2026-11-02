@@ -1,0 +1,177 @@
+MODULE main 
+VAR
+
+
+state :
+{
+NS_GREEN,
+NS_YELLOW,
+EW_GREEN,
+EW_YELLOW,
+EMERGENCY_GREEN
+};
+
+
+emergency :
+boolean;
+
+
+
+ASSIGN
+
+
+-- Initial state
+
+init(state) := NS_GREEN;
+
+
+-- Không có xe ưu tiên ban đầu
+
+init(emergency) := FALSE;
+
+
+
+-- =========================
+-- STATE TRANSITION
+-- =========================
+
+
+next(state) :=
+
+case
+
+
+-- Khi có xe ưu tiên
+-- chuyển sang chế độ ưu tiên
+
+emergency = TRUE :
+
+EMERGENCY_GREEN;
+
+
+
+state = NS_GREEN :
+
+NS_YELLOW;
+
+
+
+state = NS_YELLOW :
+
+EW_GREEN;
+
+
+
+state = EW_GREEN :
+
+EW_YELLOW;
+
+
+
+state = EW_YELLOW :
+
+NS_GREEN;
+
+
+
+state = EMERGENCY_GREEN :
+
+NS_GREEN;
+
+
+
+esac;
+
+
+
+-- =========================
+-- EMERGENCY SENSOR
+-- =========================
+
+
+-- Mô phỏng cảm biến phát hiện xe ưu tiên
+
+next(emergency) :=
+
+case
+
+
+emergency = FALSE :
+
+TRUE;
+
+
+emergency = TRUE :
+
+FALSE;
+
+
+esac;
+
+
+
+-- =========================
+-- VERIFICATION PROPERTY
+-- =========================
+
+
+-- Nếu phát hiện xe ưu tiên
+-- cuối cùng phải vào chế độ emergency
+
+
+LTLSPEC
+
+G(
+
+emergency = TRUE
+
+->
+
+F state = EMERGENCY_GREEN
+
+);
+
+
+
+-- Sau emergency phải quay lại hoạt động bình thường
+
+
+LTLSPEC
+
+G(
+
+state = EMERGENCY_GREEN
+
+->
+
+F state = NS_GREEN
+
+);
+
+-- Emergency cannot conflict
+
+LTLSPEC
+
+G !(
+
+state = EMERGENCY_GREEN
+
+&
+
+state = EW_GREEN
+
+);
+
+
+
+LTLSPEC
+
+G !(
+
+state = EMERGENCY_GREEN
+
+&
+
+state = NS_GREEN
+
+);

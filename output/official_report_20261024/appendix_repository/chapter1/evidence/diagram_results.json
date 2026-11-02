@@ -1,0 +1,14 @@
+{
+  "browser": "Microsoft Edge headless",
+  "checks": {
+    "all_states_loaded": true,
+    "initial_all_red": true,
+    "individual_green_lamps": true,
+    "rendered_real_edges": true,
+    "one_second_step": true,
+    "filter": true,
+    "reset": true,
+    "no_browser_exceptions": true
+  },
+  "status": "PASS"
+}

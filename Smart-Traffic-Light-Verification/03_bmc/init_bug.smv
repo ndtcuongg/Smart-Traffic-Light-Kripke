@@ -1,0 +1,84 @@
+MODULE main 
+VAR
+
+
+NS_light :
+
+{
+GREEN,
+YELLOW,
+RED
+};
+
+
+EW_light :
+
+{
+GREEN,
+YELLOW,
+RED
+};
+
+
+
+ASSIGN
+
+
+init(NS_light) := GREEN;
+
+
+init(EW_light) := GREEN;
+
+
+
+next(NS_light) :=
+
+case
+
+
+NS_light = GREEN :
+YELLOW;
+
+
+NS_light = YELLOW :
+RED;
+
+
+NS_light = RED :
+GREEN;
+
+
+esac;
+
+
+
+next(EW_light) :=
+
+case
+
+
+EW_light = GREEN :
+YELLOW;
+
+
+EW_light = YELLOW :
+RED;
+
+
+EW_light = RED :
+GREEN;
+
+
+esac;
+
+
+
+LTLSPEC
+
+G !(
+
+NS_light = GREEN &
+
+EW_light = GREEN
+
+);

@@ -1,0 +1,322 @@
+{
+  "document_date": "2026-10-23",
+  "status": "PASS",
+  "word_open": {
+    "page_count": 26,
+    "version": "16.0",
+    "read_only": true,
+    "table_count": 15,
+    "application": "Microsoft Word",
+    "embedded_images": 7,
+    "status": "DOCX_OPENED"
+  },
+  "pdf_open": "PASS",
+  "pdf_export_application": "Microsoft Edge headless; print HTML generated from exact DOCX content",
+  "word_pdf_export": "Stalled in this environment; fallback used",
+  "docx_word_pages": 26,
+  "pdf_pages": 24,
+  "docx_tables": 15,
+  "embedded_original_screenshots": 7,
+  "detailed_record_entries": 62,
+  "case_counts": {
+    "web": 32,
+    "backend": 13,
+    "formal": 14,
+    "negative": 3
+  },
+  "all_evidence_references_resolve": true,
+  "all_335_named_properties_match_raw_log": true,
+  "all_source_and_evidence_files_unchanged": true,
+  "protected_files": 185,
+  "changed_files": [],
+  "pdf_out_of_page_text": [],
+  "near_empty_pages": [],
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 1301,
+      "case_ids": [],
+      "preview": "page_previews/page_01.png"
+    },
+    {
+      "page": 2,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2673,
+      "case_ids": [],
+      "preview": "page_previews/page_02.png"
+    },
+    {
+      "page": 3,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 2594,
+      "case_ids": [
+        "API-03"
+      ],
+      "preview": "page_previews/page_03.png"
+    },
+    {
+      "page": 4,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 2878,
+      "case_ids": [
+        "API-04",
+        "API-07"
+      ],
+      "preview": "page_previews/page_04.png"
+    },
+    {
+      "page": 5,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 2633,
+      "case_ids": [
+        "API-09"
+      ],
+      "preview": "page_previews/page_05.png"
+    },
+    {
+      "page": 6,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 2666,
+      "case_ids": [
+        "API-01",
+        "API-02",
+        "API-03",
+        "API-04",
+        "API-12"
+      ],
+      "preview": "page_previews/page_06.png"
+    },
+    {
+      "page": 7,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 3122,
+      "case_ids": [
+        "API-05",
+        "API-06",
+        "API-07",
+        "API-08",
+        "API-09",
+        "API-10",
+        "API-11",
+        "API-12",
+        "API-13",
+        "FM-10",
+        "FM-14"
+      ],
+      "preview": "page_previews/page_07.png"
+    },
+    {
+      "page": 8,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 2653,
+      "case_ids": [
+        "FM-01",
+        "FM-02",
+        "FM-03",
+        "FM-04",
+        "FM-05",
+        "FM-06",
+        "FM-07",
+        "FM-08",
+        "FM-09",
+        "FM-10",
+        "FM-11",
+        "FM-12"
+      ],
+      "preview": "page_previews/page_08.png"
+    },
+    {
+      "page": 9,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 1959,
+      "case_ids": [
+        "FM-13",
+        "FM-14"
+      ],
+      "preview": "page_previews/page_09.png"
+    },
+    {
+      "page": 10,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2566,
+      "case_ids": [
+        "API-01",
+        "API-02",
+        "API-03",
+        "API-04",
+        "API-05",
+        "API-07",
+        "API-09",
+        "WEB-01",
+        "WEB-02",
+        "WEB-03",
+        "WEB-08",
+        "WEB-09",
+        "WEB-12",
+        "WEB-19",
+        "WEB-27",
+        "WEB-32"
+      ],
+      "preview": "page_previews/page_10.png"
+    },
+    {
+      "page": 11,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2972,
+      "case_ids": [
+        "API-06",
+        "API-11",
+        "API-12",
+        "NEG-01"
+      ],
+      "preview": "page_previews/page_11.png"
+    },
+    {
+      "page": 12,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2577,
+      "case_ids": [
+        "NEG-02",
+        "NEG-03"
+      ],
+      "preview": "page_previews/page_12.png"
+    },
+    {
+      "page": 13,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 1889,
+      "case_ids": [],
+      "preview": "page_previews/page_13.png"
+    },
+    {
+      "page": 14,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2073,
+      "case_ids": [
+        "API-01",
+        "API-02",
+        "API-03",
+        "API-04",
+        "API-07",
+        "API-08",
+        "API-09",
+        "FM-01",
+        "FM-14",
+        "NEG-01",
+        "WEB-01",
+        "WEB-02",
+        "WEB-03",
+        "WEB-09",
+        "WEB-12",
+        "WEB-18",
+        "WEB-19",
+        "WEB-27",
+        "WEB-29"
+      ],
+      "preview": "page_previews/page_14.png"
+    },
+    {
+      "page": 15,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2358,
+      "case_ids": [],
+      "preview": "page_previews/page_15.png"
+    },
+    {
+      "page": 16,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 2203,
+      "case_ids": [
+        "WEB-18"
+      ],
+      "preview": "page_previews/page_16.png"
+    },
+    {
+      "page": 17,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 262,
+      "case_ids": [],
+      "preview": "page_previews/page_17.png"
+    },
+    {
+      "page": 18,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 265,
+      "case_ids": [],
+      "preview": "page_previews/page_18.png"
+    },
+    {
+      "page": 19,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 277,
+      "case_ids": [],
+      "preview": "page_previews/page_19.png"
+    },
+    {
+      "page": 20,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 271,
+      "case_ids": [],
+      "preview": "page_previews/page_20.png"
+    },
+    {
+      "page": 21,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 262,
+      "case_ids": [],
+      "preview": "page_previews/page_21.png"
+    },
+    {
+      "page": 22,
+      "width_pt": 841.9199829101562,
+      "height_pt": 594.9599609375,
+      "characters": 269,
+      "case_ids": [],
+      "preview": "page_previews/page_22.png"
+    },
+    {
+      "page": 23,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 258,
+      "case_ids": [],
+      "preview": "page_previews/page_23.png"
+    },
+    {
+      "page": 24,
+      "width_pt": 594.9599609375,
+      "height_pt": 841.9199829101562,
+      "characters": 1495,
+      "case_ids": [],
+      "preview": "page_previews/page_24.png"
+    }
+  ],
+  "deliverables": {
+    "BIEN_BAN_KIEM_THU_PHAN_MEM_CHUONG_1.docx": "47d24e10c912b68ce810d5ce748d7259e063518076fa871130c11b5559914d50",
+    "BIEN_BAN_KIEM_THU_PHAN_MEM_CHUONG_1.pdf": "8b01167da88d50163f3807206475e57189968b6a851e79843e9461545d05e2e5"
+  },
+  "product_tests_rerun": false,
+  "note": "PASS applies to deliverable structure/evidence validation. Visual review is recorded separately after page previews are inspected; no signed manual product test is implied."
+}

@@ -1,0 +1,76 @@
+MODULE main 
+VAR
+
+
+state :
+{
+S0,
+S1,
+S2,
+S3
+};
+
+
+
+ASSIGN
+
+
+init(state) := S0;
+
+
+
+next(state) :=
+
+case
+
+
+-- =====================
+-- BUG INTRODUCED HERE
+-- =====================
+
+-- Đúng:
+-- S0 -> S1
+
+-- Sai:
+-- S0 -> S2
+
+state = S0 :
+S2;
+
+
+state = S1 :
+S2;
+
+
+state = S2 :
+S3;
+
+
+state = S3 :
+S0;
+
+
+esac;
+
+
+
+-- =====================
+-- PROPERTY
+-- =====================
+
+
+-- Nếu đang ở S0
+-- bước tiếp theo phải là S1
+
+
+LTLSPEC
+
+G(
+
+state = S0
+
+->
+
+X(state = S1)
+
+);

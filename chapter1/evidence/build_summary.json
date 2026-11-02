@@ -1,0 +1,36 @@
+{
+  "config_sha256": "b8c3daffa72b4fc5a08f1cda6f891320138ad15e7ff68e1c60226901d5e46687",
+  "concrete_states": 86400,
+  "concrete_transitions": 86400,
+  "concrete_loop_start_index": 0,
+  "abstract_states": 1012,
+  "abstract_transitions": 2548,
+  "initial_state": "t00000__ALL_RED_EW_TO_NS__r002__now_NIGHT_LOW__entry_NIGHT_LOW",
+  "exact_to_abstract_simulation": "PASS",
+  "all_state_and_edge_rules": "PASS",
+  "exact_periods": [
+    "EVENING_PEAK",
+    "MORNING_PEAK",
+    "NIGHT_LOW",
+    "NORMAL"
+  ],
+  "exact_phases": [
+    "ALL_RED_EW_TO_NS",
+    "ALL_RED_NS_TO_EW",
+    "EW_GREEN",
+    "EW_YELLOW",
+    "NS_GREEN",
+    "NS_YELLOW"
+  ],
+  "lamp_boolean_count": 12,
+  "json_ctl_properties": 26,
+  "nusmv_properties": 335,
+  "json_top_level_keys": [
+    "description",
+    "states",
+    "initial",
+    "labeling",
+    "transitions",
+    "suggested_ctl_formulas"
+  ]
+}
