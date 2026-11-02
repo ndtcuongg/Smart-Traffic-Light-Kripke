@@ -4,7 +4,7 @@
 
 **Tên đề tài:** Mô hình hóa và kiểm chứng hình thức cho hệ thống các đèn giao thông thông minh sử dụng cấu trúc Kripke.
 
-**Môn học:** CSE703153 — Kỹ thuật Lập trình An toàn.
+**Môn học:** CSE703093-1-1-26(N01) — An toàn phần mềm.
 
 **Trường:** Đại học Phenikaa.
 
@@ -84,7 +84,7 @@ Các kết quả trên phản ánh những lần kiểm chứng đã lưu, khôn
 | Nguyễn Đào Tuấn Cường | 23011520 | Phân tích mô hình, phát triển hệ thống, kiểm chứng và tổng hợp kết quả |
 | Nguyễn Trung Hiếu | 23010603 | Hỗ trợ nghiên cứu, kiểm thử và tài liệu |
 
-**Giảng viên hướng dẫn:** [Tên giảng viên]
+**Giảng viên hướng dẫn:** Vũ Quang Dũng
 
 ## 8. Giới hạn của dự án
 
